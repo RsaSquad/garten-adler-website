@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 const About = () => {
     const features = [
@@ -91,14 +92,17 @@ const About = () => {
                     <div className="relative">
                         {/* Main Image Placeholder */}
                         <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl">
-                            <div className="aspect-[4/5] bg-gradient-to-br from-green-600 via-green-500 to-lime-400 flex items-center justify-center">
-                                <div className="text-center p-8">
-                                    <div className="w-24 h-24 mx-auto mb-6 rounded-full bg-white/20 flex items-center justify-center">
-                                        <svg className="w-12 h-12 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-                                        </svg>
-                                    </div>
-                                    <h3 className="text-3xl font-bold text-white mb-4">15+ Jahre</h3>
+                            <div className="aspect-[4/5] relative">
+                                <Image
+                                    src="/images/about-garden.png"
+                                    alt="Professionell gestalteter Garten von Adler & Sohn"
+                                    fill
+                                    className="object-cover"
+                                    sizes="(max-width: 1024px) 100vw, 50vw"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-green-900/70 via-transparent to-transparent" />
+                                <div className="absolute bottom-0 left-0 right-0 text-center p-8">
+                                    <h3 className="text-3xl font-bold text-white mb-2">15+ Jahre</h3>
                                     <p className="text-white/80 text-lg">Erfahrung im Gartenbau</p>
                                 </div>
                             </div>
