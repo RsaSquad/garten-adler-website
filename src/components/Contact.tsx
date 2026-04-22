@@ -17,10 +17,12 @@ const Contact = ({ defaultOrt = '' }: ContactProps) => {
         message: '',
     });
     const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+    const [errorMsg, setErrorMsg] = useState('');
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setStatus('loading');
+        setErrorMsg('');
 
         try {
             const response = await fetch('/api/contact', {
@@ -36,9 +38,11 @@ const Contact = ({ defaultOrt = '' }: ContactProps) => {
                 setFormData({ name: '', email: '', phone: '', plz: '', ort: '', service: '', message: '' });
             } else {
                 setStatus('error');
+                setErrorMsg(data.message || 'Unbekannter Fehler');
             }
         } catch {
             setStatus('error');
+            setErrorMsg('Netzwerkfehler');
         }
     };
 
@@ -302,7 +306,7 @@ const Contact = ({ defaultOrt = '' }: ContactProps) => {
 
                                         {status === 'error' && (
                                             <div className="bg-red-50 border border-red-200 rounded-xl p-4 text-center">
-                                                <p className="text-red-600 text-sm">Fehler beim Senden. Bitte versuchen Sie es erneut oder rufen Sie uns an.</p>
+                                                <p className="text-red-600 text-sm">{errorMsg || 'Fehler beim Senden. Bitte versuchen Sie es erneut oder rufen Sie uns an.'}</p>
                                             </div>
                                         )}
 

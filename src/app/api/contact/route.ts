@@ -59,13 +59,14 @@ export async function POST(request: Request) {
         });
 
         if (error) {
-            console.error('Resend error:', error);
-            return NextResponse.json({ success: false, message: 'Fehler beim Senden.' }, { status: 500 });
+            console.error('Resend error:', JSON.stringify(error));
+            return NextResponse.json({ success: false, message: error.message || 'Fehler beim Senden.', detail: error }, { status: 500 });
         }
 
         return NextResponse.json({ success: true, message: 'Anfrage erfolgreich gesendet!' });
-    } catch (err) {
-        console.error('Server error:', err);
-        return NextResponse.json({ success: false, message: 'Serverfehler.' }, { status: 500 });
+    } catch (err: unknown) {
+        const errorMessage = err instanceof Error ? err.message : 'Unbekannter Fehler';
+        console.error('Server error:', errorMessage);
+        return NextResponse.json({ success: false, message: errorMessage }, { status: 500 });
     }
 }
