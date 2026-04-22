@@ -171,7 +171,7 @@ export default function ZaunbauPage() {
                     '@type': 'LocalBusiness',
                     name: 'Adler & Sohn',
                     url: 'https://garten-adler.de',
-                    telephone: '+49 4131 123 456',
+                    telephone: '04131 - 394 2971',
                 },
                 areaServed: {
                     '@type': 'GeoCircle',
@@ -282,8 +282,8 @@ export default function ZaunbauPage() {
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                                         </svg>
                                     </Link>
-                                    <a href="tel:+4941311234567" className="inline-flex items-center justify-center gap-3 px-8 py-4 border-2 border-white/30 text-white rounded-full font-bold hover:bg-white hover:text-amber-700 transition-colors">
-                                        <span>+49 4131 123 456</span>
+                                    <a href="tel:+4941313942971" className="inline-flex items-center justify-center gap-3 px-8 py-4 border-2 border-white/30 text-white rounded-full font-bold hover:bg-white hover:text-amber-700 transition-colors">
+                                        <span>04131 - 394 2971</span>
                                     </a>
                                 </div>
                             </div>
@@ -531,8 +531,8 @@ export default function ZaunbauPage() {
                             <Link href="/#kontakt" className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-amber-600 rounded-full font-bold hover:bg-amber-50 transition-colors shadow-lg">
                                 <span>Jetzt Angebot anfordern</span>
                             </Link>
-                            <a href="tel:+4941311234567" className="inline-flex items-center justify-center gap-3 px-8 py-4 border-2 border-white text-white rounded-full font-bold hover:bg-white hover:text-amber-600 transition-colors">
-                                <span>+49 4131 123 456</span>
+                            <a href="tel:+4941313942971" className="inline-flex items-center justify-center gap-3 px-8 py-4 border-2 border-white text-white rounded-full font-bold hover:bg-white hover:text-amber-600 transition-colors">
+                                <span>04131 - 394 2971</span>
                             </a>
                         </div>
                     </div>

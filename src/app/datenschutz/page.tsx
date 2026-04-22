@@ -54,7 +54,7 @@ export default function Datenschutz() {
                                 Adler & Sohn GmbH<br />
                                 Musterstraße 123<br />
                                 21335 Lüneburg<br /><br />
-                                Telefon: +49 4131 123 456<br />
+                                Telefon: 04131 - 394 2971<br />
                                 E-Mail: info@garten-adler.de
                             </p>
                         </section>

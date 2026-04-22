@@ -44,7 +44,7 @@ export default function Impressum() {
                         <section>
                             <h2 className="text-xl font-bold text-gray-900 mb-4">Kontakt</h2>
                             <p className="text-gray-600">
-                                Telefon: +49 4131 123 456<br />
+                                Telefon: 04131 - 394 2971<br />
                                 E-Mail: info@garten-adler.de
                             </p>
                         </section>

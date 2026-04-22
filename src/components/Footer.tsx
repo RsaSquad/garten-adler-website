@@ -51,7 +51,7 @@ const Footer = () => {
                                 Jetzt anfragen
                             </Link>
                             <a
-                                href="tel:+4941311234567"
+                                href="tel:+4941313942971"
                                 className="inline-flex items-center gap-2 px-8 py-4 border-2 border-white text-white rounded-full font-bold hover:bg-white hover:text-green-700 transition-colors"
                             >
                                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">

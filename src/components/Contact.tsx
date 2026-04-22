@@ -35,8 +35,8 @@ const Contact = ({ defaultOrt = '' }: ContactProps) => {
                 </svg>
             ),
             title: 'Telefon',
-            value: '+49 4131 123 456',
-            link: 'tel:+49413112345',
+            value: '04131 - 394 2971',
+            link: 'tel:+4941313942971',
         },
         {
             icon: (

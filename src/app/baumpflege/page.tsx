@@ -155,7 +155,7 @@ export default function BaumpflegePage() {
                     '@type': 'LocalBusiness',
                     name: 'Adler & Sohn',
                     url: 'https://garten-adler.de',
-                    telephone: '+49 4131 123 456',
+                    telephone: '04131 - 394 2971',
                 },
                 areaServed: {
                     '@type': 'GeoCircle',
@@ -269,8 +269,8 @@ export default function BaumpflegePage() {
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                                         </svg>
                                     </Link>
-                                    <a href="tel:+4941311234567" className="inline-flex items-center justify-center gap-3 px-8 py-4 border-2 border-white/30 text-white rounded-full font-bold hover:bg-white hover:text-green-700 transition-colors">
-                                        <span>+49 4131 123 456</span>
+                                    <a href="tel:+4941313942971" className="inline-flex items-center justify-center gap-3 px-8 py-4 border-2 border-white/30 text-white rounded-full font-bold hover:bg-white hover:text-green-700 transition-colors">
+                                        <span>04131 - 394 2971</span>
                                     </a>
                                 </div>
                             </div>
@@ -478,7 +478,7 @@ export default function BaumpflegePage() {
                                     in der Regel innerhalb von 24-48 Stunden bei Ihnen.
                                 </p>
                                 <div className="flex flex-col sm:flex-row gap-4">
-                                    <a href="tel:+4941311234567" className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-red-600 rounded-full font-bold hover:bg-red-50 transition-colors shadow-lg">
+                                    <a href="tel:+4941313942971" className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-red-600 rounded-full font-bold hover:bg-red-50 transition-colors shadow-lg">
                                         <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                                         </svg>
@@ -575,11 +575,11 @@ export default function BaumpflegePage() {
                                 </svg>
                                 <span>Jetzt Angebot anfordern</span>
                             </Link>
-                            <a href="tel:+4941311234567" className="inline-flex items-center justify-center gap-3 px-8 py-4 border-2 border-white text-white rounded-full font-bold hover:bg-white hover:text-green-700 transition-colors">
+                            <a href="tel:+4941313942971" className="inline-flex items-center justify-center gap-3 px-8 py-4 border-2 border-white text-white rounded-full font-bold hover:bg-white hover:text-green-700 transition-colors">
                                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                                 </svg>
-                                <span>+49 4131 123 456</span>
+                                <span>04131 - 394 2971</span>
                             </a>
                         </div>
                     </div>
