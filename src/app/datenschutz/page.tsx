@@ -55,7 +55,7 @@ export default function Datenschutz() {
                                 Musterstraße 123<br />
                                 21335 Lüneburg<br /><br />
                                 Telefon: 04131 - 394 2971<br />
-                                E-Mail: info@garten-adler.de
+                                E-Mail: info@adler-kommune.de
                             </p>
                         </section>
 

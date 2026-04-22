@@ -45,8 +45,8 @@ const Contact = ({ defaultOrt = '' }: ContactProps) => {
                 </svg>
             ),
             title: 'E-Mail',
-            value: 'info@garten-adler.de',
-            link: 'mailto:info@garten-adler.de',
+            value: 'info@adler-kommune.de',
+            link: 'mailto:info@adler-kommune.de',
         },
         {
             icon: (

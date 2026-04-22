@@ -13,7 +13,7 @@ const jsonLd = {
       logo: 'https://garten-adler.de/logo.png',
       description: 'Professioneller Garten- und Landschaftsbau in Lüneburg und Umgebung.',
       telephone: '04131 - 394 2971',
-      email: 'info@garten-adler.de',
+      email: 'info@adler-kommune.de',
       address: {
         '@type': 'PostalAddress',
         addressLocality: 'Lüneburg',
@@ -32,7 +32,7 @@ const jsonLd = {
       description: 'Professioneller Garten- und Landschaftsbau in Lüneburg und über 200 Städten in der Region. Gartengestaltung, Terrassenbau, Pflasterarbeiten, Rollrasen und mehr.',
       url: 'https://garten-adler.de',
       telephone: '04131 - 394 2971',
-      email: 'info@garten-adler.de',
+      email: 'info@adler-kommune.de',
       priceRange: '€€',
       address: {
         '@type': 'PostalAddress',
