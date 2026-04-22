@@ -26,7 +26,7 @@ const Header = () => {
     return (
         <header
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled
-                    ? 'py-3 bg-white/95 backdrop-blur-xl shadow-lg shadow-black/5'
+                    ? 'py-2 bg-green-800/95 backdrop-blur-xl shadow-lg shadow-green-900/20'
                     : 'py-5 bg-transparent'
                 }`}
         >
@@ -39,7 +39,7 @@ const Header = () => {
                             alt="Adler & Sohn Galabau"
                             width={180}
                             height={60}
-                            className="h-10 md:h-14 w-auto object-contain transition-all duration-300"
+                            className="h-8 md:h-10 w-auto object-contain transition-all duration-300"
                             priority
                         />
                     </Link>
@@ -51,7 +51,7 @@ const Header = () => {
                                 key={link.href}
                                 href={link.href}
                                 className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ${isScrolled
-                                        ? 'text-gray-700 hover:text-green-600 hover:bg-green-50'
+                                        ? 'text-white/80 hover:text-white hover:bg-white/10'
                                         : 'text-white/90 hover:text-white hover:bg-white/10'
                                     }`}
                             >
@@ -65,7 +65,7 @@ const Header = () => {
                         <Link
                             href="#kontakt"
                             className={`inline-flex items-center gap-2 px-6 py-3 rounded-full font-semibold text-sm transition-all duration-300 ${isScrolled
-                                    ? 'bg-green-600 text-white hover:bg-green-700 shadow-lg shadow-green-600/25 hover:shadow-green-600/40'
+                                    ? 'bg-white text-green-800 hover:bg-green-50 shadow-lg shadow-black/10'
                                     : 'bg-white text-green-700 hover:bg-green-50 shadow-lg shadow-black/10'
                                 }`}
                         >
@@ -79,7 +79,7 @@ const Header = () => {
                     {/* Mobile Menu Button */}
                     <button
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                        className={`md:hidden p-2 rounded-xl transition-colors ${isScrolled ? 'text-gray-700 hover:bg-gray-100' : 'text-white hover:bg-white/10'
+                        className={`md:hidden p-2 rounded-xl transition-colors ${isScrolled ? 'text-white hover:bg-white/10' : 'text-white hover:bg-white/10'
                             }`}
                     >
                         <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
