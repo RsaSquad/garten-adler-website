@@ -11,7 +11,7 @@ export async function POST(request: Request) {
 
         const { error } = await resend.emails.send({
             from: 'Garten Adler Website <onboarding@resend.dev>',
-            to: ['galabau@sohn-adler.de'],
+            to: ['rsa.schule@gmail.com'],
             subject: `Neue Anfrage von ${name} – ${service || 'Allgemein'}`,
             replyTo: email,
             html: `
