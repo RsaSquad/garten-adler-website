@@ -26,8 +26,8 @@ const Header = () => {
     return (
         <header
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled
-                    ? 'py-2 bg-green-800/95 backdrop-blur-xl shadow-lg shadow-green-900/20'
-                    : 'py-5 bg-transparent'
+                    ? 'py-1.5 bg-green-800/95 backdrop-blur-xl shadow-lg shadow-green-900/20'
+                    : 'py-4 bg-transparent'
                 }`}
         >
             <div className="container-custom">
@@ -39,7 +39,7 @@ const Header = () => {
                             alt="Adler & Sohn Galabau"
                             width={180}
                             height={60}
-                            className="h-8 md:h-10 w-auto object-contain transition-all duration-300"
+                            className="h-7 md:h-9 w-auto object-contain transition-all duration-300"
                             priority
                         />
                     </Link>
