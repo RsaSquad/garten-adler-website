@@ -53,7 +53,7 @@ export default function Impressum() {
                             <h2 className="text-xl font-bold text-gray-900 mb-4">Kontakt</h2>
                             <p className="text-gray-600">
                                 Telefon: 04131 - 39429 77<br />
-                                E-Mail: info@adler-kommune.de
+                                E-Mail: galabau@sohn-adler.de
                             </p>
                         </section>
 

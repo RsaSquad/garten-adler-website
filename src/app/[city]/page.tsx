@@ -89,7 +89,7 @@ export default async function CityPage({ params }: { params: Promise<{ city: str
                 description: city.description,
                 url: `https://garten-adler.de/${city.slug}`,
                 telephone: '04131 - 394 2971',
-                email: 'info@adler-kommune.de',
+                email: 'galabau@sohn-adler.de',
                 address: {
                     '@type': 'PostalAddress',
                     addressLocality: city.name,

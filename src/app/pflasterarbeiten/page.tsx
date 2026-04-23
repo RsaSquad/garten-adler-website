@@ -559,7 +559,7 @@ export default function PflasterarbeitenPage() {
                             <h4 className="text-white font-bold mb-4">Kontakt</h4>
                             <ul className="space-y-2 text-sm">
                                 <li><a href="tel:+4941313942971" className="hover:text-green-500 transition-colors">04131 - 394 2971</a></li>
-                                <li><a href="mailto:info@adler-kommune.de" className="hover:text-green-500 transition-colors">info@adler-kommune.de</a></li>
+                                <li><a href="mailto:galabau@sohn-adler.de" className="hover:text-green-500 transition-colors">galabau@sohn-adler.de</a></li>
                                 <li className="text-gray-500">Lüneburg & Umgebung</li>
                             </ul>
                         </div>

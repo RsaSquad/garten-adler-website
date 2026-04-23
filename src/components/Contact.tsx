@@ -68,8 +68,8 @@ const Contact = ({ defaultOrt = '' }: ContactProps) => {
                 </svg>
             ),
             title: 'E-Mail',
-            value: 'info@adler-kommune.de',
-            link: 'mailto:info@adler-kommune.de',
+            value: 'galabau@sohn-adler.de',
+            link: 'mailto:galabau@sohn-adler.de',
         },
         {
             icon: (
