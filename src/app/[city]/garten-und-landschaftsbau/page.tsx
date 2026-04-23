@@ -326,7 +326,7 @@ export default async function CityGartenLandschaftsbauPage({ params }: { params:
                 </section>
 
                 {/* Benefits */}
-                <section className="section-padding bg-green-600 text-white">
+                <section className="section-padding bg-green-800 text-white">
                     <div className="container-custom">
                         <div className="text-center max-w-3xl mx-auto mb-12">
                             <h2 className="text-3xl md:text-4xl font-bold mb-4">

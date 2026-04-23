@@ -333,7 +333,7 @@ export default async function CityGalabauPage({ params }: { params: Promise<{ ci
                         className="object-cover z-0"
                     />
                     {/* 70% Green Overlay */}
-                    <div className="absolute inset-0 bg-green-600/70 z-[1]" />
+                    <div className="absolute inset-0 bg-green-800/70 z-[1]" />
 
                     <div className="container-custom relative z-10">
                         <div className="text-center max-w-3xl mx-auto mb-12">

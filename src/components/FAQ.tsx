@@ -43,7 +43,7 @@ export default function FAQ({ items, cityName }: FAQProps) {
                             <button
                                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
                                 className={`w-full text-left p-6 rounded-xl transition-all ${openIndex === index
-                                    ? 'bg-green-600 text-white shadow-lg'
+                                    ? 'bg-green-800 text-white shadow-lg'
                                     : 'bg-white text-gray-900 hover:bg-gray-100'
                                     }`}
                             >

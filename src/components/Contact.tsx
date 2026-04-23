@@ -119,7 +119,7 @@ const Contact = ({ defaultOrt = '' }: ContactProps) => {
                         <div className="grid sm:grid-cols-2 gap-4 mb-10">
                             {contactInfo.map((info, index) => (
                                 <div key={index} className="p-5 rounded-2xl bg-gray-50 hover:bg-green-50 transition-colors group">
-                                    <div className="w-12 h-12 rounded-xl bg-green-100 text-green-600 flex items-center justify-center mb-4 group-hover:bg-green-600 group-hover:text-white transition-colors">
+                                    <div className="w-12 h-12 rounded-xl bg-green-100 text-green-600 flex items-center justify-center mb-4 group-hover:bg-green-800 group-hover:text-white transition-colors">
                                         {info.icon}
                                     </div>
                                     <div className="text-sm text-gray-500 mb-1">{info.title}</div>

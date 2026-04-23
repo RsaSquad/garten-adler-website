@@ -69,7 +69,7 @@ const About = () => {
                         <div className="grid sm:grid-cols-2 gap-4 mb-8">
                             {features.map((feature, index) => (
                                 <div key={index} className="flex items-start gap-4 p-4 rounded-xl bg-gray-50 hover:bg-green-50 transition-colors group">
-                                    <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-green-100 text-green-600 flex items-center justify-center group-hover:bg-green-600 group-hover:text-white transition-colors">
+                                    <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-green-100 text-green-600 flex items-center justify-center group-hover:bg-green-800 group-hover:text-white transition-colors">
                                         {feature.icon}
                                     </div>
                                     <div>

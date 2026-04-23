@@ -88,7 +88,7 @@ const Projects = () => {
                             key={category}
                             onClick={() => setActiveCategory(category)}
                             className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ${activeCategory === category
-                                    ? 'bg-green-600 text-white shadow-lg shadow-green-600/25'
+                                    ? 'bg-green-800 text-white shadow-lg shadow-green-600/25'
                                     : 'bg-white/5 text-gray-400 hover:bg-white/10 hover:text-white border border-white/10'
                                 }`}
                         >

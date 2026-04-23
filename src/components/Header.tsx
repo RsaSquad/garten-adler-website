@@ -111,7 +111,7 @@ const Header = () => {
                         <Link
                             href="#kontakt"
                             onClick={() => setIsMobileMenuOpen(false)}
-                            className="block mt-4 px-4 py-3 bg-green-600 text-white text-center rounded-xl font-semibold hover:bg-green-700 transition-colors"
+                            className="block mt-4 px-4 py-3 bg-green-800 text-white text-center rounded-xl font-semibold hover:bg-green-700 transition-colors"
                         >
                             Jetzt anfragen
                         </Link>

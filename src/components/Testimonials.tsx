@@ -135,7 +135,7 @@ const Testimonials = () => {
                 <div className="max-w-4xl mx-auto mb-12">
                     <div className="relative bg-white rounded-3xl shadow-xl p-8 md:p-12">
                         {/* Quote Icon */}
-                        <div className="absolute -top-6 left-8 w-12 h-12 rounded-full bg-green-600 flex items-center justify-center shadow-lg shadow-green-600/30">
+                        <div className="absolute -top-6 left-8 w-12 h-12 rounded-full bg-green-800 flex items-center justify-center shadow-lg shadow-green-600/30">
                             <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
                             </svg>
@@ -183,7 +183,7 @@ const Testimonials = () => {
                             key={index}
                             onClick={() => setCurrentIndex(index)}
                             className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentIndex
-                                    ? 'bg-green-600 w-8'
+                                    ? 'bg-green-800 w-8'
                                     : 'bg-gray-300 hover:bg-gray-400'
                                 }`}
                         />

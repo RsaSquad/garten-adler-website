@@ -417,7 +417,7 @@ export default function HeckenschnittPage() {
 
                         <div className="max-w-4xl mx-auto">
                             <div className="bg-gray-50 rounded-2xl overflow-hidden">
-                                <div className="grid grid-cols-4 bg-green-600 text-white font-bold text-sm">
+                                <div className="grid grid-cols-4 bg-green-800 text-white font-bold text-sm">
                                     <div className="p-4">Höhe</div>
                                     <div className="p-4">Formschnitt</div>
                                     <div className="p-4">Rückschnitt</div>
@@ -546,7 +546,7 @@ export default function HeckenschnittPage() {
                 </section>
 
                 {/* Why Us */}
-                <section className="section-padding bg-green-600 text-white">
+                <section className="section-padding bg-green-800 text-white">
                     <div className="container-custom">
                         <div className="text-center max-w-3xl mx-auto mb-12">
                             <h2 className="text-3xl md:text-4xl font-bold mb-4">

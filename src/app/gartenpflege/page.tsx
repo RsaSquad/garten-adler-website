@@ -454,7 +454,7 @@ export default function GartenpflegePage() {
                 </section>
 
                 {/* Benefits */}
-                <section className="section-padding bg-green-600 text-white">
+                <section className="section-padding bg-green-800 text-white">
                     <div className="container-custom">
                         <div className="text-center max-w-3xl mx-auto mb-12">
                             <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -540,7 +540,7 @@ export default function GartenpflegePage() {
                         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                             {process.map((item, i) => (
                                 <div key={i} className="relative text-center">
-                                    <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold text-white">
+                                    <div className="w-16 h-16 bg-green-800 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold text-white">
                                         {item.step}
                                     </div>
                                     <h3 className="text-lg font-bold text-gray-900 mb-2">{item.title}</h3>
