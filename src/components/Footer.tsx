@@ -10,8 +10,11 @@ const Footer = () => {
             { label: 'Terrassenbau', href: '/terrassenbau' },
             { label: 'Pflasterarbeiten', href: '/pflasterarbeiten' },
             { label: 'Rollrasen', href: '/rollrasen' },
-            { label: 'Zaunbau', href: '/zaunbau' },
+            { label: 'Zaunbau & Sichtschutz', href: '/zaunbau' },
             { label: 'Gartenpflege', href: '/gartenpflege' },
+            { label: 'Heckenschnitt', href: '/heckenschnitt' },
+            { label: 'Baumpflege', href: '/baumpflege' },
+            { label: 'GaLaBau', href: '/galabau' },
         ],
         unternehmen: [
             { label: 'Über uns', href: '#ueber-uns' },

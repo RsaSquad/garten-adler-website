@@ -622,19 +622,49 @@ export default function GartenpflegePage() {
             </main>
 
             {/* Footer */}
-            <footer className="bg-gray-900 text-gray-400 py-12">
-                <div className="container-custom">
-                    <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-                        <div className="flex items-center gap-3">
-                            <Image src="/images/logo.png" alt="Adler & Sohn Galabau" width={120} height={40} className="h-10 w-auto object-contain brightness-200" />
+            <footer className="bg-gray-900 text-gray-400">
+                <div className="container-custom py-12">
+                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+                        <div>
+                            <Image src="/images/logo.png" alt="Adler & Sohn Galabau" width={120} height={40} className="h-10 w-auto object-contain brightness-200 mb-4" />
+                            <p className="text-sm leading-relaxed">Ihr Partner für professionellen Garten- und Landschaftsbau in Lüneburg und Umgebung.</p>
                         </div>
-                        <div className="flex gap-6 text-sm">
-                            <Link href="/" className="hover:text-green-500 transition-colors">Home</Link>
-                            <Link href="/standorte" className="hover:text-green-500 transition-colors">Standorte</Link>
-                            <Link href="/impressum" className="hover:text-green-500 transition-colors">Impressum</Link>
-                            <Link href="/datenschutz" className="hover:text-green-500 transition-colors">Datenschutz</Link>
+                        <div>
+                            <h4 className="text-white font-bold mb-4">Leistungen</h4>
+                            <ul className="space-y-2 text-sm">
+                                <li><Link href="/garten-und-landschaftsbau" className="hover:text-green-500 transition-colors">Gartengestaltung</Link></li>
+                                <li><Link href="/terrassenbau" className="hover:text-green-500 transition-colors">Terrassenbau</Link></li>
+                                <li><Link href="/pflasterarbeiten" className="hover:text-green-500 transition-colors">Pflasterarbeiten</Link></li>
+                                <li><Link href="/rollrasen" className="hover:text-green-500 transition-colors">Rollrasen</Link></li>
+                                <li><Link href="/zaunbau" className="hover:text-green-500 transition-colors">Zaunbau & Sichtschutz</Link></li>
+                                <li><Link href="/gartenpflege" className="hover:text-green-500 transition-colors">Gartenpflege</Link></li>
+                                <li><Link href="/heckenschnitt" className="hover:text-green-500 transition-colors">Heckenschnitt</Link></li>
+                                <li><Link href="/baumpflege" className="hover:text-green-500 transition-colors">Baumpflege</Link></li>
+                                <li><Link href="/galabau" className="hover:text-green-500 transition-colors">GaLaBau</Link></li>
+                            </ul>
                         </div>
-                        <p className="text-sm">© {new Date().getFullYear()} Adler & Sohn. Alle Rechte vorbehalten.</p>
+                        <div>
+                            <h4 className="text-white font-bold mb-4">Unternehmen</h4>
+                            <ul className="space-y-2 text-sm">
+                                <li><Link href="/" className="hover:text-green-500 transition-colors">Home</Link></li>
+                                <li><Link href="/standorte" className="hover:text-green-500 transition-colors">Standorte</Link></li>
+                                <li><Link href="/impressum" className="hover:text-green-500 transition-colors">Impressum</Link></li>
+                                <li><Link href="/datenschutz" className="hover:text-green-500 transition-colors">Datenschutz</Link></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 className="text-white font-bold mb-4">Kontakt</h4>
+                            <ul className="space-y-2 text-sm">
+                                <li><a href="tel:+4941313942971" className="hover:text-green-500 transition-colors">04131 - 394 2971</a></li>
+                                <li><a href="mailto:info@adler-kommune.de" className="hover:text-green-500 transition-colors">info@adler-kommune.de</a></li>
+                                <li className="text-gray-500">Lüneburg & Umgebung</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div className="border-t border-gray-800">
+                    <div className="container-custom py-6">
+                        <p className="text-sm text-center text-gray-500">© {new Date().getFullYear()} Adler & Sohn. Alle Rechte vorbehalten.</p>
                     </div>
                 </div>
             </footer>
