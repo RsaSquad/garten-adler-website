@@ -280,7 +280,7 @@ export default function HeckenschnittPage() {
                                     { value: '100%', label: 'Entsorgung inkl.', icon: '♻️' },
                                 ].map((stat, i) => (
                                     <div key={i} className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-                                        <div className="text-3xl mb-2">{stat.icon}</div>
+                                        <div className="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center text-xl mb-2">{stat.icon}</div>
                                         <div className="text-3xl font-bold text-white mb-1">{stat.value}</div>
                                         <div className="text-white/60 text-sm">{stat.label}</div>
                                     </div>
@@ -345,7 +345,7 @@ export default function HeckenschnittPage() {
                         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                             {services.map((service, index) => (
                                 <div key={index} className="bg-white rounded-2xl p-6 hover:shadow-xl transition-all hover:-translate-y-1">
-                                    <div className="text-5xl mb-4">{service.icon}</div>
+                                    <div className="w-16 h-16 rounded-2xl bg-green-100 flex items-center justify-center text-3xl mb-4">{service.icon}</div>
                                     <h3 className="text-xl font-bold text-gray-900 mb-2">{service.title}</h3>
                                     <p className="text-gray-600 text-sm mb-4">{service.description}</p>
                                     <ul className="space-y-2">
@@ -499,7 +499,7 @@ export default function HeckenschnittPage() {
                                 },
                             ].map((tip, i) => (
                                 <div key={i} className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-                                    <div className="text-4xl mb-4">{tip.icon}</div>
+                                    <div className="w-14 h-14 rounded-2xl bg-green-100 flex items-center justify-center text-2xl mb-4">{tip.icon}</div>
                                     <h3 className="text-lg font-bold mb-2">{tip.title}</h3>
                                     <p className="text-green-100 text-sm">{tip.desc}</p>
                                 </div>
@@ -557,7 +557,7 @@ export default function HeckenschnittPage() {
                         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                             {benefits.map((benefit, i) => (
                                 <div key={i} className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 text-center">
-                                    <div className="text-5xl mb-4">{benefit.icon}</div>
+                                    <div className="w-16 h-16 rounded-2xl bg-green-100 flex items-center justify-center text-3xl mb-4">{benefit.icon}</div>
                                     <h3 className="text-xl font-bold mb-2">{benefit.title}</h3>
                                     <p className="text-green-100 text-sm">{benefit.description}</p>
                                 </div>

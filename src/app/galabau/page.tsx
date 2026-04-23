@@ -359,7 +359,7 @@ export default function GalabauPage() {
                                     { value: '150km', label: 'Einzugsgebiet', icon: '📍' },
                                 ].map((stat, i) => (
                                     <div key={i} className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-                                        <div className="text-3xl mb-2">{stat.icon}</div>
+                                        <div className="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center text-xl mb-2">{stat.icon}</div>
                                         <div className="text-3xl font-bold text-white mb-1">{stat.value}</div>
                                         <div className="text-white/60 text-sm">{stat.label}</div>
                                     </div>
@@ -422,7 +422,7 @@ export default function GalabauPage() {
                         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                             {services.map((service, index) => (
                                 <Link key={index} href={service.link} className="group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all hover:-translate-y-1">
-                                    <div className="text-5xl mb-4">{service.icon}</div>
+                                    <div className="w-16 h-16 rounded-2xl bg-green-100 flex items-center justify-center text-3xl mb-4">{service.icon}</div>
                                     <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors">{service.title}</h3>
                                     <p className="text-gray-600 text-sm mb-4">{service.description}</p>
                                     <ul className="space-y-1">
@@ -504,7 +504,7 @@ export default function GalabauPage() {
                         <div className="grid md:grid-cols-3 gap-8">
                             {projects.map((project, index) => (
                                 <div key={index} className="bg-gray-50 rounded-2xl p-8 hover:shadow-xl transition-all">
-                                    <div className="text-5xl mb-4">{project.icon}</div>
+                                    <div className="w-16 h-16 rounded-2xl bg-green-100 flex items-center justify-center text-3xl mb-4">{project.icon}</div>
                                     <h3 className="text-xl font-bold text-gray-900 mb-2">{project.title}</h3>
                                     <p className="text-gray-600 text-sm mb-4">{project.description}</p>
                                     <div className="flex flex-wrap gap-2 mb-4">

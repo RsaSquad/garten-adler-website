@@ -296,7 +296,7 @@ export default function ZaunbauPage() {
                                     { value: '100%', label: 'Festpreisgarantie', icon: '✅' },
                                 ].map((stat, i) => (
                                     <div key={i} className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-                                        <div className="text-3xl mb-2">{stat.icon}</div>
+                                        <div className="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center text-xl mb-2">{stat.icon}</div>
                                         <div className="text-3xl font-bold text-white mb-1">{stat.value}</div>
                                         <div className="text-white/60 text-sm">{stat.label}</div>
                                     </div>
@@ -393,7 +393,7 @@ export default function ZaunbauPage() {
                         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                             {services.map((service, index) => (
                                 <div key={index} className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-                                    <div className="text-4xl mb-4">{service.icon}</div>
+                                    <div className="w-14 h-14 rounded-2xl bg-green-100 flex items-center justify-center text-2xl mb-4">{service.icon}</div>
                                     <h3 className="text-lg font-bold mb-2">{service.title}</h3>
                                     <p className="text-gray-400 text-sm mb-4">{service.description}</p>
                                     <ul className="space-y-1">

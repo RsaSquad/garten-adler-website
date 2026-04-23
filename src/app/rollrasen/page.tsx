@@ -286,7 +286,7 @@ export default function RollrasenPage() {
                                     { value: '15+', label: 'Jahre Erfahrung', icon: '⭐' },
                                 ].map((stat, i) => (
                                     <div key={i} className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-                                        <div className="text-3xl mb-2">{stat.icon}</div>
+                                        <div className="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center text-xl mb-2">{stat.icon}</div>
                                         <div className="text-3xl font-bold text-white mb-1">{stat.value}</div>
                                         <div className="text-white/60 text-sm">{stat.label}</div>
                                     </div>
@@ -348,7 +348,7 @@ export default function RollrasenPage() {
                                             Beliebt
                                         </span>
                                     )}
-                                    <div className="text-5xl mb-4">{type.icon}</div>
+                                    <div className="w-16 h-16 rounded-2xl bg-green-100 flex items-center justify-center text-3xl mb-4">{type.icon}</div>
                                     <h3 className="text-xl font-bold text-gray-900 mb-2">{type.name}</h3>
                                     <p className="text-gray-600 text-sm mb-4">{type.description}</p>
                                     <ul className="space-y-2">

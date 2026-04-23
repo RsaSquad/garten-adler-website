@@ -283,7 +283,7 @@ export default function BaumpflegePage() {
                                     { value: '100%', label: 'Sicherheit', icon: '🛡️' },
                                 ].map((stat, i) => (
                                     <div key={i} className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-                                        <div className="text-3xl mb-2">{stat.icon}</div>
+                                        <div className="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center text-xl mb-2">{stat.icon}</div>
                                         <div className="text-3xl font-bold text-white mb-1">{stat.value}</div>
                                         <div className="text-white/60 text-sm">{stat.label}</div>
                                     </div>
@@ -339,7 +339,7 @@ export default function BaumpflegePage() {
                         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                             {services.map((service, index) => (
                                 <div key={index} className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all hover:-translate-y-1">
-                                    <div className="text-5xl mb-4">{service.icon}</div>
+                                    <div className="w-16 h-16 rounded-2xl bg-green-100 flex items-center justify-center text-3xl mb-4">{service.icon}</div>
                                     <h3 className="text-xl font-bold text-gray-900 mb-2">{service.title}</h3>
                                     <p className="text-gray-600 text-sm mb-4">{service.description}</p>
                                     <ul className="space-y-2">
@@ -385,7 +385,7 @@ export default function BaumpflegePage() {
                         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                             {reasons.map((reason, i) => (
                                 <div key={i} className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 text-center">
-                                    <div className="text-5xl mb-4">{reason.icon}</div>
+                                    <div className="w-16 h-16 rounded-2xl bg-green-100 flex items-center justify-center text-3xl mb-4">{reason.icon}</div>
                                     <h3 className="text-xl font-bold mb-2">{reason.title}</h3>
                                     <p className="text-green-100 text-sm">{reason.description}</p>
                                 </div>
@@ -494,7 +494,7 @@ export default function BaumpflegePage() {
                                     { icon: '🏠', title: 'Gebäudeschäden', desc: 'Sofortige Hilfe' },
                                 ].map((item, i) => (
                                     <div key={i} className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-                                        <div className="text-3xl mb-2">{item.icon}</div>
+                                        <div className="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center text-xl mb-2">{item.icon}</div>
                                         <h4 className="font-bold mb-1">{item.title}</h4>
                                         <p className="text-red-100 text-sm">{item.desc}</p>
                                     </div>
