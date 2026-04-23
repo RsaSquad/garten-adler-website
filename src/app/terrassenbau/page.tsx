@@ -243,7 +243,7 @@ export default function TerrassenbauPage() {
                     {/* Hero Background Image */}
                     <Image
                         src="/images/terrassenbau-hero.png"
-                        alt="Professioneller Terrassenbau – moderne Holzterrasse im Garten"
+                        alt="Terrassenbau Lüneburg - Moderne Holzterrasse vom Profi"
                         fill
                         className="object-cover"
                         priority
@@ -565,7 +565,7 @@ export default function TerrassenbauPage() {
                 <section className="relative section-padding overflow-hidden">
                     <Image
                         src="/images/terrassenbau-cta.png"
-                        alt="Fertige Terrasse im Garten – Terrassenbau vom Profi"
+                        alt="Terrassenbau Lüneburg - Holzterrasse und WPC Terrasse"
                         fill
                         className="object-cover"
                         quality={80}

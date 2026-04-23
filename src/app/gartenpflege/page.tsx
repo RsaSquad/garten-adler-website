@@ -589,7 +589,7 @@ export default function GartenpflegePage() {
                 <section className="relative section-padding overflow-hidden">
                     <Image
                         src="/images/gartenpflege-cta.png"
-                        alt="Gepflegter Garten – jetzt Gartenpflege anfragen"
+                        alt="Gartenpflege Lüneburg - Jetzt Pflegeangebot anfragen"
                         fill
                         className="object-cover"
                         quality={80}

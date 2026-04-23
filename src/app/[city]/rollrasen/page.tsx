@@ -172,7 +172,7 @@ export default async function CityRollrasenPage({ params }: { params: Promise<{ 
                     {/* Background Image */}
                     <Image
                         src="/images/rollrasen-hero.png"
-                        alt="Rollrasen verlegen – frischer grüner Rasen"
+                        alt={`Rollrasen verlegen ${city.name} - Frischer grüner Fertigrasen vom Profi`}
                         fill
                         priority
                         quality={85}

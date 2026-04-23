@@ -679,7 +679,7 @@ export default function HeckenschnittPage() {
                 <section className="relative section-padding overflow-hidden">
                     <Image
                         src="/images/heckenschnitt-cta.png"
-                        alt="Heckenschnitt – jetzt Angebot anfordern"
+                        alt="Heckenschnitt Lüneburg - Jetzt kostenloses Angebot anfordern"
                         fill
                         className="object-cover"
                         quality={80}

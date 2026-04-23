@@ -95,7 +95,7 @@ const About = () => {
                             <div className="aspect-[4/5] relative">
                                 <Image
                                     src="/images/gartengestaltung-adler-sohn-professionell.png"
-                                    alt="Professionell gestalteter Garten von Adler & Sohn"
+                                    alt="Gartengestaltung Lüneburg - Professionell gestalteter Garten von Adler & Sohn"
                                     fill
                                     className="object-cover"
                                     sizes="(max-width: 1024px) 100vw, 50vw"

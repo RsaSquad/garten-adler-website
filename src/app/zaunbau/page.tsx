@@ -513,7 +513,7 @@ export default function ZaunbauPage() {
                 <section className="relative section-padding overflow-hidden">
                     <Image
                         src="/images/zaunbau-cta.png"
-                        alt="Zaunbau – jetzt Angebot anfordern"
+                        alt="Zaunbau Lüneburg - Jetzt kostenloses Angebot anfordern"
                         fill
                         className="object-cover"
                         quality={80}

@@ -592,7 +592,7 @@ export default function GartenUndLandschaftsbauPage() {
                 <section className="relative section-padding overflow-hidden">
                     <Image
                         src="/images/garten-und-landschaftsbau-cta.png"
-                        alt="Garten- und Landschaftsbau – jetzt Angebot anfordern"
+                        alt="Garten- und Landschaftsbau Lüneburg - Jetzt Angebot anfordern"
                         fill
                         className="object-cover"
                         quality={80}

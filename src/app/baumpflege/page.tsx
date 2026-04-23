@@ -554,7 +554,7 @@ export default function BaumpflegePage() {
                 <section className="relative section-padding overflow-hidden">
                     <Image
                         src="/images/baumpflege-cta.png"
-                        alt="Baumpflege – jetzt Angebot anfordern"
+                        alt="Baumpflege Lüneburg - Jetzt kostenloses Angebot anfordern"
                         fill
                         className="object-cover"
                         quality={80}

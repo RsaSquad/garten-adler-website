@@ -215,7 +215,7 @@ export default function RollrasenPage() {
                     {/* Background Image */}
                     <Image
                         src="/images/rollrasen-hero.png"
-                        alt="Rollrasen verlegen – frischer grüner Rasen"
+                        alt="Rollrasen verlegen Lüneburg - Frischer grüner Fertigrasen vom Profi"
                         fill
                         priority
                         quality={85}
@@ -553,7 +553,7 @@ export default function RollrasenPage() {
                 <section className="relative section-padding overflow-hidden">
                     <Image
                         src="/images/rollrasen-cta.png"
-                        alt="Rollrasen – jetzt Traumrasen anfragen"
+                        alt="Rollrasen verlegen Lüneburg - Jetzt Traumrasen anfragen"
                         fill
                         className="object-cover"
                         quality={80}

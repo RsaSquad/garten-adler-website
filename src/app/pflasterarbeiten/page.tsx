@@ -496,7 +496,7 @@ export default function PflasterarbeitenPage() {
                 <section className="relative section-padding overflow-hidden">
                     <Image
                         src="/images/pflasterarbeiten-cta.png"
-                        alt="Pflasterarbeiten – jetzt Angebot anfordern"
+                        alt="Pflasterarbeiten Lüneburg - Jetzt kostenloses Angebot anfordern"
                         fill
                         className="object-cover"
                         quality={80}
