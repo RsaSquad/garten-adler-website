@@ -10,6 +10,8 @@ export interface City {
     description: string;
     plz?: string;
     districts?: string[];
+    lat?: number;
+    lng?: number;
 }
 
 export const cities: City[] = [
