@@ -25,25 +25,25 @@ const pflasterTypes = [
         name: 'Natursteinpflaster',
         description: 'Edles Natursteinpflaster aus Granit, Basalt oder Porphyr für zeitlose Eleganz.',
         features: ['Extrem langlebig', 'Frostbeständig', 'Individuelle Optik', 'Wertsteigernd'],
-        icon: '🪨',
+        image: '/images/services/naturstein.png',
     },
     {
         name: 'Betonsteinpflaster',
         description: 'Vielseitige Betonsteine in verschiedenen Formen, Farben und Oberflächenstrukturen.',
         features: ['Preisgünstig', 'Große Auswahl', 'Pflegeleicht', 'Belastbar'],
-        icon: '🧱',
+        image: '/images/services/betonstein.png',
     },
     {
         name: 'Klinker & Ziegel',
         description: 'Traditionelle Klinker für einen klassisch-norddeutschen Charakter.',
         features: ['Zeitlos schön', 'Robust', 'Rutschfest', 'Ökologisch'],
-        icon: '🏠',
+        image: '/images/services/klinker.png',
     },
     {
         name: 'Großformatplatten',
         description: 'Moderne Großformatplatten für eine elegante, minimalistische Optik.',
         features: ['Modern', 'Schnelle Verlegung', 'Wenig Fugen', 'Barrierearm'],
-        icon: '⬜',
+        image: '/images/services/grossformat.png',
     },
 ];
 
@@ -51,37 +51,37 @@ const services = [
     {
         title: 'Einfahrten & Zufahrten',
         description: 'Robuste und optisch ansprechende Einfahrten, die höchsten Belastungen standhalten.',
-        image: '🚗',
+        image: '/images/services/einfahrt.png',
         features: ['PKW- & LKW-befahrbar', 'Entwässerungssysteme', 'Randsteine', 'Beleuchtungsintegration'],
     },
     {
         title: 'Terrassen & Sitzplätze',
         description: 'Gemütliche Terrassen und Sitzplätze als Zentrum Ihres Gartens.',
-        image: '☀️',
+        image: '/images/services/terrasse.png',
         features: ['Terrassenplatten', 'Stufenanlagen', 'Barrierefreie Zugänge', 'Drainage'],
     },
     {
         title: 'Gartenwege',
         description: 'Funktionale und ästhetische Wege durch Ihren Garten.',
-        image: '🚶',
+        image: '/images/services/gartenweg.png',
         features: ['Geschwungene Formen', 'Trittplatten', 'Beleuchtung', 'Einfassungen'],
     },
     {
         title: 'Hofbefestigungen',
         description: 'Professionelle Befestigung von Höfen und Vorplätzen.',
-        image: '🏡',
+        image: '/images/services/hofbefestigung.png',
         features: ['Großflächig', 'Belastbar', 'Entwässerung', 'Stellplätze'],
     },
     {
         title: 'Parkplätze',
         description: 'Private und gewerbliche Parkflächen fachgerecht gepflastert.',
-        image: '🅿️',
+        image: '/images/services/parkplatz.png',
         features: ['Markierungen', 'Schwerlastfähig', 'Rasengitter-Option', 'Bordsteine'],
     },
     {
         title: 'Poolumrandungen',
         description: 'Rutschfeste und elegante Umrandungen für Ihren Pool.',
-        image: '🏊',
+        image: '/images/services/pool.png',
         features: ['Rutschfest', 'Wärmeleitend', 'Wasserabweisend', 'Barfußfreundlich'],
     },
 ];
@@ -277,8 +277,11 @@ export default function PflasterarbeitenPage() {
 
                         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                             {pflasterTypes.map((type, index) => (
-                                <div key={index} className="bg-gray-50 rounded-2xl p-6 hover:shadow-xl transition-all hover:-translate-y-1 group">
-                                    <div className="text-5xl mb-4">{type.icon}</div>
+                                <div key={index} className="bg-gray-50 rounded-2xl overflow-hidden hover:shadow-xl transition-all hover:-translate-y-1 group">
+                                    <div className="h-40 relative">
+                                        <Image src={type.image} alt={type.name} fill className="object-cover" />
+                                    </div>
+                                    <div className="p-6">
                                     <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-amber-600 transition-colors">
                                         {type.name}
                                     </h3>
@@ -293,6 +296,7 @@ export default function PflasterarbeitenPage() {
                                             </li>
                                         ))}
                                     </ul>
+                                    </div>
                                 </div>
                             ))}
                         </div>
@@ -318,8 +322,8 @@ export default function PflasterarbeitenPage() {
                         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                             {services.map((service, index) => (
                                 <div key={index} className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all group">
-                                    <div className="h-48 bg-gradient-to-br from-gray-700 to-gray-800 flex items-center justify-center">
-                                        <span className="text-7xl group-hover:scale-110 transition-transform">{service.image}</span>
+                                    <div className="h-48 relative">
+                                        <Image src={service.image} alt={service.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
                                     </div>
                                     <div className="p-6">
                                         <h3 className="text-xl font-bold text-gray-900 mb-2">{service.title}</h3>

@@ -52,14 +52,14 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
 
 // Services für die Stadt
 const services = [
-    { name: 'Gartengestaltung', icon: '🌳', description: 'Komplette Neugestaltung und Planung' },
-    { name: 'Terrassenbau', icon: '🏡', description: 'Holz, WPC oder Naturstein' },
-    { name: 'Pflasterarbeiten', icon: '🧱', description: 'Einfahrten und Gehwege' },
-    { name: 'Rollrasen', icon: '🌿', description: 'Lieferung und Verlegung' },
-    { name: 'Zaunbau', icon: '🚧', description: 'Zäune und Sichtschutz' },
-    { name: 'Gartenpflege', icon: '✂️', description: 'Regelmäßige Pflege' },
-    { name: 'Hochbeete', icon: '🌱', description: 'Kräuter und Gemüse' },
-    { name: 'Wasserspiele', icon: '💧', description: 'Teiche und Brunnen' },
+    { name: 'Gartengestaltung', image: '/images/services/gartengestaltung.png', description: 'Komplette Neugestaltung und Planung' },
+    { name: 'Terrassenbau', image: '/images/services/terrasse.png', description: 'Holz, WPC oder Naturstein' },
+    { name: 'Pflasterarbeiten', image: '/images/services/einfahrt.png', description: 'Einfahrten und Gehwege' },
+    { name: 'Rollrasen', image: '/images/services/rollrasen.png', description: 'Lieferung und Verlegung' },
+    { name: 'Zaunbau', image: '/images/services/zaunbau.png', description: 'Zäune und Sichtschutz' },
+    { name: 'Gartenpflege', image: '/images/services/gartenpflege.png', description: 'Regelmäßige Pflege' },
+    { name: 'Hochbeete', image: '/images/services/hochbeet.png', description: 'Kräuter und Gemüse' },
+    { name: 'Wasserspiele', image: '/images/services/wasserspiel.png', description: 'Teiche und Brunnen' },
 ];
 
 export default async function CityPage({ params }: { params: Promise<{ city: string }> }) {
@@ -298,14 +298,18 @@ export default async function CityPage({ params }: { params: Promise<{ city: str
 
                         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                             {services.map((service, index) => (
-                                <div key={index} className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-shadow card-hover">
-                                    <div className="text-4xl mb-4">{service.icon}</div>
+                                <div key={index} className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow card-hover">
+                                    <div className="h-36 relative">
+                                        <Image src={service.image} alt={service.name} fill className="object-cover" />
+                                    </div>
+                                    <div className="p-6">
                                     <h3 className="text-lg font-bold text-gray-900 mb-2">
                                         {service.name} {city.name}
                                     </h3>
                                     <p className="text-gray-600 text-sm">
                                         {service.description} in {city.name} und Umgebung.
                                     </p>
+                                    </div>
                                 </div>
                             ))}
                         </div>
