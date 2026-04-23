@@ -126,7 +126,7 @@ export default async function CityZaunbauPage({ params }: { params: Promise<{ ci
 
             {/* Header */}
             <header className="fixed top-0 left-0 right-0 z-50 bg-green-800/95 backdrop-blur-xl shadow-lg shadow-green-900/20">
-                <div className="container-custom py-4">
+                <div className="container-custom py-1.5">
                     <nav className="flex items-center justify-between">
                         <Link href="/" className="flex items-center gap-3">
                             <Image src="/images/logo.png" alt="Adler & Sohn Galabau" width={140} height={47} className="h-10 w-auto object-contain" />
