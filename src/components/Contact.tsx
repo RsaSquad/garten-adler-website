@@ -187,7 +187,7 @@ const Contact = ({ defaultOrt = '' }: ContactProps) => {
                                     </div>
                                     <div>
                                         <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-                                            Telefon
+                                            Telefon *
                                         </label>
                                         <input
                                             type="tel"
@@ -195,6 +195,7 @@ const Contact = ({ defaultOrt = '' }: ContactProps) => {
                                             name="phone"
                                             value={formData.phone}
                                             onChange={handleChange}
+                                            required
                                             placeholder="+49 ..."
                                         />
                                     </div>
