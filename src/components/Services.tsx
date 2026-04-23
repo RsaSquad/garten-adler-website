@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import Link from 'next/link';
 
 const services = [
     {
@@ -11,6 +12,7 @@ const services = [
         ),
         title: 'Gartengestaltung',
         description: 'Individuelle Gartenplanung und -gestaltung nach Ihren Wünschen. Wir schaffen grüne Oasen zum Wohlfühlen.',
+        href: '/garten-und-landschaftsbau',
     },
     {
         icon: (
@@ -20,6 +22,7 @@ const services = [
         ),
         title: 'Terrassenbau',
         description: 'Moderne Terrassen aus Naturstein, Holz oder WPC. Schaffen Sie Ihren perfekten Outdoor-Wohnbereich.',
+        href: '/terrassenbau',
     },
     {
         icon: (
@@ -29,6 +32,7 @@ const services = [
         ),
         title: 'Pflasterarbeiten',
         description: 'Professionelle Pflasterarbeiten für Einfahrten, Wege und Flächen. Langlebig und ästhetisch.',
+        href: '/pflasterarbeiten',
     },
     {
         icon: (
@@ -38,6 +42,7 @@ const services = [
         ),
         title: 'Rollrasen',
         description: 'Sofort ein perfekter Rasen. Lieferung und Verlegung von hochwertigem Rollrasen für Ihren Garten.',
+        href: '/rollrasen',
     },
     {
         icon: (
@@ -47,6 +52,7 @@ const services = [
         ),
         title: 'Zaunbau & Sichtschutz',
         description: 'Hochwertige Zäune und Sichtschutzelemente. Privatsphäre und Sicherheit für Ihr Grundstück.',
+        href: '/zaunbau',
     },
     {
         icon: (
@@ -56,6 +62,7 @@ const services = [
         ),
         title: 'Gartenpflege',
         description: 'Regelmäßige Pflege und Wartung Ihrer Grünanlagen. Wir halten Ihren Garten das ganze Jahr schön.',
+        href: '/gartenpflege',
     },
     {
         icon: (
@@ -65,6 +72,7 @@ const services = [
         ),
         title: 'Hochbeete',
         description: 'Individuelle Hochbeete für Kräuter, Gemüse oder Blumen. Rückenschonend und dekorativ.',
+        href: '/garten-und-landschaftsbau',
     },
     {
         icon: (
@@ -74,6 +82,7 @@ const services = [
         ),
         title: 'Wasserspiele',
         description: 'Teiche, Brunnen und Wasserspiele. Bringen Sie Leben und Atmosphäre in Ihren Garten.',
+        href: '/garten-und-landschaftsbau',
     },
 ];
 
@@ -125,7 +134,8 @@ const Services = () => {
                 {/* Services Grid */}
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {services.map((service, index) => (
-                        <div
+                        <Link
+                            href={service.href}
                             key={index}
                             data-index={index}
                             className={`service-card group bg-white rounded-2xl p-6 card-hover cursor-pointer ${visibleCards.includes(index) ? 'animate-fadeInUp' : 'opacity-0'
@@ -147,7 +157,7 @@ const Services = () => {
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                                 </svg>
                             </div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
 
