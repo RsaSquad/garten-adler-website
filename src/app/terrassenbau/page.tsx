@@ -4,11 +4,11 @@ import Image from 'next/image';
 import { Contact } from '@/components';
 
 export const metadata: Metadata = {
-    title: 'Terrassenbau Hamburg | Holzterrasse, Naturstein, WPC | Adler & Sohn',
+    title: 'Terrassenbau Hamburg | Holzterrasse, Naturstein, WPC',
     description: 'Professioneller Terrassenbau in Hamburg und Umgebung. ✓ Holzterrassen ✓ Naturstein ✓ WPC ✓ Betonplatten. Ihr Outdoor-Wohnzimmer vom Fachbetrieb. Jetzt anfragen!',
     keywords: 'Terrassenbau Hamburg, Terrasse bauen Hamburg, Holzterrasse, WPC-Terrasse, Natursteinterrasse, Terrassenbauer Hamburg',
     openGraph: {
-        title: 'Terrassenbau Hamburg | Adler & Sohn',
+        title: 'Terrassenbau Hamburg',
         description: 'Terrassen aus Holz, Naturstein oder WPC – fachgerecht gebaut für Jahrzehnte.',
         url: 'https://garten-adler.de/terrassenbau',
         siteName: 'Adler & Sohn',
@@ -183,7 +183,7 @@ export default function TerrassenbauPage() {
                 '@type': 'Service',
                 name: 'Terrassenbau',
                 provider: {
-                    '@type': 'LocalBusiness',
+                    '@type': 'HomeAndConstructionBusiness',
                     name: 'Adler & Sohn',
                     url: 'https://garten-adler.de',
                     telephone: '04131 - 394 2971',

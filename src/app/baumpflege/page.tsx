@@ -4,11 +4,11 @@ import Image from 'next/image';
 import { Contact } from '@/components';
 
 export const metadata: Metadata = {
-    title: 'Baumpflege Hamburg & Umgebung | Baumschnitt, Fällung, Kronenpflege | Adler & Sohn',
+    title: 'Baumpflege Hamburg & Umgebung | Baumschnitt, Fällung, Kronenpflege',
     description: 'Professionelle Baumpflege in Hamburg und Umgebung. ✓ Baumschnitt ✓ Kronenpflege ✓ Baumfällung ✓ Stubbenfräsen ✓ Baumgutachten. Zertifizierte Baumpfleger mit Seilklettertechnik.',
     keywords: 'Baumpflege Hamburg, Baumschnitt Hamburg, Baumfällung Hamburg, Kronenpflege, Obstbaumschnitt, Baumpfleger, Seilklettertechnik, Stubbenfräsen, Baumgutachten',
     openGraph: {
-        title: 'Baumpflege Hamburg & Umgebung | Adler & Sohn',
+        title: 'Baumpflege Hamburg & Umgebung',
         description: 'Professionelle Baumpflege vom zertifizierten Fachbetrieb. Baumschnitt, Kronenpflege, Fällung und mehr.',
         url: 'https://garten-adler.de/baumpflege',
         siteName: 'Adler & Sohn',
@@ -152,7 +152,7 @@ export default function BaumpflegePage() {
                 '@type': 'Service',
                 name: 'Baumpflege',
                 provider: {
-                    '@type': 'LocalBusiness',
+                    '@type': 'HomeAndConstructionBusiness',
                     name: 'Adler & Sohn',
                     url: 'https://garten-adler.de',
                     telephone: '04131 - 394 2971',

@@ -4,11 +4,11 @@ import Image from 'next/image';
 import { Contact } from '@/components';
 
 export const metadata: Metadata = {
-    title: 'Zaunbau Hamburg & Umgebung | Holzzaun, Metallzaun, Gabionen | Adler & Sohn',
+    title: 'Zaunbau Hamburg & Umgebung | Holzzaun, Metallzaun, Gabionen',
     description: 'Professioneller Zaunbau in Hamburg und Umgebung. ✓ Holzzäune ✓ Metallzäune ✓ Gabionen ✓ Sichtschutz ✓ Doppelstabmatten. Montage vom Fachbetrieb. Jetzt anfragen!',
     keywords: 'Zaunbau Hamburg, Zaun setzen Hamburg, Holzzaun, Metallzaun, Gabionen, Sichtschutz, Doppelstabmattenzaun, Gartenzaun Hamburg',
     openGraph: {
-        title: 'Zaunbau Hamburg & Umgebung | Adler & Sohn',
+        title: 'Zaunbau Hamburg & Umgebung',
         description: 'Zäune und Sichtschutz vom Profi. Holz, Metall, Gabionen – fachgerechte Montage.',
         url: 'https://garten-adler.de/zaunbau',
         siteName: 'Adler & Sohn',
@@ -168,7 +168,7 @@ export default function ZaunbauPage() {
                 '@type': 'Service',
                 name: 'Zaunbau',
                 provider: {
-                    '@type': 'LocalBusiness',
+                    '@type': 'HomeAndConstructionBusiness',
                     name: 'Adler & Sohn',
                     url: 'https://garten-adler.de',
                     telephone: '04131 - 394 2971',

@@ -4,11 +4,11 @@ import Image from 'next/image';
 import { Contact } from '@/components';
 
 export const metadata: Metadata = {
-    title: 'Heckenschnitt Hamburg & Umgebung | Formschnitt, Rückschnitt | Adler & Sohn',
+    title: 'Heckenschnitt Hamburg & Umgebung | Formschnitt, Rückschnitt',
     description: 'Professioneller Heckenschnitt in Hamburg und Umgebung. ✓ Formschnitt ✓ Rückschnitt ✓ Verjüngung ✓ Alle Heckenarten. Saubere Arbeit mit Entsorgung. Jetzt anfragen!',
     keywords: 'Heckenschnitt Hamburg, Hecke schneiden Hamburg, Heckenpflege, Formschnitt Hecke, Thuja schneiden, Liguster Hecke, Buchenhecke schneiden, Kirschlorbeer schneiden',
     openGraph: {
-        title: 'Heckenschnitt Hamburg & Umgebung | Adler & Sohn',
+        title: 'Heckenschnitt Hamburg & Umgebung',
         description: 'Professioneller Heckenschnitt vom Fachbetrieb. Formschnitt, Rückschnitt und Pflege aller Heckenarten.',
         url: 'https://garten-adler.de/heckenschnitt',
         siteName: 'Adler & Sohn',
@@ -152,7 +152,7 @@ export default function HeckenschnittPage() {
                 '@type': 'Service',
                 name: 'Heckenschnitt',
                 provider: {
-                    '@type': 'LocalBusiness',
+                    '@type': 'HomeAndConstructionBusiness',
                     name: 'Adler & Sohn',
                     url: 'https://garten-adler.de',
                     telephone: '04131 - 394 2971',

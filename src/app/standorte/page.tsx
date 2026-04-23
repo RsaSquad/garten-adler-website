@@ -4,11 +4,11 @@ import Image from 'next/image';
 import { cities, getCitiesByRegion } from '@/data/cities';
 
 export const metadata: Metadata = {
-    title: 'Garten- & Landschaftsbau in Hamburg und Umgebung | Adler & Sohn',
+    title: 'Garten- & Landschaftsbau in Hamburg und Umgebung',
     description: 'Professioneller Garten- und Landschaftsbau in über 70 Städten rund um Hamburg. Finden Sie Ihren lokalen Partner für Gartengestaltung, Terrassenbau und mehr.',
     keywords: 'Gartenbau Hamburg, Landschaftsbau Schleswig-Holstein, Gartenbau Niedersachsen, Gartengestaltung Metropolregion Hamburg',
     openGraph: {
-        title: 'Garten- & Landschaftsbau in Hamburg und Umgebung | Adler & Sohn',
+        title: 'Garten- & Landschaftsbau in Hamburg und Umgebung',
         description: 'Professioneller Garten- und Landschaftsbau in über 70 Städten rund um Hamburg.',
         url: 'https://garten-adler.de/standorte',
         siteName: 'Adler & Sohn',

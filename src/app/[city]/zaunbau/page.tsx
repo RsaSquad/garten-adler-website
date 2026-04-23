@@ -18,11 +18,11 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
     }
 
     return {
-        title: `Zaunbau ${city.name} | Holzzaun, Metallzaun, Gabionen | Adler & Sohn`,
+        title: `Zaunbau ${city.name} | Holzzaun, Metallzaun, Gabionen`,
         description: `Professioneller Zaunbau in ${city.name} und ${city.region}. ✓ Holzzäune ✓ Metallzäune ✓ Gabionen ✓ Sichtschutz. Montage vom Fachbetrieb. Jetzt anfragen!`,
         keywords: `Zaunbau ${city.name}, Zaun setzen ${city.name}, Holzzaun ${city.name}, Metallzaun ${city.name}, Gabionen ${city.name}, Sichtschutz ${city.name}`,
         openGraph: {
-            title: `Zaunbau ${city.name} | Adler & Sohn`,
+            title: `Zaunbau ${city.name}`,
             description: `Zäune und Sichtschutz in ${city.name}. Holz, Metall, Gabionen – fachgerechte Montage.`,
             url: `https://garten-adler.de/${city.slug}/zaunbau`,
             siteName: 'Adler & Sohn',
@@ -88,7 +88,7 @@ export default async function CityZaunbauPage({ params }: { params: Promise<{ ci
                 '@type': 'Service',
                 name: `Zaunbau ${city.name}`,
                 provider: {
-                    '@type': 'LocalBusiness',
+                    '@type': 'HomeAndConstructionBusiness',
                     name: 'Adler & Sohn',
                     url: 'https://garten-adler.de',
                     telephone: '04131 - 394 2971',

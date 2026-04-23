@@ -4,11 +4,11 @@ import Image from 'next/image';
 import { Contact } from '@/components';
 
 export const metadata: Metadata = {
-    title: 'Gartenpflege Hamburg & Umgebung | Rasenmähen, Heckenschnitt, Unkraut | Adler & Sohn',
+    title: 'Gartenpflege Hamburg & Umgebung | Rasenmähen, Heckenschnitt, Unkraut',
     description: 'Professionelle Gartenpflege in Hamburg und Umgebung. ✓ Rasenmähen ✓ Heckenschnitt ✓ Unkrautentfernung ✓ Baumpflege ✓ Beetpflege. Regelmäßig oder einmalig. Erfahrene Gärtner – jetzt anfragen!',
     keywords: 'Gartenpflege Hamburg, Rasenmähen, Heckenschnitt, Unkraut entfernen, Baumpflege, Gartenhilfe, Gartenservice, Rasenpflege, Beetpflege, Gärtner Hamburg, Gartenarbeit, Grünpflege, Objektpflege',
     openGraph: {
-        title: 'Gartenpflege Hamburg & Umgebung | Adler & Sohn',
+        title: 'Gartenpflege Hamburg & Umgebung',
         description: 'Professionelle Gartenpflege für einen gepflegten Garten das ganze Jahr. Regelmäßig oder einmalig.',
         url: 'https://garten-adler.de/gartenpflege',
         siteName: 'Adler & Sohn',
@@ -220,7 +220,7 @@ export default function GartenpflegePage() {
                 '@type': 'Service',
                 name: 'Gartenpflege',
                 provider: {
-                    '@type': 'LocalBusiness',
+                    '@type': 'HomeAndConstructionBusiness',
                     name: 'Adler & Sohn',
                     url: 'https://garten-adler.de',
                     telephone: '04131 - 394 2971',

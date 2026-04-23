@@ -18,11 +18,11 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
     }
 
     return {
-        title: `Baumpflege ${city.name} | Baumschnitt, Fällung, Kronenpflege | Adler & Sohn`,
+        title: `Baumpflege ${city.name} | Baumschnitt, Fällung, Kronenpflege`,
         description: `Professionelle Baumpflege in ${city.name} und ${city.region}. ✓ Baumschnitt ✓ Kronenpflege ✓ Baumfällung ✓ Stubbenfräsen. Zertifizierte Baumpfleger. Jetzt anfragen!`,
         keywords: `Baumpflege ${city.name}, Baumschnitt ${city.name}, Baumfällung ${city.name}, Baumpfleger ${city.name}, Kronenpflege ${city.name}, Obstbaumschnitt ${city.name}`,
         openGraph: {
-            title: `Baumpflege ${city.name} | Adler & Sohn`,
+            title: `Baumpflege ${city.name}`,
             description: `Zertifizierte Baumpflege in ${city.name}. Baumschnitt, Kronenpflege, Fällung vom Fachbetrieb.`,
             url: `https://garten-adler.de/${city.slug}/baumpflege`,
             siteName: 'Adler & Sohn',
@@ -106,7 +106,7 @@ export default async function CityBaumpflegePage({ params }: { params: Promise<{
                 '@type': 'Service',
                 name: `Baumpflege ${city.name}`,
                 provider: {
-                    '@type': 'LocalBusiness',
+                    '@type': 'HomeAndConstructionBusiness',
                     name: 'Adler & Sohn',
                     url: 'https://garten-adler.de',
                     telephone: '04131 - 394 2971',

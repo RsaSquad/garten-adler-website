@@ -26,7 +26,7 @@ const jsonLd = {
       ],
     },
     {
-      '@type': 'LocalBusiness',
+      '@type': 'HomeAndConstructionBusiness',
       '@id': 'https://garten-adler.de/#localbusiness',
       name: 'Adler & Sohn - Garten- & Landschaftsbau',
       description: 'Professioneller Garten- und Landschaftsbau in Lüneburg und über 200 Städten in der Region. Gartengestaltung, Terrassenbau, Pflasterarbeiten, Rollrasen und mehr.',

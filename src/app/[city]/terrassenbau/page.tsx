@@ -18,11 +18,11 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
     }
 
     return {
-        title: `Terrassenbau ${city.name} | Holzterrasse, Naturstein, WPC | Adler & Sohn`,
+        title: `Terrassenbau ${city.name} | Holzterrasse, Naturstein, WPC`,
         description: `Professioneller Terrassenbau in ${city.name}. ✓ Holzterrassen ✓ Naturstein ✓ WPC ✓ Betonplatten. Ihr Outdoor-Wohnzimmer vom Fachbetrieb. Jetzt anfragen!`,
         keywords: `Terrassenbau ${city.name}, Terrasse bauen ${city.name}, Holzterrasse ${city.name}, WPC-Terrasse ${city.name}`,
         openGraph: {
-            title: `Terrassenbau ${city.name} | Adler & Sohn`,
+            title: `Terrassenbau ${city.name}`,
             description: `Terrassen aus Holz, Naturstein oder WPC in ${city.name} – fachgerecht gebaut.`,
             url: `https://garten-adler.de/${city.slug}/terrassenbau`,
             siteName: 'Adler & Sohn',
@@ -88,7 +88,7 @@ export default async function CityTerrassenbauPage({ params }: { params: Promise
                 '@type': 'Service',
                 name: `Terrassenbau ${city.name}`,
                 provider: {
-                    '@type': 'LocalBusiness',
+                    '@type': 'HomeAndConstructionBusiness',
                     name: 'Adler & Sohn',
                     url: 'https://garten-adler.de',
                     telephone: '04131 - 394 2971',

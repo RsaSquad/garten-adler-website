@@ -61,13 +61,7 @@ export const metadata: Metadata = {
     title: "Adler & Sohn | Garten- & Landschaftsbau",
     description: "Professioneller Garten- und Landschaftsbau in Lüneburg und Umgebung.",
   },
-  other: {
-    // GEO Meta-Tags für lokale Sichtbarkeit
-    'geo.region': 'DE-NI',
-    'geo.placename': 'Lüneburg',
-    'geo.position': '53.2464;10.4115',
-    'ICBM': '53.2464, 10.4115',
-  },
+  // GEO meta tags are set per-page to avoid conflicts with city-specific pages
 };
 
 export default function RootLayout({

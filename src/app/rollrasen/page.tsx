@@ -4,11 +4,11 @@ import Image from 'next/image';
 import { Contact } from '@/components';
 
 export const metadata: Metadata = {
-    title: 'Rollrasen verlegen Hamburg & Umgebung | Fertigrasen vom Profi | Adler & Sohn',
+    title: 'Rollrasen verlegen Hamburg & Umgebung | Fertigrasen vom Profi',
     description: 'Professionelle Rollrasen-Verlegung in Hamburg und Umgebung. ✓ Premium-Rollrasen ✓ Fachgerechte Verlegung ✓ Sofort grün ✓ Anwachsgarantie. Jetzt beraten lassen!',
     keywords: 'Rollrasen verlegen Hamburg, Fertigrasen Hamburg, Rollrasen kaufen, Rollrasen Kosten, Rasen verlegen lassen, Rollrasen Verlegung, Fertigrasen Verlegung, Rollrasen Preis pro m2',
     openGraph: {
-        title: 'Rollrasen verlegen Hamburg & Umgebung | Adler & Sohn',
+        title: 'Rollrasen verlegen Hamburg & Umgebung',
         description: 'Professionelle Rollrasen-Verlegung für einen sofort grünen Traumrasen. Premium-Qualität mit Anwachsgarantie.',
         url: 'https://garten-adler.de/rollrasen',
         siteName: 'Adler & Sohn',
@@ -155,7 +155,7 @@ export default function RollrasenPage() {
                 '@type': 'Service',
                 name: 'Rollrasen Verlegung',
                 provider: {
-                    '@type': 'LocalBusiness',
+                    '@type': 'HomeAndConstructionBusiness',
                     name: 'Adler & Sohn',
                     url: 'https://garten-adler.de',
                     telephone: '04131 - 394 2971',

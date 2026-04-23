@@ -4,11 +4,11 @@ import Image from 'next/image';
 import { Contact } from '@/components';
 
 export const metadata: Metadata = {
-    title: 'Galabau Hamburg & Umgebung | Garten- und Landschaftsbau | Adler & Sohn',
+    title: 'Galabau Hamburg & Umgebung | Garten- und Landschaftsbau',
     description: 'Professioneller Galabau in Hamburg und Umgebung. ✓ Gartengestaltung ✓ Terrassenbau ✓ Pflasterarbeiten ✓ Bepflanzung ✓ Komplette Gartenplanung. Jetzt anfragen!',
     keywords: 'Galabau Hamburg, Garten- und Landschaftsbau Hamburg, Gartengestaltung, Terrassenbau, Gartenplanung, Außenanlagen, Gartenbau Hamburg',
     openGraph: {
-        title: 'Galabau Hamburg & Umgebung | Adler & Sohn',
+        title: 'Galabau Hamburg & Umgebung',
         description: 'Garten- und Landschaftsbau vom Profi. Komplette Gartengestaltung aus einer Hand.',
         url: 'https://garten-adler.de/galabau',
         siteName: 'Adler & Sohn',
@@ -220,7 +220,7 @@ export default function GalabauPage() {
                 '@type': 'Service',
                 name: 'Garten- und Landschaftsbau',
                 provider: {
-                    '@type': 'LocalBusiness',
+                    '@type': 'HomeAndConstructionBusiness',
                     name: 'Adler & Sohn',
                     url: 'https://garten-adler.de',
                     telephone: '04131 - 394 2971',

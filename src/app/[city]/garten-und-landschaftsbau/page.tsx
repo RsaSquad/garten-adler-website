@@ -18,11 +18,11 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
     }
 
     return {
-        title: `Garten- und Landschaftsbau ${city.name} | GaLaBau vom Profi | Adler & Sohn`,
+        title: `Garten- und Landschaftsbau ${city.name} | GaLaBau vom Profi`,
         description: `Professioneller Garten- und Landschaftsbau in ${city.name}. ✓ Gartengestaltung ✓ Terrassenbau ✓ Pflasterarbeiten ✓ Bepflanzung. Jetzt anfragen!`,
         keywords: `Garten- und Landschaftsbau ${city.name}, GaLaBau ${city.name}, Gartengestaltung ${city.name}, Landschaftsbau ${city.name}`,
         openGraph: {
-            title: `Garten- und Landschaftsbau ${city.name} | Adler & Sohn`,
+            title: `Garten- und Landschaftsbau ${city.name}`,
             description: `Ihr Traumgarten in ${city.name}. Komplette Gartengestaltung und Landschaftsbau aus einer Hand.`,
             url: `https://garten-adler.de/${city.slug}/garten-und-landschaftsbau`,
             siteName: 'Adler & Sohn',
@@ -94,7 +94,7 @@ export default async function CityGartenLandschaftsbauPage({ params }: { params:
                 '@type': 'Service',
                 name: `Garten- und Landschaftsbau ${city.name}`,
                 provider: {
-                    '@type': 'LocalBusiness',
+                    '@type': 'HomeAndConstructionBusiness',
                     name: 'Adler & Sohn',
                     url: 'https://garten-adler.de',
                     telephone: '04131 - 394 2971',

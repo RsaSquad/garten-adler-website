@@ -18,11 +18,11 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
     }
 
     return {
-        title: `Heckenschnitt ${city.name} | Formschnitt, Rückschnitt | Adler & Sohn`,
+        title: `Heckenschnitt ${city.name} | Formschnitt, Rückschnitt`,
         description: `Professioneller Heckenschnitt in ${city.name} und ${city.region}. ✓ Formschnitt ✓ Rückschnitt ✓ Alle Heckenarten ✓ Entsorgung inklusive. Jetzt anfragen!`,
         keywords: `Heckenschnitt ${city.name}, Hecke schneiden ${city.name}, Heckenpflege ${city.name}, Thuja schneiden ${city.name}, Formschnitt Hecke ${city.name}`,
         openGraph: {
-            title: `Heckenschnitt ${city.name} | Adler & Sohn`,
+            title: `Heckenschnitt ${city.name}`,
             description: `Professioneller Heckenschnitt in ${city.name}. Formschnitt, Rückschnitt und Pflege aller Heckenarten.`,
             url: `https://garten-adler.de/${city.slug}/heckenschnitt`,
             siteName: 'Adler & Sohn',
@@ -95,7 +95,7 @@ export default async function CityHeckenschnittPage({ params }: { params: Promis
                 '@type': 'Service',
                 name: `Heckenschnitt ${city.name}`,
                 provider: {
-                    '@type': 'LocalBusiness',
+                    '@type': 'HomeAndConstructionBusiness',
                     name: 'Adler & Sohn',
                     url: 'https://garten-adler.de',
                     telephone: '04131 - 394 2971',

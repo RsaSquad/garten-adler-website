@@ -4,11 +4,11 @@ import Image from 'next/image';
 import { Contact } from '@/components';
 
 export const metadata: Metadata = {
-    title: 'Pflasterarbeiten Hamburg & Umgebung | Einfahrten, Terrassen, Wege | Adler & Sohn',
+    title: 'Pflasterarbeiten Hamburg & Umgebung | Einfahrten, Terrassen, Wege',
     description: 'Professionelle Pflasterarbeiten in Hamburg und Umgebung. ✓ Einfahrten ✓ Terrassen ✓ Gartenwege ✓ Hofbefestigungen. Hochwertige Materialien & faire Preise. Jetzt beraten lassen!',
     keywords: 'Pflasterarbeiten Hamburg, Pflastersteine verlegen, Einfahrt pflastern, Terrasse pflastern, Gartenwege anlegen, Hofbefestigung, Natursteinpflaster, Betonsteinpflaster, Pflasterbau',
     openGraph: {
-        title: 'Pflasterarbeiten Hamburg & Umgebung | Adler & Sohn',
+        title: 'Pflasterarbeiten Hamburg & Umgebung',
         description: 'Professionelle Pflasterarbeiten für Einfahrten, Terrassen und Gartenwege. Qualität aus Meisterhand.',
         url: 'https://garten-adler.de/pflasterarbeiten',
         siteName: 'Adler & Sohn',
@@ -120,7 +120,7 @@ export default function PflasterarbeitenPage() {
         '@type': 'Service',
         name: 'Pflasterarbeiten',
         provider: {
-            '@type': 'LocalBusiness',
+            '@type': 'HomeAndConstructionBusiness',
             name: 'Adler & Sohn',
             url: 'https://garten-adler.de',
         },

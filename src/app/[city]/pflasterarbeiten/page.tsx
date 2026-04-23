@@ -18,10 +18,10 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
     const city = getCityBySlug(citySlug);
 
     if (!city) {
-        return { title: 'Nicht gefunden | Adler & Sohn' };
+        return { title: 'Nicht gefunden' };
     }
 
-    const title = `Pflasterarbeiten ${city.name} | Einfahrten & Terrassen | Adler & Sohn`;
+    const title = `Pflasterarbeiten ${city.name} | Einfahrten & Terrassen`;
     const description = `Professionelle Pflasterarbeiten in ${city.name} (${city.region}). ✓ Einfahrten ✓ Terrassen ✓ Gartenwege ✓ Hofbefestigungen. Festpreisgarantie & 5 Jahre Gewährleistung!`;
 
     return {
@@ -100,7 +100,7 @@ export default async function CityPflasterarbeitenPage({ params }: { params: Pro
                 '@type': 'Service',
                 name: `Pflasterarbeiten in ${city.name}`,
                 provider: {
-                    '@type': 'LocalBusiness',
+                    '@type': 'HomeAndConstructionBusiness',
                     name: 'Adler & Sohn',
                     telephone: '04131 - 394 2971',
                 },

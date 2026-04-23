@@ -20,11 +20,11 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
 
     if (!city) {
         return {
-            title: 'Stadt nicht gefunden | Adler & Sohn',
+            title: 'Stadt nicht gefunden',
         };
     }
 
-    const title = `Garten- & Landschaftsbau ${city.name} | Adler & Sohn`;
+    const title = `Garten- & Landschaftsbau ${city.name}`;
     const description = `Professioneller Garten- und Landschaftsbau in ${city.name} (${city.region}). ✓ Gartengestaltung ✓ Terrassenbau ✓ Rollrasen ✓ Pflasterarbeiten. Jetzt kostenlose Beratung!`;
 
     return {
@@ -83,7 +83,7 @@ export default async function CityPage({ params }: { params: Promise<{ city: str
         '@context': 'https://schema.org',
         '@graph': [
             {
-                '@type': 'LocalBusiness',
+                '@type': 'HomeAndConstructionBusiness',
                 '@id': `https://garten-adler.de/${city.slug}#business`,
                 name: `Adler & Sohn - Garten- & Landschaftsbau ${city.name}`,
                 description: city.description,
@@ -96,11 +96,7 @@ export default async function CityPage({ params }: { params: Promise<{ city: str
                     addressRegion: city.region,
                     addressCountry: 'DE',
                 },
-                geo: {
-                    '@type': 'GeoCoordinates',
-                    latitude: 53.2464,
-                    longitude: 10.4115,
-                },
+
                 areaServed: {
                     '@type': 'City',
                     name: city.name,
@@ -366,9 +362,9 @@ export default async function CityPage({ params }: { params: Promise<{ city: str
                             <div className="grid grid-cols-2 gap-6">
                                 {[
                                     { value: '15+', label: 'Jahre Erfahrung' },
-                                    { value: '500+', label: 'Projekte' },
-                                    { value: '100%', label: 'Zufriedenheit' },
-                                    { value: '24h', label: 'Antwortzeit' },
+                                    { value: 'Viele', label: 'Projekte realisiert' },
+                                    { value: 'Top', label: 'Kundenzufriedenheit' },
+                                    { value: 'Schnell', label: 'Rückmeldung' },
                                 ].map((stat, index) => (
                                     <div key={index} className="bg-gradient-to-br from-green-600 to-green-500 rounded-2xl p-8 text-center text-white">
                                         <div className="text-4xl md:text-5xl font-bold mb-2">{stat.value}</div>

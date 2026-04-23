@@ -4,11 +4,11 @@ import Image from 'next/image';
 import { Contact } from '@/components';
 
 export const metadata: Metadata = {
-    title: 'Garten- und Landschaftsbau Hamburg | Gartengestaltung vom Profi | Adler & Sohn',
+    title: 'Garten- und Landschaftsbau Hamburg | Gartengestaltung vom Profi',
     description: 'Professioneller Garten- und Landschaftsbau in Hamburg und Umgebung. ✓ Gartengestaltung ✓ Terrassenbau ✓ Pflasterarbeiten ✓ Bepflanzung ✓ Über 15 Jahre Erfahrung. Jetzt anfragen!',
     keywords: 'Garten- und Landschaftsbau Hamburg, GaLaBau Hamburg, Gartengestaltung, Landschaftsbau, Gartenbau Hamburg, Gartenplaner, Außenanlagen Hamburg',
     openGraph: {
-        title: 'Garten- und Landschaftsbau Hamburg | Adler & Sohn',
+        title: 'Garten- und Landschaftsbau Hamburg',
         description: 'Ihr Traumgarten wird Realität. Komplette Gartengestaltung und Landschaftsbau aus einer Hand.',
         url: 'https://garten-adler.de/garten-und-landschaftsbau',
         siteName: 'Adler & Sohn',
@@ -201,7 +201,7 @@ export default function GartenUndLandschaftsbauPage() {
         '@context': 'https://schema.org',
         '@graph': [
             {
-                '@type': 'LocalBusiness',
+                '@type': 'HomeAndConstructionBusiness',
                 '@id': 'https://garten-adler.de/#organization',
                 name: 'Adler & Sohn Garten- und Landschaftsbau',
                 url: 'https://garten-adler.de',

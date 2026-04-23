@@ -18,11 +18,11 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
     }
 
     return {
-        title: `Rollrasen verlegen ${city.name} | Fertigrasen vom Profi | Adler & Sohn`,
+        title: `Rollrasen verlegen ${city.name} | Fertigrasen vom Profi`,
         description: `Professionelle Rollrasen-Verlegung in ${city.name} und ${city.region}. ✓ Premium-Rollrasen ✓ Fachgerechte Verlegung ✓ Sofort grün ✓ Anwachsgarantie. Jetzt anfragen!`,
         keywords: `Rollrasen ${city.name}, Fertigrasen ${city.name}, Rollrasen verlegen ${city.name}, Rasen verlegen ${city.name}, Rollrasen Kosten ${city.name}, Gärtner ${city.name}`,
         openGraph: {
-            title: `Rollrasen verlegen ${city.name} | Adler & Sohn`,
+            title: `Rollrasen verlegen ${city.name}`,
             description: `Premium Rollrasen-Verlegung in ${city.name}. Sofort grüner Traumrasen mit Anwachsgarantie.`,
             url: `https://garten-adler.de/${city.slug}/rollrasen`,
             siteName: 'Adler & Sohn',
@@ -107,7 +107,7 @@ export default async function CityRollrasenPage({ params }: { params: Promise<{ 
                 '@type': 'Service',
                 name: `Rollrasen Verlegung ${city.name}`,
                 provider: {
-                    '@type': 'LocalBusiness',
+                    '@type': 'HomeAndConstructionBusiness',
                     name: 'Adler & Sohn',
                     url: 'https://garten-adler.de',
                     telephone: '04131 - 394 2971',

@@ -14,10 +14,10 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
     const city = getCityBySlug(citySlug);
 
     if (!city) {
-        return { title: 'Nicht gefunden | Adler & Sohn' };
+        return { title: 'Nicht gefunden' };
     }
 
-    const title = `Gartenpflege ${city.name} | Rasenmähen, Heckenschnitt | Adler & Sohn`;
+    const title = `Gartenpflege ${city.name} | Rasenmähen, Heckenschnitt`;
     const description = `Professionelle Gartenpflege in ${city.name} (${city.region}). ✓ Rasenmähen ✓ Heckenschnitt ✓ Beetpflege ✓ Baumpflege. Erfahrene Gärtner, faire Konditionen!`;
 
     return {
@@ -79,7 +79,7 @@ export default async function CityGartenpflegePage({ params }: { params: Promise
             {
                 '@type': 'Service',
                 name: `Gartenpflege in ${city.name}`,
-                provider: { '@type': 'LocalBusiness', name: 'Adler & Sohn', telephone: '04131 - 394 2971' },
+                provider: { '@type': 'HomeAndConstructionBusiness', name: 'Adler & Sohn', telephone: '04131 - 394 2971' },
                 areaServed: { '@type': 'City', name: city.name },
                 description: `Professionelle Gartenpflege in ${city.name}. Rasenmähen, Heckenschnitt, Beetpflege und mehr.`,
             },
