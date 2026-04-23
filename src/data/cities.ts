@@ -16,6 +16,8 @@ export const cities: City[] = [
     // Großstädte
     {
         slug: "hamburg",
+        lat: 53.5511,
+        lng: 9.9937,
         name: "Hamburg",
         population: 1900000,
         region: "Hamburg",
@@ -25,6 +27,8 @@ export const cities: City[] = [
     },
     {
         slug: "luebeck",
+        lat: 53.8655,
+        lng: 10.6866,
         name: "Lübeck",
         population: 217000,
         region: "Schleswig-Holstein",
@@ -34,6 +38,8 @@ export const cities: City[] = [
     },
     {
         slug: "neumunster",
+        lat: 54.074,
+        lng: 9.9838,
         name: "Neumünster",
         population: 80000,
         region: "Schleswig-Holstein",
@@ -42,6 +48,8 @@ export const cities: City[] = [
     },
     {
         slug: "norderstedt",
+        lat: 53.706,
+        lng: 9.9937,
         name: "Norderstedt",
         population: 80000,
         region: "Schleswig-Holstein",
@@ -50,6 +58,8 @@ export const cities: City[] = [
     },
     {
         slug: "luneburg",
+        lat: 53.2464,
+        lng: 10.4115,
         name: "Lüneburg",
         population: 77000,
         region: "Niedersachsen",
@@ -58,6 +68,8 @@ export const cities: City[] = [
     },
     {
         slug: "elmshorn",
+        lat: 53.7542,
+        lng: 9.6562,
         name: "Elmshorn",
         population: 52000,
         region: "Schleswig-Holstein",
@@ -66,6 +78,8 @@ export const cities: City[] = [
     },
     {
         slug: "stade",
+        lat: 53.5977,
+        lng: 9.476,
         name: "Stade",
         population: 48000,
         region: "Niedersachsen",
@@ -74,6 +88,8 @@ export const cities: City[] = [
     },
     {
         slug: "cuxhaven",
+        lat: 53.86,
+        lng: 8.694,
         name: "Cuxhaven",
         population: 48000,
         region: "Niedersachsen",
@@ -82,6 +98,8 @@ export const cities: City[] = [
     },
     {
         slug: "pinneberg",
+        lat: 53.6552,
+        lng: 9.7994,
         name: "Pinneberg",
         population: 45000,
         region: "Schleswig-Holstein",
@@ -90,6 +108,8 @@ export const cities: City[] = [
     },
     {
         slug: "buchholz",
+        lat: 53.32,
+        lng: 9.868,
         name: "Buchholz in der Nordheide",
         population: 42000,
         region: "Niedersachsen",
@@ -98,6 +118,8 @@ export const cities: City[] = [
     },
     {
         slug: "seevetal",
+        lat: 53.399,
+        lng: 9.963,
         name: "Seevetal",
         population: 42000,
         region: "Niedersachsen",
@@ -106,6 +128,8 @@ export const cities: City[] = [
     },
     {
         slug: "buxtehude",
+        lat: 53.4747,
+        lng: 9.6872,
         name: "Buxtehude",
         population: 41000,
         region: "Niedersachsen",
@@ -114,6 +138,8 @@ export const cities: City[] = [
     },
     {
         slug: "winsen-luhe",
+        lat: 53.3573,
+        lng: 10.2089,
         name: "Winsen (Luhe)",
         population: 35000,
         region: "Niedersachsen",
@@ -122,6 +148,8 @@ export const cities: City[] = [
     },
     {
         slug: "ahrensburg",
+        lat: 53.6753,
+        lng: 10.2414,
         name: "Ahrensburg",
         population: 34000,
         region: "Schleswig-Holstein",
@@ -130,6 +158,8 @@ export const cities: City[] = [
     },
     {
         slug: "wedel",
+        lat: 53.5833,
+        lng: 9.7167,
         name: "Wedel",
         population: 33000,
         region: "Schleswig-Holstein",
@@ -138,6 +168,8 @@ export const cities: City[] = [
     },
     {
         slug: "geesthacht",
+        lat: 53.4372,
+        lng: 10.3708,
         name: "Geesthacht",
         population: 31000,
         region: "Schleswig-Holstein",
@@ -146,6 +178,8 @@ export const cities: City[] = [
     },
     {
         slug: "itzehoe",
+        lat: 53.9247,
+        lng: 9.5127,
         name: "Itzehoe",
         population: 31000,
         region: "Schleswig-Holstein",
@@ -154,6 +188,8 @@ export const cities: City[] = [
     },
     {
         slug: "henstedt-ulzburg",
+        lat: 53.7942,
+        lng: 9.9827,
         name: "Henstedt-Ulzburg",
         population: 30000,
         region: "Schleswig-Holstein",
@@ -162,6 +198,8 @@ export const cities: City[] = [
     },
     {
         slug: "reinbek",
+        lat: 53.5097,
+        lng: 10.2472,
         name: "Reinbek",
         population: 28000,
         region: "Schleswig-Holstein",
@@ -170,6 +208,8 @@ export const cities: City[] = [
     },
     {
         slug: "bad-oldesloe",
+        lat: 53.8111,
+        lng: 10.3739,
         name: "Bad Oldesloe",
         population: 25000,
         region: "Schleswig-Holstein",
@@ -178,6 +218,8 @@ export const cities: City[] = [
     },
     {
         slug: "kaltenkirchen",
+        lat: 53.8342,
+        lng: 9.9611,
         name: "Kaltenkirchen",
         population: 22000,
         region: "Schleswig-Holstein",
@@ -186,6 +228,8 @@ export const cities: City[] = [
     },
     {
         slug: "quickborn",
+        lat: 53.7333,
+        lng: 9.9,
         name: "Quickborn",
         population: 22000,
         region: "Schleswig-Holstein",
@@ -194,6 +238,8 @@ export const cities: City[] = [
     },
     {
         slug: "neu-wulmstorf",
+        lat: 53.4667,
+        lng: 9.7833,
         name: "Neu Wulmstorf",
         population: 22000,
         region: "Niedersachsen",
@@ -202,6 +248,8 @@ export const cities: City[] = [
     },
     {
         slug: "schenefeld",
+        lat: 53.5833,
+        lng: 9.8167,
         name: "Schenefeld",
         population: 20000,
         region: "Schleswig-Holstein",
@@ -210,6 +258,8 @@ export const cities: City[] = [
     },
     {
         slug: "glinde",
+        lat: 53.5439,
+        lng: 10.2053,
         name: "Glinde",
         population: 19000,
         region: "Schleswig-Holstein",
@@ -218,6 +268,8 @@ export const cities: City[] = [
     },
     {
         slug: "halstenbek",
+        lat: 53.6333,
+        lng: 9.8333,
         name: "Halstenbek",
         population: 18000,
         region: "Schleswig-Holstein",
@@ -226,6 +278,8 @@ export const cities: City[] = [
     },
     {
         slug: "bad-segeberg",
+        lat: 53.9361,
+        lng: 10.3089,
         name: "Bad Segeberg",
         population: 17000,
         region: "Schleswig-Holstein",
@@ -234,6 +288,8 @@ export const cities: City[] = [
     },
     {
         slug: "schwarzenbek",
+        lat: 53.5033,
+        lng: 10.4786,
         name: "Schwarzenbek",
         population: 17000,
         region: "Schleswig-Holstein",
@@ -242,6 +298,8 @@ export const cities: City[] = [
     },
     {
         slug: "bargteheide",
+        lat: 53.7283,
+        lng: 10.2583,
         name: "Bargteheide",
         population: 16000,
         region: "Schleswig-Holstein",
@@ -250,6 +308,8 @@ export const cities: City[] = [
     },
     {
         slug: "uetersen",
+        lat: 53.6833,
+        lng: 9.6667,
         name: "Uetersen",
         population: 15000,
         region: "Schleswig-Holstein",
@@ -258,6 +318,8 @@ export const cities: City[] = [
     },
     {
         slug: "tornesch",
+        lat: 53.7,
+        lng: 9.7167,
         name: "Tornesch",
         population: 15000,
         region: "Schleswig-Holstein",
@@ -266,6 +328,8 @@ export const cities: City[] = [
     },
     {
         slug: "rosengarten",
+        lat: 53.4,
+        lng: 9.9333,
         name: "Rosengarten",
         population: 14000,
         region: "Niedersachsen",
@@ -274,6 +338,8 @@ export const cities: City[] = [
     },
     {
         slug: "tostedt",
+        lat: 53.2833,
+        lng: 9.7167,
         name: "Tostedt",
         population: 13000,
         region: "Niedersachsen",
@@ -282,6 +348,8 @@ export const cities: City[] = [
     },
     {
         slug: "trittau",
+        lat: 53.6111,
+        lng: 10.405,
         name: "Trittau",
         population: 12000,
         region: "Schleswig-Holstein",
@@ -290,6 +358,8 @@ export const cities: City[] = [
     },
     {
         slug: "rellingen",
+        lat: 53.65,
+        lng: 9.8167,
         name: "Rellingen",
         population: 12000,
         region: "Schleswig-Holstein",
@@ -298,6 +368,8 @@ export const cities: City[] = [
     },
     {
         slug: "wentorf",
+        lat: 53.4917,
+        lng: 10.25,
         name: "Wentorf bei Hamburg",
         population: 12000,
         region: "Schleswig-Holstein",
@@ -314,6 +386,8 @@ export const cities: City[] = [
     },
     {
         slug: "oststeinbek",
+        lat: 53.5333,
+        lng: 10.15,
         name: "Oststeinbek",
         population: 10000,
         region: "Schleswig-Holstein",
@@ -322,6 +396,8 @@ export const cities: City[] = [
     },
     {
         slug: "stelle",
+        lat: 53.3833,
+        lng: 10.0833,
         name: "Stelle",
         population: 10000,
         region: "Niedersachsen",
@@ -338,6 +414,8 @@ export const cities: City[] = [
     },
     {
         slug: "jork",
+        lat: 53.5333,
+        lng: 9.6833,
         name: "Jork",
         population: 9000,
         region: "Niedersachsen",
@@ -354,6 +432,8 @@ export const cities: City[] = [
     },
     {
         slug: "grosshansdorf",
+        lat: 53.6667,
+        lng: 10.2667,
         name: "Großhansdorf",
         population: 8000,
         region: "Schleswig-Holstein",
@@ -362,6 +442,8 @@ export const cities: City[] = [
     },
     {
         slug: "ammersbek",
+        lat: 53.6833,
+        lng: 10.1833,
         name: "Ammersbek",
         population: 8000,
         region: "Schleswig-Holstein",
@@ -370,6 +452,8 @@ export const cities: City[] = [
     },
     {
         slug: "bad-bramstedt",
+        lat: 53.9167,
+        lng: 9.8833,
         name: "Bad Bramstedt",
         population: 15000,
         region: "Schleswig-Holstein",
@@ -378,6 +462,8 @@ export const cities: City[] = [
     },
     {
         slug: "barmstedt",
+        lat: 53.7833,
+        lng: 9.7667,
         name: "Barmstedt",
         population: 10000,
         region: "Schleswig-Holstein",
@@ -418,6 +504,8 @@ export const cities: City[] = [
     },
     {
         slug: "harsefeld",
+        lat: 53.45,
+        lng: 9.5167,
         name: "Harsefeld",
         population: 13000,
         region: "Niedersachsen",
@@ -426,6 +514,8 @@ export const cities: City[] = [
     },
     {
         slug: "horneburg",
+        lat: 53.5083,
+        lng: 9.575,
         name: "Horneburg",
         population: 6000,
         region: "Niedersachsen",
@@ -434,6 +524,8 @@ export const cities: City[] = [
     },
     {
         slug: "hollenstedt",
+        lat: 53.3667,
+        lng: 9.7167,
         name: "Hollenstedt",
         population: 5000,
         region: "Niedersachsen",
@@ -442,6 +534,8 @@ export const cities: City[] = [
     },
     {
         slug: "salzhausen",
+        lat: 53.2333,
+        lng: 10.1833,
         name: "Salzhausen",
         population: 6000,
         region: "Niedersachsen",
@@ -450,6 +544,8 @@ export const cities: City[] = [
     },
     {
         slug: "dollern",
+        lat: 53.5333,
+        lng: 9.55,
         name: "Dollern",
         population: 3500,
         region: "Niedersachsen",
@@ -466,6 +562,8 @@ export const cities: City[] = [
     },
     {
         slug: "drochtersen",
+        lat: 53.7167,
+        lng: 9.3833,
         name: "Drochtersen",
         population: 11000,
         region: "Niedersachsen",
@@ -474,6 +572,8 @@ export const cities: City[] = [
     },
     {
         slug: "fredenbeck",
+        lat: 53.5333,
+        lng: 9.4333,
         name: "Fredenbeck",
         population: 5000,
         region: "Niedersachsen",
@@ -490,6 +590,8 @@ export const cities: City[] = [
     },
     {
         slug: "reppenstedt",
+        lat: 53.2667,
+        lng: 10.35,
         name: "Reppenstedt",
         population: 6000,
         region: "Niedersachsen",
@@ -498,6 +600,8 @@ export const cities: City[] = [
     },
     {
         slug: "adendorf",
+        lat: 53.2667,
+        lng: 10.45,
         name: "Adendorf",
         population: 11000,
         region: "Niedersachsen",
@@ -506,6 +610,8 @@ export const cities: City[] = [
     },
     {
         slug: "bardowick",
+        lat: 53.2833,
+        lng: 10.3833,
         name: "Bardowick",
         population: 7000,
         region: "Niedersachsen",
@@ -530,6 +636,8 @@ export const cities: City[] = [
     },
     {
         slug: "barendorf",
+        lat: 53.25,
+        lng: 10.4833,
         name: "Barendorf",
         population: 3000,
         region: "Niedersachsen",
@@ -579,6 +687,8 @@ export const cities: City[] = [
     // Lüneburger Heide Region
     {
         slug: "soltau",
+        lat: 52.9833,
+        lng: 9.8333,
         name: "Soltau",
         population: 22000,
         region: "Niedersachsen",
@@ -587,6 +697,8 @@ export const cities: City[] = [
     },
     {
         slug: "munster",
+        lat: 52.9833,
+        lng: 10.0833,
         name: "Munster",
         population: 15000,
         region: "Niedersachsen",
@@ -595,6 +707,8 @@ export const cities: City[] = [
     },
     {
         slug: "schneverdingen",
+        lat: 53.1167,
+        lng: 9.7833,
         name: "Schneverdingen",
         population: 19000,
         region: "Niedersachsen",
@@ -603,6 +717,8 @@ export const cities: City[] = [
     },
     {
         slug: "bispingen",
+        lat: 53.0833,
+        lng: 9.9833,
         name: "Bispingen",
         population: 6000,
         region: "Niedersachsen",
@@ -611,6 +727,8 @@ export const cities: City[] = [
     },
     {
         slug: "amelinghausen",
+        lat: 53.1167,
+        lng: 10.2167,
         name: "Amelinghausen",
         population: 4000,
         region: "Niedersachsen",
@@ -619,6 +737,8 @@ export const cities: City[] = [
     },
     {
         slug: "egestorf",
+        lat: 53.1833,
+        lng: 9.8667,
         name: "Egestorf",
         population: 5500,
         region: "Niedersachsen",
@@ -627,6 +747,8 @@ export const cities: City[] = [
     },
     {
         slug: "hanstedt",
+        lat: 53.2667,
+        lng: 9.9167,
         name: "Hanstedt",
         population: 5000,
         region: "Niedersachsen",
@@ -635,6 +757,8 @@ export const cities: City[] = [
     },
     {
         slug: "undeloh",
+        lat: 53.2,
+        lng: 9.95,
         name: "Undeloh",
         population: 1000,
         region: "Niedersachsen",
@@ -643,6 +767,8 @@ export const cities: City[] = [
     },
     {
         slug: "jesteburg",
+        lat: 53.3,
+        lng: 9.9667,
         name: "Jesteburg",
         population: 8000,
         region: "Niedersachsen",
@@ -651,6 +777,8 @@ export const cities: City[] = [
     },
     {
         slug: "marxen",
+        lat: 53.3167,
+        lng: 10.0667,
         name: "Marxen",
         population: 2500,
         region: "Niedersachsen",
@@ -683,6 +811,8 @@ export const cities: City[] = [
     },
     {
         slug: "rehlingen",
+        lat: 53,
+        lng: 10.3,
         name: "Rehlingen",
         population: 2000,
         region: "Niedersachsen",
@@ -699,6 +829,8 @@ export const cities: City[] = [
     },
     {
         slug: "deutsch-evern",
+        lat: 53.2167,
+        lng: 10.4333,
         name: "Deutsch Evern",
         population: 4000,
         region: "Niedersachsen",
@@ -707,6 +839,8 @@ export const cities: City[] = [
     },
     {
         slug: "melbeck",
+        lat: 53.1833,
+        lng: 10.3833,
         name: "Melbeck",
         population: 4500,
         region: "Niedersachsen",
@@ -715,6 +849,8 @@ export const cities: City[] = [
     },
     {
         slug: "embsen",
+        lat: 53.1667,
+        lng: 10.35,
         name: "Embsen",
         population: 2500,
         region: "Niedersachsen",
@@ -739,6 +875,8 @@ export const cities: City[] = [
     },
     {
         slug: "vögelsen",
+        lat: 53.2833,
+        lng: 10.4,
         name: "Vögelsen",
         population: 3000,
         region: "Niedersachsen",
@@ -755,6 +893,8 @@ export const cities: City[] = [
     },
     {
         slug: "barum",
+        lat: 53.2333,
+        lng: 10.4833,
         name: "Barum",
         population: 3500,
         region: "Niedersachsen",
@@ -763,6 +903,8 @@ export const cities: City[] = [
     },
     {
         slug: "wulfsen",
+        lat: 53.3333,
+        lng: 10.15,
         name: "Wulfsen",
         population: 2000,
         region: "Niedersachsen",
@@ -795,6 +937,8 @@ export const cities: City[] = [
     },
     {
         slug: "toppenstedt",
+        lat: 53.3167,
+        lng: 10.1167,
         name: "Toppenstedt",
         population: 3000,
         region: "Niedersachsen",
@@ -899,6 +1043,8 @@ export const cities: City[] = [
     },
     {
         slug: "wietzendorf",
+        lat: 52.9167,
+        lng: 10.1,
         name: "Wietzendorf",
         population: 4000,
         region: "Niedersachsen",
@@ -907,6 +1053,8 @@ export const cities: City[] = [
     },
     {
         slug: "hermannsburg",
+        lat: 52.8333,
+        lng: 10.0833,
         name: "Hermannsburg",
         population: 8500,
         region: "Niedersachsen",
@@ -923,6 +1071,8 @@ export const cities: City[] = [
     },
     {
         slug: "faßberg",
+        lat: 52.9,
+        lng: 10.1667,
         name: "Faßberg",
         population: 6000,
         region: "Niedersachsen",
@@ -947,6 +1097,8 @@ export const cities: City[] = [
     },
     {
         slug: "wrestedt",
+        lat: 52.9333,
+        lng: 10.6167,
         name: "Wrestedt",
         population: 4500,
         region: "Niedersachsen",
@@ -955,6 +1107,8 @@ export const cities: City[] = [
     },
     {
         slug: "uelzen",
+        lat: 52.9667,
+        lng: 10.5667,
         name: "Uelzen",
         population: 34000,
         region: "Niedersachsen",
@@ -963,6 +1117,8 @@ export const cities: City[] = [
     },
     {
         slug: "bad-bevensen",
+        lat: 53.0833,
+        lng: 10.5833,
         name: "Bad Bevensen",
         population: 9500,
         region: "Niedersachsen",
@@ -971,6 +1127,8 @@ export const cities: City[] = [
     },
     {
         slug: "ebstorf",
+        lat: 53.0167,
+        lng: 10.4167,
         name: "Ebstorf",
         population: 5500,
         region: "Niedersachsen",
@@ -979,6 +1137,8 @@ export const cities: City[] = [
     },
     {
         slug: "bienenbüttel",
+        lat: 53.1333,
+        lng: 10.4833,
         name: "Bienenbüttel",
         population: 6500,
         region: "Niedersachsen",
@@ -995,6 +1155,8 @@ export const cities: City[] = [
     },
     {
         slug: "thomasburg",
+        lat: 53.2333,
+        lng: 10.65,
         name: "Thomasburg",
         population: 1000,
         region: "Niedersachsen",
@@ -1003,6 +1165,8 @@ export const cities: City[] = [
     },
     {
         slug: "neetze",
+        lat: 53.2667,
+        lng: 10.5833,
         name: "Neetze",
         population: 3500,
         region: "Niedersachsen",
@@ -1011,6 +1175,8 @@ export const cities: City[] = [
     },
     {
         slug: "bleckede",
+        lat: 53.2917,
+        lng: 10.7333,
         name: "Bleckede",
         population: 9500,
         region: "Niedersachsen",
@@ -1019,6 +1185,8 @@ export const cities: City[] = [
     },
     {
         slug: "dahlenburg",
+        lat: 53.1833,
+        lng: 10.7333,
         name: "Dahlenburg",
         population: 3500,
         region: "Niedersachsen",
@@ -1027,6 +1195,8 @@ export const cities: City[] = [
     },
     {
         slug: "nahrendorf",
+        lat: 53.2333,
+        lng: 10.8167,
         name: "Nahrendorf",
         population: 2000,
         region: "Niedersachsen",
@@ -1035,6 +1205,8 @@ export const cities: City[] = [
     },
     {
         slug: "hitzacker",
+        lat: 53.15,
+        lng: 11.05,
         name: "Hitzacker",
         population: 5000,
         region: "Niedersachsen",
@@ -1043,6 +1215,8 @@ export const cities: City[] = [
     },
     {
         slug: "dannenberg",
+        lat: 53.0833,
+        lng: 11.0833,
         name: "Dannenberg",
         population: 8500,
         region: "Niedersachsen",
@@ -1077,6 +1251,8 @@ export const cities: City[] = [
     },
     {
         slug: "delmenhorst",
+        lat: 53.05,
+        lng: 8.6333,
         name: "Delmenhorst",
         population: 77000,
         region: "Niedersachsen",
@@ -1085,6 +1261,8 @@ export const cities: City[] = [
     },
     {
         slug: "oldenburg",
+        lat: 53.1439,
+        lng: 8.2146,
         name: "Oldenburg",
         population: 170000,
         region: "Niedersachsen",
@@ -1557,6 +1735,8 @@ export const cities: City[] = [
     },
     {
         slug: "nordenham",
+        lat: 53.4833,
+        lng: 8.4833,
         name: "Nordenham",
         population: 26000,
         region: "Niedersachsen",
@@ -1565,6 +1745,8 @@ export const cities: City[] = [
     },
     {
         slug: "brake",
+        lat: 53.3333,
+        lng: 8.4833,
         name: "Brake (Unterweser)",
         population: 15000,
         region: "Niedersachsen",

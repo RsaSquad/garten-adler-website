@@ -8,35 +8,35 @@ export function generateCityFAQs(cityName: string, region: string): FAQItem[] {
     return [
         {
             question: `Bieten Sie Gartengestaltung in ${cityName} an?`,
-            answer: `Ja, wir sind regelmäßig in ${cityName} und Umgebung tätig. Wir bieten schnellen Service und persönliche Betreuung für alle Garten- und Landschaftsbau-Projekte in ${cityName}.`,
+            answer: `Ja, wir sind regelmäßig in ${cityName} und der näheren Umgebung im Einsatz. Von der Erstberatung vor Ort bis zur fertigen Umsetzung betreuen wir Sie persönlich – schnell und zuverlässig.`,
         },
         {
             question: `Was kostet ein Gärtner in ${cityName}?`,
-            answer: `Die Kosten für Gartenarbeiten in ${cityName} entsprechen unseren fairem Regionalpreisen. Eine einfache Gartenpflege beginnt bei ca. 45€/Stunde, komplette Gartengestaltungen bei 80-150€/m². Kontaktieren Sie uns für ein kostenloses Angebot für Ihr Projekt in ${cityName}.`,
+            answer: `Die Kosten hängen – wie überall – vom Umfang, dem Material und dem Zugang zum Grundstück ab. Kleinere Pflegearbeiten sind natürlich günstiger als komplette Neugestaltungen mit Pflaster- oder Terrassenbau. Am besten vereinbaren Sie einen kostenlosen Beratungstermin, dann können wir ein konkretes Angebot erstellen.`,
         },
         {
             question: `Wie schnell können Sie in ${cityName} starten?`,
-            answer: `Für ${cityName} können wir meist innerhalb von 1-2 Wochen mit der Arbeit beginnen. Bei dringenden Projekten in ${cityName} sind oft auch kurzfristigere Termine möglich. Die Erstberatung vor Ort ist bereits in wenigen Tagen möglich.`,
+            answer: `In der Regel können wir innerhalb von 1–2 Wochen loslegen. Bei dringenden Anliegen finden wir oft auch schneller einen Termin. Die Erstberatung vor Ort ist meist schon in wenigen Tagen möglich.`,
         },
         {
-            question: `Welche Gartenarbeiten bieten Sie in ${cityName} an?`,
-            answer: `In ${cityName} bieten wir das komplette Spektrum: Gartengestaltung, Terrassenbau, Pflasterarbeiten, Rollrasenverlegung, Zaunbau, Heckenpflanzung, Baumfällung und regelmäßige Gartenpflege. Alles aus einer Hand für ${cityName} und ${region}.`,
+            question: `Welche Gartenarbeiten übernehmen Sie?`,
+            answer: `Wir decken das gesamte Spektrum des Garten- und Landschaftsbaus ab: Gartengestaltung, Terrassenbau, Pflasterarbeiten, Rollrasen, Zaunbau, Heckenpflege, Baumpflege und regelmäßige Gartenpflege. Alles aus einer Hand.`,
         },
         {
-            question: `Gibt es Referenzprojekte in ${cityName}?`,
-            answer: `Ja, wir haben bereits zahlreiche Projekte in ${cityName} und der Region ${region} erfolgreich umgesetzt. Gerne zeigen wir Ihnen bei der Beratung Fotos von Referenzprojekten in Ihrer Nähe.`,
+            question: `Haben Sie schon Projekte in der Region ${region} umgesetzt?`,
+            answer: `Ja, wir haben bereits viele Projekte in der Region erfolgreich realisiert. Bei der Beratung zeigen wir Ihnen gerne Referenzfotos aus Ihrer Nähe.`,
         },
         {
-            question: `Muss ich bei der Gartenarbeit in ${cityName} anwesend sein?`,
-            answer: `Nein, nach der gemeinsamen Planung und Absprache können wir selbstständig in ${cityName} arbeiten. Wir halten Sie per Foto und Telefon über den Fortschritt auf dem Laufenden.`,
+            question: `Muss ich während der Arbeiten anwesend sein?`,
+            answer: `Nein, nach der gemeinsamen Planung und Abstimmung arbeiten wir selbstständig. Wir halten Sie per Foto und telefonisch über den Fortschritt auf dem Laufenden.`,
         },
         {
-            question: `Berechnen Sie Anfahrtskosten nach ${cityName}?`,
-            answer: `Nein, die Anfahrt nach ${cityName} ist in unseren Angeboten bereits enthalten. Es entstehen keine zusätzlichen Anfahrtskosten für Sie.`,
+            question: `Fallen Anfahrtskosten an?`,
+            answer: `Nein, die Anfahrt ist in unseren Angeboten bereits enthalten. Es entstehen keine zusätzlichen Kosten für Sie.`,
         },
         {
-            question: `Kennen Sie die Bodenverhältnisse in ${cityName}?`,
-            answer: `Ja, durch unsere langjährige Erfahrung in ${region} kennen wir die typischen Bodenverhältnisse in ${cityName}. Ob sandiger Heideboden, Marschboden oder Lehm – wir wählen die passenden Pflanzen und Techniken für optimale Ergebnisse.`,
+            question: `Kennen Sie die Bodenverhältnisse in der Region?`,
+            answer: `Durch unsere langjährige Erfahrung in ${region} kennen wir die typischen Gegebenheiten vor Ort gut. Ob sandiger Heideboden, Marschboden oder Lehm – wir wählen passende Pflanzen und Techniken für ein optimales Ergebnis.`,
         },
     ];
 }
