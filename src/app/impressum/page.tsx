@@ -5,6 +5,10 @@ import Image from 'next/image';
 export const metadata: Metadata = {
     title: 'Impressum | Adler & Sohn',
     description: 'Impressum der Adler & Sohn GmbH – Angaben gemäß § 5 TMG. Garten- und Landschaftsbau in Lüneburg und Umgebung.',
+    robots: {
+        index: false,
+        follow: false,
+    },
     alternates: {
         canonical: 'https://garten-adler.de/impressum',
     },

@@ -5,6 +5,10 @@ import Image from 'next/image';
 export const metadata: Metadata = {
     title: 'Datenschutzerklärung | Adler & Sohn',
     description: 'Datenschutzerklärung der Adler & Sohn GmbH. Informationen zur Erfassung und Verarbeitung Ihrer Daten.',
+    robots: {
+        index: false,
+        follow: false,
+    },
     alternates: {
         canonical: 'https://garten-adler.de/datenschutz',
     },
