@@ -47,13 +47,13 @@ export default function StandortePage() {
             />
 
             {/* Header */}
-            <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm">
+            <header className="fixed top-0 left-0 right-0 z-50 bg-green-800/95 backdrop-blur-xl shadow-lg shadow-green-900/20">
                 <div className="container-custom py-4">
                     <nav className="flex items-center justify-between">
                         <Link href="/" className="flex items-center gap-3">
                             <Image src="/images/logo.png" alt="Adler & Sohn Galabau" width={140} height={47} className="h-10 w-auto object-contain" />
                         </Link>
-                        <Link href="/#kontakt" className="btn-primary text-sm py-2.5 px-5">
+                        <Link href="/#kontakt" className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-semibold text-sm bg-white text-green-800 hover:bg-green-50 shadow-lg shadow-black/10 transition-all">
                             Jetzt anfragen
                         </Link>
                     </nav>

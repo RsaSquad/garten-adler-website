@@ -18,7 +18,7 @@ export default function Impressum() {
     return (
         <main className="min-h-screen bg-gray-50">
             {/* Header */}
-            <header className="bg-white shadow-sm">
+            <header className="bg-green-800/95 backdrop-blur-xl shadow-lg shadow-green-900/20">
                 <div className="container-custom py-6">
                     <Link href="/" className="flex items-center gap-3">
                         <Image src="/images/logo.png" alt="Adler & Sohn Galabau" width={140} height={47} className="h-10 w-auto object-contain" />
