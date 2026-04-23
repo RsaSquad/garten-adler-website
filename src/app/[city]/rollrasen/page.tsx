@@ -327,7 +327,7 @@ export default async function CityRollrasenPage({ params }: { params: Promise<{ 
                     {/* Background Image */}
                     <Image
                         src="/images/rollrasen-verlegung.jpg"
-                        alt="Rollrasen Verlegung"
+                        alt={`Rollrasen Verlegung ${city.name} - Schritt für Schritt`}
                         fill
                         quality={75}
                         sizes="100vw"
@@ -441,7 +441,7 @@ export default async function CityRollrasenPage({ params }: { params: Promise<{ 
                 <section className="relative section-padding overflow-hidden">
                     <Image
                         src="/images/rollrasen-cta.png"
-                        alt="rollrasen - jetzt Angebot anfordern"
+                        alt={`Rollrasen verlegen ${city.name} - Jetzt Angebot anfordern`}
                         fill
                         className="object-cover"
                         quality={80}

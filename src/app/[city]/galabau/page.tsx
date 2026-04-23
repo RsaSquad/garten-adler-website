@@ -149,7 +149,7 @@ export default async function CityGalabauPage({ params }: { params: Promise<{ ci
                     {/* Background Image */}
                     <Image
                         src="/images/galabau-hero.png"
-                        alt="Professioneller Garten- und Landschaftsbau"
+                        alt={`Garten- und Landschaftsbau ${city.name} - Professionelle Gestaltung`}
                         fill
                         priority
                         quality={85}
@@ -285,7 +285,7 @@ export default async function CityGalabauPage({ params }: { params: Promise<{ ci
                     {/* Background Image */}
                     <Image
                         src="/images/galabau-hero.png"
-                        alt="Gartenlandschaft Hintergrund"
+                        alt={`Gartenlandschaft ${city.name} - Galabau vom Profi`}
                         fill
                         quality={75}
                         sizes="100vw"

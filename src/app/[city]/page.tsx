@@ -52,14 +52,14 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
 
 // Services für die Stadt
 const services = [
-    { name: 'Gartengestaltung', image: '/images/services/gartengestaltung.png', description: 'Komplette Neugestaltung und Planung' },
-    { name: 'Terrassenbau', image: '/images/services/terrasse.png', description: 'Holz, WPC oder Naturstein' },
-    { name: 'Pflasterarbeiten', image: '/images/services/einfahrt.png', description: 'Einfahrten und Gehwege' },
-    { name: 'Rollrasen', image: '/images/services/rollrasen.png', description: 'Lieferung und Verlegung' },
-    { name: 'Zaunbau', image: '/images/services/zaunbau.png', description: 'Zäune und Sichtschutz' },
-    { name: 'Gartenpflege', image: '/images/services/gartenpflege.png', description: 'Regelmäßige Pflege' },
-    { name: 'Hochbeete', image: '/images/services/hochbeet.png', description: 'Kräuter und Gemüse' },
-    { name: 'Wasserspiele', image: '/images/services/wasserspiel.png', description: 'Teiche und Brunnen' },
+    { name: 'Gartengestaltung', image: '/images/services/gartengestaltung-neuanlage-planung.png', description: 'Komplette Neugestaltung und Planung' },
+    { name: 'Terrassenbau', image: '/images/services/terrassenbau-holzterrasse-wpc.png', description: 'Holz, WPC oder Naturstein' },
+    { name: 'Pflasterarbeiten', image: '/images/services/pflasterarbeiten-einfahrt-pflastern.png', description: 'Einfahrten und Gehwege' },
+    { name: 'Rollrasen', image: '/images/services/rollrasen-verlegen-rasenflaeche.png', description: 'Lieferung und Verlegung' },
+    { name: 'Zaunbau', image: '/images/services/zaunbau-holzzaun-sichtschutz.png', description: 'Zäune und Sichtschutz' },
+    { name: 'Gartenpflege', image: '/images/services/gartenpflege-rasenmähen-heckenschnitt.png', description: 'Regelmäßige Pflege' },
+    { name: 'Hochbeete', image: '/images/services/hochbeet-bauen-holz-garten.png', description: 'Kräuter und Gemüse' },
+    { name: 'Wasserspiele', image: '/images/services/gartengestaltung-wasserspiel-brunnen.png', description: 'Teiche und Brunnen' },
 ];
 
 export default async function CityPage({ params }: { params: Promise<{ city: string }> }) {
@@ -194,8 +194,8 @@ export default async function CityPage({ params }: { params: Promise<{ city: str
                 {/* Hero Section */}
                 <section className="relative pt-32 pb-20 overflow-hidden">
                     <Image
-                        src={`/images/city-hero-${heroIndex}.png`}
-                        alt={`Gartengestaltung in ${city.name}`}
+                        src={`/images/garten-landschaftsbau-gartengestaltung-projekt-${heroIndex}.png`}
+                        alt={`Garten- und Landschaftsbau ${city.name} - Professionelle Gartengestaltung`}
                         fill
                         priority
                         quality={85}
@@ -454,8 +454,8 @@ export default async function CityPage({ params }: { params: Promise<{ city: str
                 {/* CTA Section */}
                 <section className="relative section-padding overflow-hidden">
                     <Image
-                        src={`/images/city-cta-${ctaIndex}.png`}
-                        alt={`Traumgarten in ${city.name}`}
+                        src={`/images/garten-landschaftsbau-traumgarten-beratung-${ctaIndex}.png`}
+                        alt={`Garten- und Landschaftsbau ${city.name} - Traumgarten anlegen lassen`}
                         fill
                         className="object-cover"
                         quality={80}

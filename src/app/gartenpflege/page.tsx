@@ -280,7 +280,7 @@ export default function GartenpflegePage() {
                     {/* Background Image */}
                     <Image
                         src="/images/gartenpflege-hero.png"
-                        alt="Professionelle Gartenpflege"
+                        alt="Professionelle Gartenpflege Lüneburg - Rasenmähen und Heckenschnitt"
                         fill
                         priority
                         quality={85}
@@ -482,7 +482,7 @@ export default function GartenpflegePage() {
                     {/* Background Image */}
                     <Image
                         src="/images/gartenpflege-kalender.jpg"
-                        alt="Gartenpflege Kalender"
+                        alt="Gartenpflege Jahreskalender Lüneburg - Pflege Tipps"
                         fill
                         quality={75}
                         sizes="100vw"

@@ -25,25 +25,25 @@ const pflasterTypes = [
         name: 'Natursteinpflaster',
         description: 'Edles Natursteinpflaster aus Granit, Basalt oder Porphyr für zeitlose Eleganz.',
         features: ['Extrem langlebig', 'Frostbeständig', 'Individuelle Optik', 'Wertsteigernd'],
-        image: '/images/services/naturstein.png',
+        image: '/images/services/pflasterarbeiten-naturstein-terrassenbau-holzterrasse-wpc.png',
     },
     {
         name: 'Betonsteinpflaster',
         description: 'Vielseitige Betonsteine in verschiedenen Formen, Farben und Oberflächenstrukturen.',
         features: ['Preisgünstig', 'Große Auswahl', 'Pflegeleicht', 'Belastbar'],
-        image: '/images/services/betonstein.png',
+        image: '/images/services/pflasterarbeiten-betonstein-verlegen.png',
     },
     {
         name: 'Klinker & Ziegel',
         description: 'Traditionelle Klinker für einen klassisch-norddeutschen Charakter.',
         features: ['Zeitlos schön', 'Robust', 'Rutschfest', 'Ökologisch'],
-        image: '/images/services/klinker.png',
+        image: '/images/services/pflasterarbeiten-klinker-verlegen.png',
     },
     {
         name: 'Großformatplatten',
         description: 'Moderne Großformatplatten für eine elegante, minimalistische Optik.',
         features: ['Modern', 'Schnelle Verlegung', 'Wenig Fugen', 'Barrierearm'],
-        image: '/images/services/grossformat.png',
+        image: '/images/services/pflasterarbeiten-grossformat-platten.png',
     },
 ];
 
@@ -51,37 +51,37 @@ const services = [
     {
         title: 'Einfahrten & Zufahrten',
         description: 'Robuste und optisch ansprechende Einfahrten, die höchsten Belastungen standhalten.',
-        image: '/images/services/einfahrt.png',
+        image: '/images/services/pflasterarbeiten-einfahrt-pflastern.png',
         features: ['PKW- & LKW-befahrbar', 'Entwässerungssysteme', 'Randsteine', 'Beleuchtungsintegration'],
     },
     {
         title: 'Terrassen & Sitzplätze',
         description: 'Gemütliche Terrassen und Sitzplätze als Zentrum Ihres Gartens.',
-        image: '/images/services/terrasse.png',
+        image: '/images/services/terrassenbau-holzterrasse-wpc.png',
         features: ['Terrassenplatten', 'Stufenanlagen', 'Barrierefreie Zugänge', 'Drainage'],
     },
     {
         title: 'Gartenwege',
         description: 'Funktionale und ästhetische Wege durch Ihren Garten.',
-        image: '/images/services/gartenweg.png',
+        image: '/images/services/gartenweg-naturstein-pflasterarbeiten.png',
         features: ['Geschwungene Formen', 'Trittplatten', 'Beleuchtung', 'Einfassungen'],
     },
     {
         title: 'Hofbefestigungen',
         description: 'Professionelle Befestigung von Höfen und Vorplätzen.',
-        image: '/images/services/hofbefestigung.png',
+        image: '/images/services/pflasterarbeiten-pflasterarbeiten-hofbefestigung.png',
         features: ['Großflächig', 'Belastbar', 'Entwässerung', 'Stellplätze'],
     },
     {
         title: 'Parkplätze',
         description: 'Private und gewerbliche Parkflächen fachgerecht gepflastert.',
-        image: '/images/services/parkplatz.png',
+        image: '/images/services/pflasterarbeiten-parkplatz-anlegen.png',
         features: ['Markierungen', 'Schwerlastfähig', 'Rasengitter-Option', 'Bordsteine'],
     },
     {
         title: 'Poolumrandungen',
         description: 'Rutschfeste und elegante Umrandungen für Ihren Pool.',
-        image: '/images/services/pool.png',
+        image: '/images/services/gartengestaltung-pool-anlage.png',
         features: ['Rutschfest', 'Wärmeleitend', 'Wasserabweisend', 'Barfußfreundlich'],
     },
 ];
@@ -170,7 +170,7 @@ export default function PflasterarbeitenPage() {
                     {/* Background Image */}
                     <Image
                         src="/images/pflasterarbeiten-hero.png"
-                        alt="Professionelle Pflasterarbeiten"
+                        alt="Professionelle Pflasterarbeiten Lüneburg - Einfahrt und Terrasse pflastern"
                         fill
                         priority
                         quality={85}
@@ -420,7 +420,7 @@ export default function PflasterarbeitenPage() {
                                 <div className="aspect-square rounded-2xl overflow-hidden">
                                     <Image
                                         src="/images/pflasterarbeiten-qualitaet.jpg"
-                                        alt="Hochwertige Pflasterarbeiten von Adler & Sohn"
+                                        alt="Hochwertige Pflasterarbeiten Lüneburg - Naturstein und Betonstein"
                                         fill
                                         quality={80}
                                         sizes="(max-width: 1024px) 100vw, 50vw"

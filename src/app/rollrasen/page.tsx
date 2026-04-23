@@ -372,7 +372,7 @@ export default function RollrasenPage() {
                     {/* Background Image */}
                     <Image
                         src="/images/rollrasen-hero.png"
-                        alt="Rollrasen Verlegung Hintergrund"
+                        alt="Rollrasen verlegen Lüneburg - Grüner Rasen in 24 Stunden"
                         fill
                         quality={75}
                         sizes="100vw"
@@ -408,7 +408,7 @@ export default function RollrasenPage() {
                     {/* Background Image */}
                     <Image
                         src="/images/rollrasen-verlegung.jpg"
-                        alt="Rollrasen Verlegung"
+                        alt="Rollrasen Verlegung Lüneburg - Fertigrasen vom Profi"
                         fill
                         quality={75}
                         sizes="100vw"

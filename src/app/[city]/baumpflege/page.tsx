@@ -165,7 +165,7 @@ export default async function CityBaumpflegePage({ params }: { params: Promise<{
                     {/* Background Image */}
                     <Image
                         src="/images/baumpflege-hero.png"
-                        alt="Professionelle Baumpflege"
+                        alt={`Professionelle Baumpflege ${city.name} - Baumschnitt vom Fachmann`}
                         fill
                         priority
                         quality={85}
@@ -391,7 +391,7 @@ export default async function CityBaumpflegePage({ params }: { params: Promise<{
                     {/* Background Image */}
                     <Image
                         src="/images/baumpflege-faq.jpg"
-                        alt="Baumpflege FAQ Hintergrund"
+                        alt={`Baumpflege ${city.name} - Häufige Fragen`}
                         fill
                         quality={75}
                         sizes="100vw"
@@ -430,7 +430,7 @@ export default async function CityBaumpflegePage({ params }: { params: Promise<{
                 <section className="relative section-padding overflow-hidden">
                     <Image
                         src="/images/baumpflege-cta.png"
-                        alt="baumpflege - jetzt Angebot anfordern"
+                        alt={`Baumpflege ${city.name} - Jetzt Angebot anfordern`}
                         fill
                         className="object-cover"
                         quality={80}

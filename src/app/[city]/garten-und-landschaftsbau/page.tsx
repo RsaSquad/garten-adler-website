@@ -153,7 +153,7 @@ export default async function CityGartenLandschaftsbauPage({ params }: { params:
                     {/* Background Image */}
                     <Image
                         src="/images/garten-und-landschaftsbau-hero.png"
-                        alt="Professioneller Garten- und Landschaftsbau"
+                        alt={`Garten- und Landschaftsbau ${city.name} - Professionelle Gestaltung`}
                         fill
                         priority
                         quality={85}
@@ -289,7 +289,7 @@ export default async function CityGartenLandschaftsbauPage({ params }: { params:
                     {/* Background Image */}
                     <Image
                         src="/images/galabau-ablauf.jpg"
-                        alt="Gartengestaltung Ablauf"
+                        alt={`Gartengestaltung Ablauf ${city.name} - Planung bis Umsetzung`}
                         fill
                         quality={75}
                         sizes="100vw"
@@ -450,7 +450,7 @@ export default async function CityGartenLandschaftsbauPage({ params }: { params:
                 <section className="relative section-padding overflow-hidden">
                     <Image
                         src="/images/garten-und-landschaftsbau-cta.png"
-                        alt="garten-und-landschaftsbau - jetzt Angebot anfordern"
+                        alt={`Garten- und Landschaftsbau ${city.name} - Jetzt anfragen`}
                         fill
                         className="object-cover"
                         quality={80}

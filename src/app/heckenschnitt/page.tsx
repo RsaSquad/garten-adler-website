@@ -211,7 +211,7 @@ export default function HeckenschnittPage() {
                 <section className="relative pt-32 pb-24 overflow-hidden">
                     <Image
                         src="/images/heckenschnitt-hero.png"
-                        alt="Professioneller Heckenschnitt"
+                        alt="Professioneller Heckenschnitt Lüneburg - Formschnitt und Rückschnitt"
                         fill
                         priority
                         quality={85}

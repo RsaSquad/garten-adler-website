@@ -146,7 +146,7 @@ export default async function CityZaunbauPage({ params }: { params: Promise<{ ci
                 <section className="relative pt-32 pb-24 overflow-hidden">
                     <Image
                         src="/images/zaunbau-hero.png"
-                        alt="Professioneller Zaunbau"
+                        alt={`Professioneller Zaunbau ${city.name} - Holzzaun und Sichtschutz`}
                         fill
                         priority
                         quality={85}
@@ -440,7 +440,7 @@ export default async function CityZaunbauPage({ params }: { params: Promise<{ ci
                 <section className="relative section-padding overflow-hidden">
                     <Image
                         src="/images/zaunbau-cta.png"
-                        alt="zaunbau - jetzt Angebot anfordern"
+                        alt={`Zaunbau ${city.name} - Jetzt Angebot anfordern`}
                         fill
                         className="object-cover"
                         quality={80}

@@ -288,7 +288,7 @@ export default function GalabauPage() {
                     {/* Background Image */}
                     <Image
                         src="/images/galabau-hero.png"
-                        alt="Professioneller Garten- und Landschaftsbau"
+                        alt="Garten- und Landschaftsbau Lüneburg - Professionelle Gartengestaltung"
                         fill
                         priority
                         quality={85}
@@ -446,7 +446,7 @@ export default function GalabauPage() {
                     {/* Background Image */}
                     <Image
                         src="/images/galabau-garten-landschaftsbau-gartenweg-naturstein.jpg"
-                        alt="Gartenlandschaft Hintergrund"
+                        alt="Gartenlandschaft Lüneburg - Galabau vom Profi"
                         fill
                         quality={75}
                         sizes="100vw"

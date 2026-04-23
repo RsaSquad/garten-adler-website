@@ -94,7 +94,7 @@ const About = () => {
                         <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl">
                             <div className="aspect-[4/5] relative">
                                 <Image
-                                    src="/images/about-garden.png"
+                                    src="/images/gartengestaltung-adler-sohn-professionell.png"
                                     alt="Professionell gestalteter Garten von Adler & Sohn"
                                     fill
                                     className="object-cover"

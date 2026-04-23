@@ -156,7 +156,7 @@ export default async function CityPflasterarbeitenPage({ params }: { params: Pro
                     {/* Background Image */}
                     <Image
                         src="/images/pflasterarbeiten-hero.png"
-                        alt="Professionelle Pflasterarbeiten"
+                        alt={`Professionelle Pflasterarbeiten ${city.name} - Einfahrt und Terrasse`}
                         fill
                         priority
                         quality={85}
@@ -305,7 +305,7 @@ export default async function CityPflasterarbeitenPage({ params }: { params: Pro
                                 <div className="aspect-square rounded-2xl overflow-hidden">
                                     <Image
                                         src="/images/pflasterarbeiten-qualitaet.jpg"
-                                        alt="Hochwertige Pflasterarbeiten von Adler & Sohn"
+                                        alt={`Hochwertige Pflasterarbeiten ${city.name} - Adler & Sohn`}
                                         fill
                                         quality={80}
                                         sizes="(max-width: 1024px) 100vw, 50vw"
@@ -367,7 +367,7 @@ export default async function CityPflasterarbeitenPage({ params }: { params: Pro
                 <section className="relative section-padding overflow-hidden">
                     <Image
                         src="/images/pflasterarbeiten-cta.png"
-                        alt="Pflasterarbeiten - jetzt Angebot anfordern"
+                        alt={`Pflasterarbeiten ${city.name} - Jetzt Angebot anfordern`}
                         fill
                         className="object-cover"
                         quality={80}

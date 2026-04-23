@@ -227,7 +227,7 @@ export default function ZaunbauPage() {
                 <section className="relative pt-32 pb-24 overflow-hidden">
                     <Image
                         src="/images/zaunbau-hero.png"
-                        alt="Professioneller Zaunbau"
+                        alt="Professioneller Zaunbau Lüneburg - Holzzaun und Sichtschutz"
                         fill
                         priority
                         quality={85}

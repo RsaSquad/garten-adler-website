@@ -212,7 +212,7 @@ export default function BaumpflegePage() {
                     {/* Background Image */}
                     <Image
                         src="/images/baumpflege-hero.png"
-                        alt="Professionelle Baumpflege"
+                        alt="Professionelle Baumpflege Lüneburg - Baumschnitt und Kronenpflege"
                         fill
                         priority
                         quality={85}
@@ -363,7 +363,7 @@ export default function BaumpflegePage() {
                     {/* Background Image */}
                     <Image
                         src="/images/baumpflege-warum.jpg"
-                        alt="Baumpflege Hintergrund"
+                        alt="Baumpflege Lüneburg - Fachgerechter Baumschnitt"
                         fill
                         quality={75}
                         sizes="100vw"
@@ -512,7 +512,7 @@ export default function BaumpflegePage() {
                     {/* Background Image */}
                     <Image
                         src="/images/baumpflege-faq.jpg"
-                        alt="Baumpflege FAQ Hintergrund"
+                        alt="Baumpflege Lüneburg - Häufige Fragen und Antworten"
                         fill
                         quality={75}
                         sizes="100vw"

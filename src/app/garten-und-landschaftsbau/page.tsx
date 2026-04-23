@@ -275,7 +275,7 @@ export default function GartenUndLandschaftsbauPage() {
                     {/* Background Image */}
                     <Image
                         src="/images/garten-und-landschaftsbau-hero.png"
-                        alt="Professioneller Garten- und Landschaftsbau"
+                        alt="Garten- und Landschaftsbau Lüneburg - Professionelle Gartengestaltung"
                         fill
                         priority
                         quality={85}
@@ -428,7 +428,7 @@ export default function GartenUndLandschaftsbauPage() {
                     {/* Background Image */}
                     <Image
                         src="/images/galabau-ablauf.jpg"
-                        alt="Gartengestaltung Ablauf"
+                        alt="Gartengestaltung Ablauf Lüneburg - Planung bis Umsetzung"
                         fill
                         quality={75}
                         sizes="100vw"
