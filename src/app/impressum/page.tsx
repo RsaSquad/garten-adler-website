@@ -12,10 +12,6 @@ export const metadata: Metadata = {
     alternates: {
         canonical: 'https://garten-adler.de/impressum',
     },
-    robots: {
-        index: false,
-        follow: true,
-    },
 };
 
 export default function Impressum() {

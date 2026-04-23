@@ -12,10 +12,6 @@ export const metadata: Metadata = {
     alternates: {
         canonical: 'https://garten-adler.de/datenschutz',
     },
-    robots: {
-        index: false,
-        follow: true,
-    },
 };
 
 export default function Datenschutz() {
