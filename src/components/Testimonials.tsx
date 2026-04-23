@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 
 const testimonials = [
     {
@@ -37,14 +37,73 @@ const testimonials = [
     },
 ];
 
+const stats = [
+    { target: 500, suffix: '+', label: 'Zufriedene Kunden' },
+    { target: 15, suffix: '+', label: 'Jahre Erfahrung' },
+    { target: 100, suffix: '%', label: 'Weiterempfehlung' },
+    { target: 24, suffix: 'h', label: 'Schnelle Antwort' },
+];
+
+const AnimatedCounter = ({ target, suffix, inView }: { target: number; suffix: string; inView: boolean }) => {
+    const [count, setCount] = useState(0);
+    const hasAnimated = useRef(false);
+
+    useEffect(() => {
+        if (!inView || hasAnimated.current) return;
+        hasAnimated.current = true;
+
+        const duration = 2000;
+        const startTime = performance.now();
+
+        const animate = (currentTime: number) => {
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            // Ease out cubic for smooth deceleration
+            const eased = 1 - Math.pow(1 - progress, 3);
+            setCount(Math.floor(eased * target));
+
+            if (progress < 1) {
+                requestAnimationFrame(animate);
+            } else {
+                setCount(target);
+            }
+        };
+
+        requestAnimationFrame(animate);
+    }, [inView, target]);
+
+    return (
+        <span>{count}{suffix}</span>
+    );
+};
+
 const Testimonials = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [statsInView, setStatsInView] = useState(false);
+    const statsRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         const timer = setInterval(() => {
             setCurrentIndex((prev) => (prev + 1) % testimonials.length);
         }, 6000);
         return () => clearInterval(timer);
+    }, []);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setStatsInView(true);
+                }
+            },
+            { threshold: 0.3 }
+        );
+
+        if (statsRef.current) {
+            observer.observe(statsRef.current);
+        }
+
+        return () => observer.disconnect();
     }, []);
 
     return (
@@ -131,16 +190,13 @@ const Testimonials = () => {
                     ))}
                 </div>
 
-                {/* Trust Indicators */}
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
-                    {[
-                        { value: '500+', label: 'Zufriedene Kunden' },
-                        { value: '15+', label: 'Jahre Erfahrung' },
-                        { value: '100%', label: 'Weiterempfehlung' },
-                        { value: '24h', label: 'Schnelle Antwort' },
-                    ].map((stat, index) => (
+                {/* Trust Indicators - Animated */}
+                <div ref={statsRef} className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
+                    {stats.map((stat, index) => (
                         <div key={index} className="text-center">
-                            <div className="text-3xl md:text-4xl font-bold text-green-600 mb-2">{stat.value}</div>
+                            <div className="text-3xl md:text-4xl font-bold text-green-600 mb-2">
+                                <AnimatedCounter target={stat.target} suffix={stat.suffix} inView={statsInView} />
+                            </div>
                             <div className="text-gray-500 text-sm">{stat.label}</div>
                         </div>
                     ))}
@@ -151,3 +207,4 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
+
