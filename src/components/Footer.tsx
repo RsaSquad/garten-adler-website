@@ -6,12 +6,12 @@ const Footer = () => {
 
     const footerLinks = {
         leistungen: [
-            { label: 'Gartengestaltung', href: '#leistungen' },
-            { label: 'Terrassenbau', href: '#leistungen' },
-            { label: 'Pflasterarbeiten', href: '#leistungen' },
-            { label: 'Rollrasen', href: '#leistungen' },
-            { label: 'Zaunbau', href: '#leistungen' },
-            { label: 'Gartenpflege', href: '#leistungen' },
+            { label: 'Gartengestaltung', href: '/garten-und-landschaftsbau' },
+            { label: 'Terrassenbau', href: '/terrassenbau' },
+            { label: 'Pflasterarbeiten', href: '/pflasterarbeiten' },
+            { label: 'Rollrasen', href: '/rollrasen' },
+            { label: 'Zaunbau', href: '/zaunbau' },
+            { label: 'Gartenpflege', href: '/gartenpflege' },
         ],
         unternehmen: [
             { label: 'Über uns', href: '#ueber-uns' },
