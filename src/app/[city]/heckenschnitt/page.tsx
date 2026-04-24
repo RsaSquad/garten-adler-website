@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { getCityBySlug, getNearbyCities, getAllCitySlugs } from '@/data/cities';
 import { Contact } from '@/components';
+import { getCityAndRegion, getRegionLabel } from '@/utils/cityHelpers';
 
 export async function generateStaticParams() {
     return getAllCitySlugs().map((slug) => ({ city: slug }));
@@ -19,7 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
 
     return {
         title: `Heckenschnitt ${city.name} | Formschnitt, Rückschnitt`,
-        description: `Professioneller Heckenschnitt in ${city.name} und ${city.region}. ✓ Formschnitt ✓ Rückschnitt ✓ Alle Heckenarten ✓ Entsorgung inklusive. Jetzt anfragen!`,
+        description: `Professioneller Heckenschnitt in ${getCityAndRegion(city)}. ✓ Formschnitt ✓ Rückschnitt ✓ Alle Heckenarten ✓ Entsorgung inklusive. Jetzt anfragen!`,
         keywords: `Heckenschnitt ${city.name}, Hecke schneiden ${city.name}, Heckenpflege ${city.name}, Thuja schneiden ${city.name}, Formschnitt Hecke ${city.name}`,
         openGraph: {
             title: `Heckenschnitt ${city.name}`,
@@ -68,7 +69,7 @@ export default async function CityHeckenschnittPage({ params }: { params: Promis
         },
         {
             q: `Wie schnell können Sie in ${city.name} sein?`,
-            a: `Für ${city.name} ($ entfernt) können wir in der Regel innerhalb von 1-2 Wochen einen Termin anbieten. Bei dringenden Anfragen oft auch schneller.`,
+            a: `Für ${city.name} (${city.distance}km entfernt) können wir in der Regel innerhalb von 1-2 Wochen einen Termin anbieten. Bei dringenden Anfragen oft auch schneller.`,
         },
         {
             q: `Entsorgen Sie das Schnittgut in ${city.name}?`,
@@ -187,12 +188,12 @@ export default async function CityHeckenschnittPage({ params }: { params: Promis
                                 </h1>
 
                                 <p className="text-xl text-white/80 leading-relaxed mb-8">
-                                    Professioneller Heckenschnitt für {city.name} und {city.region}: Formschnitt, Rückschnitt
+                                    Professioneller Heckenschnitt für {getCityAndRegion(city)}: Formschnitt, Rückschnitt
                                     und Pflege aller Heckenarten. Wir sind schnell bei Ihnen.
                                 </p>
 
                                 <div className="flex flex-wrap gap-4 mb-10">
-                                    {['Alle Heckenarten', 'Entsorgung inklusive', 'Bis 4m Höhe', `$ entfernt`].map((item, i) => (
+                                    {['Alle Heckenarten', 'Entsorgung inklusive', 'Bis 4m Höhe', `${city.distance}km entfernt`].map((item, i) => (
                                         <div key={i} className="flex items-center gap-2 text-white/90">
                                             <svg className="w-5 h-5 text-lime-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -220,7 +221,7 @@ export default async function CityHeckenschnittPage({ params }: { params: Promis
                                     { value: '5-15€', label: 'pro lfm (bis 2m)', icon: '💰' },
                                     { value: '2x', label: 'Schnitt pro Jahr', icon: '📅' },
                                     { value: '4m', label: 'max. Höhe', icon: '📏' },
-                                    { value: `$`, label: 'Entfernung', icon: '📍' },
+                                    { value: `${city.distance}km`, label: 'Entfernung', icon: '📍' },
                                 ].map((stat, i) => (
                                     <div key={i} className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
                                         <div className="text-3xl mb-2">{stat.icon}</div>

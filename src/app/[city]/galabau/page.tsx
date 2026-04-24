@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { getCityBySlug, getNearbyCities, getAllCitySlugs } from '@/data/cities';
 import { Contact } from '@/components';
+import { getCityAndRegion, getRegionLabel } from '@/utils/cityHelpers';
 
 export async function generateStaticParams() {
     return getAllCitySlugs().map((slug) => ({ city: slug }));
@@ -19,7 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
 
     return {
         title: `Galabau ${city.name} | Garten- und Landschaftsbau`,
-        description: `Professioneller Galabau in ${city.name} und ${city.region}. ✓ Gartengestaltung ✓ Terrassenbau ✓ Pflasterarbeiten ✓ Bepflanzung. Alles aus einer Hand!`,
+        description: `Professioneller Galabau in ${getCityAndRegion(city)}. ✓ Gartengestaltung ✓ Terrassenbau ✓ Pflasterarbeiten ✓ Bepflanzung. Alles aus einer Hand!`,
         keywords: `Galabau ${city.name}, Garten- und Landschaftsbau ${city.name}, Gartengestaltung ${city.name}, Terrassenbau ${city.name}, Gartenbau ${city.name}`,
         openGraph: {
             title: `Galabau ${city.name}`,
@@ -63,7 +64,7 @@ export default async function CityGalabauPage({ params }: { params: Promise<{ ci
         },
         {
             q: `Wie schnell können Sie in ${city.name} starten?`,
-            a: `Für Projekte in ${city.name} ($ entfernt) können wir nach Auftragserteilung in der Regel innerhalb von 2-4 Wochen starten. Die Planung beginnt sofort nach dem Vor-Ort-Termin.`,
+            a: `Für Projekte in ${city.name} (${city.distance}km entfernt) können wir nach Auftragserteilung in der Regel innerhalb von 2-4 Wochen starten. Die Planung beginnt sofort nach dem Vor-Ort-Termin.`,
         },
         {
             q: `Bieten Sie auch Kleinprojekte in ${city.name} an?`,
@@ -184,12 +185,12 @@ export default async function CityGalabauPage({ params }: { params: Promise<{ ci
                                 </h1>
 
                                 <p className="text-xl text-white/80 leading-relaxed mb-8">
-                                    Professioneller Garten- und Landschaftsbau für {city.name} und {city.region}:
+                                    Professioneller Garten- und Landschaftsbau für {getCityAndRegion(city)}:
                                     Von der Planung über Terrassenbau bis zur Bepflanzung – alles aus einer Hand.
                                 </p>
 
                                 <div className="flex flex-wrap gap-4 mb-10">
-                                    {['Komplette Gartengestaltung', 'Festpreisgarantie', 'Eigenes Fachpersonal', `$ entfernt`].map((item, i) => (
+                                    {['Komplette Gartengestaltung', 'Festpreisgarantie', 'Eigenes Fachpersonal', `${city.distance}km entfernt`].map((item, i) => (
                                         <div key={i} className="flex items-center gap-2 text-white/90">
                                             <svg className="w-5 h-5 text-teal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -217,7 +218,7 @@ export default async function CityGalabauPage({ params }: { params: Promise<{ ci
                                     { value: '500+', label: 'Projekte realisiert', icon: '🏡' },
                                     { value: '15+', label: 'Jahre Erfahrung', icon: '⏱️' },
                                     { value: '100%', label: 'Festpreisgarantie', icon: '💰' },
-                                    { value: `$`, label: 'Entfernung', icon: '📍' },
+                                    { value: `${city.distance}km`, label: 'Entfernung', icon: '📍' },
                                 ].map((stat, i) => (
                                     <div key={i} className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
                                         <div className="text-3xl mb-2">{stat.icon}</div>

@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { getCityBySlug, getNearbyCities, getAllCitySlugs } from '@/data/cities';
 import { Contact } from '@/components';
+import { getCityAndRegion, getRegionLabel } from '@/utils/cityHelpers';
 
 export async function generateStaticParams() {
     return getAllCitySlugs().map((slug) => ({ city: slug }));
@@ -18,12 +19,12 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
     }
 
     const title = `Gartenpflege ${city.name} | Rasenmähen, Heckenschnitt`;
-    const description = `Professionelle Gartenpflege in ${city.name} (${city.region}). ✓ Rasenmähen ✓ Heckenschnitt ✓ Beetpflege ✓ Baumpflege. Erfahrene Gärtner, faire Konditionen!`;
+    const description = `Professionelle Gartenpflege in ${getCityAndRegion(city)}. ✓ Rasenmähen ✓ Heckenschnitt ✓ Beetpflege ✓ Baumpflege. Erfahrene Gärtner, faire Konditionen!`;
 
     return {
         title,
         description,
-        keywords: `Gartenpflege ${city.name}, Rasenmähen ${city.name}, Heckenschnitt ${city.name}, Gärtner ${city.name}, Gartenservice ${city.region}`,
+        keywords: `Gartenpflege ${city.name}, Rasenmähen ${city.name}, Heckenschnitt ${city.name}, Gärtner ${city.name}, Gartenservice ${getRegionLabel(city)}`,
         openGraph: { title, description, url: `https://garten-adler.de/${city.slug}/gartenpflege` },
         alternates: { canonical: `https://garten-adler.de/${city.slug}/gartenpflege` },
     };
@@ -201,7 +202,7 @@ export default async function CityGartenpflegePage({ params }: { params: Promise
                                 Unsere Gartenpflege-Leistungen in {city.name}
                             </h2>
                             <p className="text-lg text-gray-600">
-                                Kompetente Pflege für jeden Bereich Ihres Gartens in {city.name} und {city.region}.
+                                Kompetente Pflege für jeden Bereich Ihres Gartens in {getCityAndRegion(city)}.
                             </p>
                         </div>
 
@@ -230,7 +231,7 @@ export default async function CityGartenpflegePage({ params }: { params: Promise
                                     Warum Adler & Sohn für Gartenpflege in {city.name}?
                                 </h2>
                                 <p className="text-lg text-gray-600 mb-8">
-                                    Als regionaler Gartenpflegedienst kennen wir {city.name} und die Besonderheiten der Region {city.region}.
+                                    Als regionaler Gartenpflegedienst kennen wir {city.name} und die Besonderheiten der Region {getRegionLabel(city)}.
                                     Unsere Nähe garantiert schnellen Service und persönliche Betreuung.
                                 </p>
                                 <div className="space-y-4">

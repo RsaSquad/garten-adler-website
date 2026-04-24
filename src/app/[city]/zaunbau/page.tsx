@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { getCityBySlug, getNearbyCities, getAllCitySlugs } from '@/data/cities';
 import { Contact } from '@/components';
+import { getCityAndRegion, getRegionLabel } from '@/utils/cityHelpers';
 
 export async function generateStaticParams() {
     return getAllCitySlugs().map((slug) => ({ city: slug }));
@@ -19,7 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
 
     return {
         title: `Zaunbau ${city.name} | Holzzaun, Metallzaun, Gabionen`,
-        description: `Professioneller Zaunbau in ${city.name} und ${city.region}. ✓ Holzzäune ✓ Metallzäune ✓ Gabionen ✓ Sichtschutz. Montage vom Fachbetrieb. Jetzt anfragen!`,
+        description: `Professioneller Zaunbau in ${getCityAndRegion(city)}. ✓ Holzzäune ✓ Metallzäune ✓ Gabionen ✓ Sichtschutz. Montage vom Fachbetrieb. Jetzt anfragen!`,
         keywords: `Zaunbau ${city.name}, Zaun setzen ${city.name}, Holzzaun ${city.name}, Metallzaun ${city.name}, Gabionen ${city.name}, Sichtschutz ${city.name}`,
         openGraph: {
             title: `Zaunbau ${city.name}`,
@@ -61,7 +62,7 @@ export default async function CityZaunbauPage({ params }: { params: Promise<{ ci
         },
         {
             q: `Wie schnell können Sie in ${city.name} starten?`,
-            a: `Für Zaunbau-Projekte in ${city.name} ($ entfernt) können wir nach Auftragserteilung in der Regel innerhalb von 1-2 Wochen starten. Die Montage selbst dauert meist 1-3 Tage.`,
+            a: `Für Zaunbau-Projekte in ${city.name} (${city.distance}km entfernt) können wir nach Auftragserteilung in der Regel innerhalb von 1-2 Wochen starten. Die Montage selbst dauert meist 1-3 Tage.`,
         },
         {
             q: `Welcher Zaun ist in ${city.name} am beliebtesten?`,
@@ -180,12 +181,12 @@ export default async function CityZaunbauPage({ params }: { params: Promise<{ ci
                                 </h1>
 
                                 <p className="text-xl text-white/80 leading-relaxed mb-8">
-                                    Professioneller Zaunbau für {city.name} und {city.region}:
+                                    Professioneller Zaunbau für {getCityAndRegion(city)}:
                                     Holz, Metall oder Gabionen – wir liefern und montieren Zäune aller Art.
                                 </p>
 
                                 <div className="flex flex-wrap gap-4 mb-10">
-                                    {['Alle Zaunarten', 'Festpreisgarantie', 'Inkl. Tore', `$ entfernt`].map((item, i) => (
+                                    {['Alle Zaunarten', 'Festpreisgarantie', 'Inkl. Tore', `${city.distance}km entfernt`].map((item, i) => (
                                         <div key={i} className="flex items-center gap-2 text-white/90">
                                             <svg className="w-5 h-5 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -213,7 +214,7 @@ export default async function CityZaunbauPage({ params }: { params: Promise<{ ci
                                     { value: 'ab 25€', label: 'pro lfm', icon: '💰' },
                                     { value: '1-3', label: 'Tage Montage', icon: '⚡' },
                                     { value: '25+', label: 'Jahre Lebensdauer', icon: '⏱️' },
-                                    { value: `$`, label: 'Entfernung', icon: '📍' },
+                                    { value: `${city.distance}km`, label: 'Entfernung', icon: '📍' },
                                 ].map((stat, i) => (
                                     <div key={i} className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
                                         <div className="text-3xl mb-2">{stat.icon}</div>

@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { getCityBySlug, getNearbyCities, getAllCitySlugs } from '@/data/cities';
 import { Contact } from '@/components';
+import { getCityAndRegion, getRegionLabel } from '@/utils/cityHelpers';
 
 // Generiere alle Städte-Pflasterarbeiten-Seiten statisch
 export async function generateStaticParams() {
@@ -22,12 +23,12 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
     }
 
     const title = `Pflasterarbeiten ${city.name} | Einfahrten & Terrassen`;
-    const description = `Professionelle Pflasterarbeiten in ${city.name} (${city.region}). ✓ Einfahrten ✓ Terrassen ✓ Gartenwege ✓ Hofbefestigungen. Festpreisgarantie & 5 Jahre Gewährleistung!`;
+    const description = `Professionelle Pflasterarbeiten in ${getCityAndRegion(city)}. ✓ Einfahrten ✓ Terrassen ✓ Gartenwege ✓ Hofbefestigungen. Festpreisgarantie & 5 Jahre Gewährleistung!`;
 
     return {
         title,
         description,
-        keywords: `Pflasterarbeiten ${city.name}, Pflastersteine ${city.name}, Einfahrt pflastern ${city.name}, Terrasse pflastern ${city.name}, Pflasterbau ${city.region}`,
+        keywords: `Pflasterarbeiten ${city.name}, Pflastersteine ${city.name}, Einfahrt pflastern ${city.name}, Terrasse pflastern ${city.name}, Pflasterbau ${getRegionLabel(city)}`,
         openGraph: {
             title,
             description,
@@ -80,7 +81,7 @@ export default async function CityPflasterarbeitenPage({ params }: { params: Pro
         },
         {
             q: `Welches Pflaster ist für ${city.name} am besten geeignet?`,
-            a: `Für ${city.name} in ${city.region} empfehlen wir frostbeständige Materialien. Besonders beliebt sind hier Betonsteine mit Natursteinoptik oder klassisches Granitpflaster. Wir beraten Sie vor Ort zu den besten Optionen.`,
+            a: `für ${getCityAndRegion(city)} empfehlen wir frostbeständige Materialien. Besonders beliebt sind hier Betonsteine mit Natursteinoptik oder klassisches Granitpflaster. Wir beraten Sie vor Ort zu den besten Optionen.`,
         },
         {
             q: `Bieten Sie Pflasterarbeiten in ganz ${city.name} an?`,
@@ -228,7 +229,7 @@ export default async function CityPflasterarbeitenPage({ params }: { params: Pro
                                 Pflastermaterialien für {city.name}
                             </h2>
                             <p className="text-lg text-gray-600">
-                                Wir verarbeiten alle gängigen Pflastermaterialien – passend für Klima und Boden in {city.region}.
+                                Wir verarbeiten alle gängigen Pflastermaterialien – passend für Klima und Boden in {getRegionLabel(city)}.
                             </p>
                         </div>
 
@@ -282,8 +283,8 @@ export default async function CityPflasterarbeitenPage({ params }: { params: Pro
                                 </h2>
                                 <div className="space-y-4">
                                     {[
-                                        { t: 'Lokale Expertise', d: `Wir kennen Boden und Klima in ${city.name} und ${city.region}` },
-                                        { t: 'Kurze Anfahrt', d: `Mit nur $ Entfernung sind wir schnell vor Ort` },
+                                        { t: 'Lokale Expertise', d: `Wir kennen Boden und Klima in ${getCityAndRegion(city)}` },
+                                        { t: 'Kurze Anfahrt', d: `Mit nur ${city.distance}km Entfernung sind wir schnell vor Ort` },
                                         { t: 'Festpreisgarantie', d: 'Keine versteckten Kosten – der Preis steht vorab fest' },
                                         { t: '5 Jahre Gewährleistung', d: 'Überdurchschnittlich lange Garantie auf alle Arbeiten' },
                                     ].map((item, i) => (

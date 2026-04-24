@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { getCityBySlug, getNearbyCities, getAllCitySlugs } from '@/data/cities';
 import { Contact } from '@/components';
+import { getCityAndRegion, getRegionLabel } from '@/utils/cityHelpers';
 
 export async function generateStaticParams() {
     return getAllCitySlugs().map((slug) => ({ city: slug }));
@@ -19,7 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
 
     return {
         title: `Baumpflege ${city.name} | Baumschnitt, Fällung, Kronenpflege`,
-        description: `Professionelle Baumpflege in ${city.name} und ${city.region}. ✓ Baumschnitt ✓ Kronenpflege ✓ Baumfällung ✓ Stubbenfräsen. Zertifizierte Baumpfleger. Jetzt anfragen!`,
+        description: `Professionelle Baumpflege in ${getCityAndRegion(city)}. ✓ Baumschnitt ✓ Kronenpflege ✓ Baumfällung ✓ Stubbenfräsen. Zertifizierte Baumpfleger. Jetzt anfragen!`,
         keywords: `Baumpflege ${city.name}, Baumschnitt ${city.name}, Baumfällung ${city.name}, Baumpfleger ${city.name}, Kronenpflege ${city.name}, Obstbaumschnitt ${city.name}`,
         openGraph: {
             title: `Baumpflege ${city.name}`,
@@ -79,7 +80,7 @@ export default async function CityBaumpflegePage({ params }: { params: Promise<{
         },
         {
             q: `Wie schnell können Sie in ${city.name} sein?`,
-            a: `Für ${city.name} ($ entfernt) können wir in der Regel innerhalb von 1-2 Wochen einen Termin anbieten. Bei Sturmschäden oder akuter Gefahr sind wir oft innerhalb von 24-48 Stunden in ${city.name}.`,
+            a: `Für ${city.name} (${city.distance}km entfernt) können wir in der Regel innerhalb von 1-2 Wochen einen Termin anbieten. Bei Sturmschäden oder akuter Gefahr sind wir oft innerhalb von 24-48 Stunden in ${city.name}.`,
         },
         {
             q: `Brauche ich in ${city.name} eine Genehmigung für Baumfällung?`,
@@ -200,12 +201,12 @@ export default async function CityBaumpflegePage({ params }: { params: Promise<{
                                 </h1>
 
                                 <p className="text-xl text-white/80 leading-relaxed mb-8">
-                                    Professionelle Baumpflege für {city.name} und {city.region}: Von der Kronenpflege bis zur sicheren
+                                    Professionelle Baumpflege für {getCityAndRegion(city)}: Von der Kronenpflege bis zur sicheren
                                     Fällung. Wir sind schnell bei Ihnen.
                                 </p>
 
                                 <div className="flex flex-wrap gap-4 mb-10">
-                                    {['Zertifizierte Baumpfleger', 'Seilklettertechnik', 'Entsorgung inklusive', `$ entfernt`].map((item, i) => (
+                                    {['Zertifizierte Baumpfleger', 'Seilklettertechnik', 'Entsorgung inklusive', `${city.distance}km entfernt`].map((item, i) => (
                                         <div key={i} className="flex items-center gap-2 text-white/90">
                                             <svg className="w-5 h-5 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -233,7 +234,7 @@ export default async function CityBaumpflegePage({ params }: { params: Promise<{
                                     { value: '24h', label: 'Notfall-Service', icon: '🚨' },
                                     { value: '15+', label: 'Jahre Erfahrung', icon: '⏱️' },
                                     { value: '100%', label: 'Versichert', icon: '🛡️' },
-                                    { value: `$`, label: 'Entfernung', icon: '📍' },
+                                    { value: `${city.distance}km`, label: 'Entfernung', icon: '📍' },
                                 ].map((stat, i) => (
                                     <div key={i} className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
                                         <div className="text-3xl mb-2">{stat.icon}</div>
@@ -256,7 +257,7 @@ export default async function CityBaumpflegePage({ params }: { params: Promise<{
                             <div className="prose prose-lg max-w-none text-gray-600">
                                 <p className="lead text-xl mb-6">
                                     Bäume sind wertvolle Lebewesen, die fachgerechte Pflege verdienen. Als zertifizierter
-                                    Baumpflegebetrieb sind wir regelmäßig in {city.name} und der Region {city.region} tätig.
+                                    Baumpflegebetrieb sind wir regelmäßig in {city.name} und der Region {getRegionLabel(city)} tätig.
                                 </p>
                                 <p className="mb-6">
                                     Mit unserer <strong>Seilklettertechnik</strong> erreichen wir jeden Ast, ohne Ihren Garten

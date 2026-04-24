@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 import { cities, getCityBySlug, getNearbyCities, getAllCitySlugs } from '@/data/cities';
 import { FAQ, Contact } from '@/components';
 import { generateCityFAQs } from '@/lib/faqData';
+import { getCityAndRegion, getRegionLabel } from '@/utils/cityHelpers';
 
 // Generiere alle Städte-Seiten statisch
 export async function generateStaticParams() {
@@ -25,7 +26,7 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
     }
 
     const title = `Garten- & Landschaftsbau ${city.name}`;
-    const description = `Professioneller Garten- und Landschaftsbau in ${city.name} (${city.region}). ✓ Gartengestaltung ✓ Terrassenbau ✓ Rollrasen ✓ Pflasterarbeiten. Jetzt kostenlose Beratung!`;
+    const description = `Professioneller Garten- und Landschaftsbau in ${getCityAndRegion(city)}. ✓ Gartengestaltung ✓ Terrassenbau ✓ Rollrasen ✓ Pflasterarbeiten. Jetzt kostenlose Beratung!`;
 
     return {
         title,
@@ -212,7 +213,7 @@ export default async function CityPage({ params }: { params: Promise<{ city: str
                                 </li>
                                 <li><span className="mx-2">/</span></li>
                                 <li>
-                                    <span className="text-white/80">{city.region}</span>
+                                    <span className="text-white/80">{getRegionLabel(city)}</span>
                                 </li>
                                 <li><span className="mx-2">/</span></li>
                                 <li>
@@ -288,7 +289,7 @@ export default async function CityPage({ params }: { params: Promise<{ city: str
                             </h2>
                             <p className="text-lg text-gray-600">
                                 Von der Gartengestaltung bis zur Pflege – wir sind Ihr Komplettanbieter für
-                                alle Garten- und Landschaftsbau-Arbeiten in {city.name} und {city.region}.
+                                alle Garten- und Landschaftsbau-Arbeiten in {getCityAndRegion(city)}.
                             </p>
                         </div>
 
@@ -334,7 +335,7 @@ export default async function CityPage({ params }: { params: Promise<{ city: str
                                 </h2>
                                 <p className="text-lg text-gray-600 mb-8">
                                     Als regionaler Garten- und Landschaftsbaubetrieb kennen wir {city.name} und die Besonderheiten
-                                    der Region {city.region}. Unsere Nähe garantiert schnellen Service und persönliche Betreuung.
+                                    der Region {getRegionLabel(city)}. Unsere Nähe garantiert schnellen Service und persönliche Betreuung.
                                 </p>
 
                                 <div className="space-y-4">

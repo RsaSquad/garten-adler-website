@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { getCityBySlug, getNearbyCities, getAllCitySlugs } from '@/data/cities';
 import { Contact } from '@/components';
+import { getCityAndRegion, getRegionLabel } from '@/utils/cityHelpers';
 
 export async function generateStaticParams() {
     return getAllCitySlugs().map((slug) => ({ city: slug }));
@@ -67,7 +68,7 @@ export default async function CityGartenLandschaftsbauPage({ params }: { params:
         },
         {
             q: `Wie schnell können Sie in ${city.name} starten?`,
-            a: `Für GaLaBau-Projekte in ${city.name} ($ entfernt) können wir nach Auftragserteilung meist innerhalb von 2-3 Wochen starten. Die Dauer hängt vom Projektumfang ab.`,
+            a: `Für GaLaBau-Projekte in ${city.name} (${city.distance}km entfernt) können wir nach Auftragserteilung meist innerhalb von 2-3 Wochen starten. Die Dauer hängt vom Projektumfang ab.`,
         },
         {
             q: `Welche Leistungen bieten Sie in ${city.name}?`,
@@ -189,12 +190,12 @@ export default async function CityGartenLandschaftsbauPage({ params }: { params:
                                 </h1>
 
                                 <p className="text-xl text-white/80 leading-relaxed mb-8">
-                                    Professioneller Garten- und Landschaftsbau für {city.name} und {city.region}.
+                                    Professioneller Garten- und Landschaftsbau für {getCityAndRegion(city)}.
                                     Von der Planung bis zur Pflege – Ihr Traumgarten aus einer Hand.
                                 </p>
 
                                 <div className="flex flex-wrap gap-4 mb-10">
-                                    {['Komplettservice', 'Festpreisgarantie', '15+ Jahre Erfahrung', `$ entfernt`].map((item, i) => (
+                                    {['Komplettservice', 'Festpreisgarantie', '15+ Jahre Erfahrung', `${city.distance}km entfernt`].map((item, i) => (
                                         <div key={i} className="flex items-center gap-2 text-white/90">
                                             <svg className="w-5 h-5 text-teal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -222,7 +223,7 @@ export default async function CityGartenLandschaftsbauPage({ params }: { params:
                                     { value: '12', label: 'Leistungsbereiche', icon: '🛠️' },
                                     { value: '15+', label: 'Jahre Erfahrung', icon: '⏱️' },
                                     { value: '100%', label: 'Festpreisgarantie', icon: '💰' },
-                                    { value: `$`, label: 'Entfernung', icon: '📍' },
+                                    { value: `${city.distance}km`, label: 'Entfernung', icon: '📍' },
                                 ].map((stat, i) => (
                                     <div key={i} className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
                                         <div className="text-3xl mb-2">{stat.icon}</div>
@@ -248,7 +249,7 @@ export default async function CityGartenLandschaftsbauPage({ params }: { params:
                                     Wir planen, gestalten und pflegen Außenanlagen mit Leidenschaft und Fachwissen.
                                 </p>
                                 <p className="mb-6">
-                                    Als erfahrener Galabau-Betrieb sind wir in {city.name} und {city.region} für Sie tätig.
+                                    Als erfahrener Galabau-Betrieb sind wir in {getCityAndRegion(city)} für Sie tätig.
                                     Unser Team aus <strong>ausgebildeten Landschaftsgärtnern</strong> berät Sie individuell
                                     und setzt Ihr Projekt termingerecht um – mit Festpreisgarantie.
                                 </p>

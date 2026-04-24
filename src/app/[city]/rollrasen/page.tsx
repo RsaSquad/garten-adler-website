@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { getCityBySlug, getNearbyCities, getAllCitySlugs } from '@/data/cities';
 import { Contact } from '@/components';
+import { getCityAndRegion, getRegionLabel } from '@/utils/cityHelpers';
 
 export async function generateStaticParams() {
     return getAllCitySlugs().map((slug) => ({ city: slug }));
@@ -19,7 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
 
     return {
         title: `Rollrasen verlegen ${city.name} | Fertigrasen vom Profi`,
-        description: `Professionelle Rollrasen-Verlegung in ${city.name} und ${city.region}. ✓ Premium-Rollrasen ✓ Fachgerechte Verlegung ✓ Sofort grün ✓ Anwachsgarantie. Jetzt anfragen!`,
+        description: `Professionelle Rollrasen-Verlegung in ${getCityAndRegion(city)}. ✓ Premium-Rollrasen ✓ Fachgerechte Verlegung ✓ Sofort grün ✓ Anwachsgarantie. Jetzt anfragen!`,
         keywords: `Rollrasen ${city.name}, Fertigrasen ${city.name}, Rollrasen verlegen ${city.name}, Rasen verlegen ${city.name}, Rollrasen Kosten ${city.name}, Gärtner ${city.name}`,
         openGraph: {
             title: `Rollrasen verlegen ${city.name}`,
@@ -80,11 +81,11 @@ export default async function CityRollrasenPage({ params }: { params: Promise<{ 
         },
         {
             q: `Wie schnell können Sie Rollrasen in ${city.name} verlegen?`,
-            a: `Für ${city.name} ($ entfernt) können wir in der Regel innerhalb von 1-2 Wochen starten. Bei dringenden Projekten sind auch kurzfristigere Termine möglich. Die Verlegung selbst dauert bei einem durchschnittlichen Garten nur 1-2 Tage.`,
+            a: `Für ${city.name} (${city.distance}km entfernt) können wir in der Regel innerhalb von 1-2 Wochen starten. Bei dringenden Projekten sind auch kurzfristigere Termine möglich. Die Verlegung selbst dauert bei einem durchschnittlichen Garten nur 1-2 Tage.`,
         },
         {
             q: `Welche Rollrasen-Sorte empfehlen Sie für ${city.name}?`,
-            a: `Das hängt von Ihrem Garten ab. Für die meisten Familiengärten in ${city.name} empfehlen wir unseren Sport- & Spielrasen. Bei schattigen Bereichen den Schattenrasen, und für besonders sonnige Lagen in ${city.region} unseren trockenresistenten Rasen.`,
+            a: `Das hängt von Ihrem Garten ab. Für die meisten Familiengärten in ${city.name} empfehlen wir unseren Sport- & Spielrasen. Bei schattigen Bereichen den Schattenrasen, und für besonders sonnige Lagen in ${getRegionLabel(city)} unseren trockenresistenten Rasen.`,
         },
         {
             q: `Bereiten Sie den Boden in ${city.name} auch vor?`,
@@ -207,12 +208,12 @@ export default async function CityRollrasenPage({ params }: { params: Promise<{ 
                                 </h1>
 
                                 <p className="text-xl text-white/80 leading-relaxed mb-8">
-                                    Premium Rollrasen für {city.name} und {city.region}: Wir verlegen Ihren Traumrasen
+                                    Premium Rollrasen für {getCityAndRegion(city)}: Wir verlegen Ihren Traumrasen
                                     inklusive Bodenvorbereitung – schneller Service garantiert.
                                 </p>
 
                                 <div className="flex flex-wrap gap-4 mb-10">
-                                    {['Sofort grün', '1 Jahr Garantie', 'Festpreis', `$ Entfernung`].map((item, i) => (
+                                    {['Sofort grün', '1 Jahr Garantie', 'Festpreis', `${city.distance}km Entfernung`].map((item, i) => (
                                         <div key={i} className="flex items-center gap-2 text-white/90">
                                             <svg className="w-5 h-5 text-lime-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -240,7 +241,7 @@ export default async function CityRollrasenPage({ params }: { params: Promise<{ 
                                     { value: '15-25€', label: 'pro m² inkl. Verlegung', icon: '💰' },
                                     { value: '24h', label: 'Frisch geerntet', icon: '🌱' },
                                     { value: '1 Jahr', label: 'Anwachsgarantie', icon: '✓' },
-                                    { value: `$`, label: 'Entfernung', icon: '📍' },
+                                    { value: `${city.distance}km`, label: 'Entfernung', icon: '📍' },
                                 ].map((stat, i) => (
                                     <div key={i} className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
                                         <div className="text-3xl mb-2">{stat.icon}</div>
@@ -268,7 +269,7 @@ export default async function CityRollrasenPage({ params }: { params: Promise<{ 
                                 </p>
                                 <p className="mb-6">
                                     Als erfahrener Garten- und Landschaftsbaubetrieb verlegen wir regelmäßig Rollrasen in {city.name}
-                                    und der gesamten Region {city.region}. Mit nur <strong> Entfernung</strong> sind
+                                    und der gesamten Region {getRegionLabel(city)}. Mit nur <strong>{city.distance}km Entfernung</strong> sind
                                     wir schnell bei Ihnen und liefern Ihren neuen Rasen frisch von der Rasenschule.
                                 </p>
                                 <p>
