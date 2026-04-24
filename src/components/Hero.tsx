@@ -34,7 +34,7 @@ const Hero = () => {
                     {/* Badge */}
                     <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-8 animate-fadeInUp">
                         <span className="w-2 h-2 rounded-full bg-lime-400 animate-pulse" />
-                        <span className="text-white/90 text-sm font-medium">Ihr Partner für grüne Oasen in Lüneburg</span>
+                        <span className="text-white/90 text-sm font-medium">Ihr Partner für grüne Oasen</span>
                     </div>
 
                     {/* Main Heading */}
