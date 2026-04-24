@@ -14,6 +14,7 @@ export interface BlogArticle {
     faqs: { q: string; a: string }[];
     relatedServices: string[]; // service slugs for internal linking
     relatedCities?: string[]; // city slugs for internal linking
+    heroImage?: string; // hero background image path
 }
 
 export interface BlogSection {
@@ -224,6 +225,7 @@ export const blogArticles: BlogArticle[] = [
             },
         ],
         relatedServices: ['rollrasen', 'gartenpflege', 'garten-und-landschaftsbau'],
+        heroImage: '/images/blog-rollrasen-vergleich.png',
     },
 ];
 
