@@ -164,7 +164,7 @@ export default async function CityBaumpflegePage({ params }: { params: Promise<{
                 <section className="relative pt-32 pb-24 overflow-hidden">
                     {/* Background Image */}
                     <Image
-                        src="/images/baumpflege-hero.png"
+                        src={`/images/baumpflege-hero-${city.slug}.png`}
                         alt={`Professionelle Baumpflege ${city.name} - Baumschnitt vom Fachmann`}
                         fill
                         priority
@@ -390,7 +390,7 @@ export default async function CityBaumpflegePage({ params }: { params: Promise<{
                 <section className="relative section-padding overflow-hidden">
                     {/* Background Image */}
                     <Image
-                        src="/images/baumpflege-faq.jpg"
+                        src={`/images/baumpflege-faq-${city.slug}.jpg`}
                         alt={`Baumpflege ${city.name} - Häufige Fragen`}
                         fill
                         quality={75}
@@ -429,7 +429,7 @@ export default async function CityBaumpflegePage({ params }: { params: Promise<{
                 {/* CTA */}
                 <section className="relative section-padding overflow-hidden">
                     <Image
-                        src="/images/baumpflege-cta.png"
+                        src={`/images/baumpflege-cta-${city.slug}.png`}
                         alt={`Baumpflege ${city.name} - Jetzt Angebot anfordern`}
                         fill
                         className="object-cover"

@@ -152,7 +152,7 @@ export default async function CityHeckenschnittPage({ params }: { params: Promis
                 {/* Hero */}
                 <section className="relative pt-32 pb-24 overflow-hidden">
                     <Image
-                        src="/images/heckenschnitt-hero.png"
+                        src={`/images/heckenschnitt-hero-${city.slug}.png`}
                         alt={`Professioneller Heckenschnitt ${city.name} - Formschnitt vom Profi`}
                         fill
                         priority
@@ -441,7 +441,7 @@ export default async function CityHeckenschnittPage({ params }: { params: Promis
                 {/* CTA */}
                 <section className="relative section-padding overflow-hidden">
                     <Image
-                        src="/images/heckenschnitt-cta.png"
+                        src={`/images/heckenschnitt-cta-${city.slug}.png`}
                         alt={`Heckenschnitt ${city.name} - Jetzt Angebot anfordern`}
                         fill
                         className="object-cover"

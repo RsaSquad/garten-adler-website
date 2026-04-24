@@ -155,7 +155,7 @@ export default async function CityPflasterarbeitenPage({ params }: { params: Pro
                 <section className="relative pt-32 pb-20 overflow-hidden">
                     {/* Background Image */}
                     <Image
-                        src="/images/pflasterarbeiten-hero.png"
+                        src={`/images/pflasterarbeiten-hero-${city.slug}.png`}
                         alt={`Professionelle Pflasterarbeiten ${city.name} - Einfahrt und Terrasse`}
                         fill
                         priority
@@ -304,7 +304,7 @@ export default async function CityPflasterarbeitenPage({ params }: { params: Pro
                             <div className="relative">
                                 <div className="aspect-square rounded-2xl overflow-hidden">
                                     <Image
-                                        src="/images/pflasterarbeiten-qualitaet.jpg"
+                                        src={`/images/pflasterarbeiten-qualitaet-${city.slug}.jpg`}
                                         alt={`Hochwertige Pflasterarbeiten ${city.name} - Adler & Sohn`}
                                         fill
                                         quality={80}
@@ -366,7 +366,7 @@ export default async function CityPflasterarbeitenPage({ params }: { params: Pro
                 {/* CTA */}
                 <section className="relative section-padding overflow-hidden">
                     <Image
-                        src="/images/pflasterarbeiten-cta.png"
+                        src={`/images/pflasterarbeiten-cta-${city.slug}.png`}
                         alt={`Pflasterarbeiten ${city.name} - Jetzt Angebot anfordern`}
                         fill
                         className="object-cover"

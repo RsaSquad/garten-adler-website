@@ -146,7 +146,7 @@ export default async function CityTerrassenbauPage({ params }: { params: Promise
                 <section className="relative pt-32 pb-24 overflow-hidden">
                     {/* Hero Background Image */}
                     <Image
-                        src="/images/terrassenbau-hero.png"
+                        src={`/images/terrassenbau-hero-${city.slug}.png`}
                         alt={`Terrassenbau in ${city.name} – moderne Holzterrasse im Garten`}
                         fill
                         className="object-cover"
@@ -438,7 +438,7 @@ export default async function CityTerrassenbauPage({ params }: { params: Promise
                 {/* CTA */}
                 <section className="relative section-padding overflow-hidden">
                     <Image
-                        src="/images/terrassenbau-cta.png"
+                        src={`/images/terrassenbau-cta-${city.slug}.png`}
                         alt={`Terrassenbau in ${city.name} – jetzt Angebot anfordern`}
                         fill
                         className="object-cover"

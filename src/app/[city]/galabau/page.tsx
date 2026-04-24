@@ -148,7 +148,7 @@ export default async function CityGalabauPage({ params }: { params: Promise<{ ci
                 <section className="relative pt-32 pb-24 overflow-hidden">
                     {/* Background Image */}
                     <Image
-                        src="/images/galabau-hero.png"
+                        src={`/images/galabau-hero-${city.slug}.png`}
                         alt={`Garten- und Landschaftsbau ${city.name} - Professionelle Gestaltung`}
                         fill
                         priority
@@ -284,7 +284,7 @@ export default async function CityGalabauPage({ params }: { params: Promise<{ ci
                 <section className="relative section-padding text-white overflow-hidden">
                     {/* Background Image */}
                     <Image
-                        src="/images/galabau-hero.png"
+                        src={`/images/galabau-hero-${city.slug}.png`}
                         alt={`Gartenlandschaft ${city.name} - Galabau vom Profi`}
                         fill
                         quality={75}
@@ -325,7 +325,7 @@ export default async function CityGalabauPage({ params }: { params: Promise<{ ci
                 <section className="relative section-padding text-white overflow-hidden">
                     {/* Background Image */}
                     <Image
-                        src="/images/galabau-erdarbeiten.jpg"
+                        src={`/images/galabau-erdarbeiten-${city.slug}.jpg`}
                         alt="Galabau Erdarbeiten Hintergrund"
                         fill
                         quality={75}
@@ -457,7 +457,7 @@ export default async function CityGalabauPage({ params }: { params: Promise<{ ci
                 {/* CTA */}
                 <section className="relative section-padding overflow-hidden">
                     <Image
-                        src="/images/galabau-cta.png"
+                        src={`/images/galabau-cta-${city.slug}.png`}
                         alt="galabau - jetzt Angebot anfordern"
                         fill
                         className="object-cover"

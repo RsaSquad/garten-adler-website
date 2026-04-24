@@ -194,7 +194,7 @@ export default async function CityPage({ params }: { params: Promise<{ city: str
                 {/* Hero Section */}
                 <section className="relative pt-32 pb-20 overflow-hidden">
                     <Image
-                        src={`/images/garten-landschaftsbau-gartengestaltung-projekt-${heroIndex}.png`}
+                        src={`/images/garten-landschaftsbau-gartengestaltung-projekt-${city.slug}-${heroIndex}.png`}
                         alt={`Garten- und Landschaftsbau ${city.name} - Professionelle Gartengestaltung`}
                         fill
                         priority
@@ -454,7 +454,7 @@ export default async function CityPage({ params }: { params: Promise<{ city: str
                 {/* CTA Section */}
                 <section className="relative section-padding overflow-hidden">
                     <Image
-                        src={`/images/garten-landschaftsbau-traumgarten-beratung-${ctaIndex}.png`}
+                        src={`/images/garten-landschaftsbau-traumgarten-beratung-${city.slug}-${ctaIndex}.png`}
                         alt={`Garten- und Landschaftsbau ${city.name} - Traumgarten anlegen lassen`}
                         fill
                         className="object-cover"

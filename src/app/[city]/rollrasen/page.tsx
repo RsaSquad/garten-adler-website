@@ -171,7 +171,7 @@ export default async function CityRollrasenPage({ params }: { params: Promise<{ 
                 <section className="relative pt-32 pb-24 overflow-hidden">
                     {/* Background Image */}
                     <Image
-                        src="/images/rollrasen-hero.png"
+                        src={`/images/rollrasen-hero-${city.slug}.png`}
                         alt={`Rollrasen verlegen ${city.name} - Frischer grüner Fertigrasen vom Profi`}
                         fill
                         priority
@@ -326,7 +326,7 @@ export default async function CityRollrasenPage({ params }: { params: Promise<{ 
                 <section className="relative section-padding text-white overflow-hidden">
                     {/* Background Image */}
                     <Image
-                        src="/images/rollrasen-verlegung.jpg"
+                        src={`/images/rollrasen-verlegung-${city.slug}.jpg`}
                         alt={`Rollrasen Verlegung ${city.name} - Schritt für Schritt`}
                         fill
                         quality={75}
@@ -440,7 +440,7 @@ export default async function CityRollrasenPage({ params }: { params: Promise<{ 
                 {/* CTA */}
                 <section className="relative section-padding overflow-hidden">
                     <Image
-                        src="/images/rollrasen-cta.png"
+                        src={`/images/rollrasen-cta-${city.slug}.png`}
                         alt={`Rollrasen verlegen ${city.name} - Jetzt Angebot anfordern`}
                         fill
                         className="object-cover"

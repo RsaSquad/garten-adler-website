@@ -128,7 +128,7 @@ export default async function CityGartenpflegePage({ params }: { params: Promise
                 <section className="relative pt-32 pb-20 overflow-hidden">
                     {/* Background Image */}
                     <Image
-                        src="/images/gartenpflege-hero.png"
+                        src={`/images/gartenpflege-hero-${city.slug}.png`}
                         alt={`Professionelle Gartenpflege ${city.name} - Rasenpflege und mehr`}
                         fill
                         priority
@@ -323,7 +323,7 @@ export default async function CityGartenpflegePage({ params }: { params: Promise
                 <section className="relative section-padding text-white overflow-hidden">
                     {/* Background Image */}
                     <Image
-                        src="/images/gartenpflege-kalender.jpg"
+                        src={`/images/gartenpflege-kalender-${city.slug}.jpg`}
                         alt={`Gartenpflege ${city.name} und Umgebung`}
                         fill
                         quality={75}
@@ -353,7 +353,7 @@ export default async function CityGartenpflegePage({ params }: { params: Promise
                 {/* CTA */}
                 <section className="relative section-padding overflow-hidden">
                     <Image
-                        src="/images/gartenpflege-cta.png"
+                        src={`/images/gartenpflege-cta-${city.slug}.png`}
                         alt={`Gartenpflege ${city.name} - Jetzt Angebot anfordern`}
                         fill
                         className="object-cover"
