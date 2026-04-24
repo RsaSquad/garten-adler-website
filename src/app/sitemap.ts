@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next';
 import { cities } from '@/data/cities';
+import { blogArticles } from '@/data/blog';
 
 // Festes Datum für konsistentes Caching – bei Content-Updates aktualisieren
 const LAST_UPDATED = '2026-04-21';
@@ -58,6 +59,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'yearly',
             priority: 0.3,
         },
+        {
+            url: `${baseUrl}/blog`,
+            lastModified: LAST_UPDATED,
+            changeFrequency: 'weekly',
+            priority: 0.8,
+        },
+        // Blog-Artikel
+        ...blogArticles.map((article) => ({
+            url: `${baseUrl}/blog/${article.slug}`,
+            lastModified: article.updatedDate || article.publishDate,
+            changeFrequency: 'monthly' as const,
+            priority: 0.75,
+        })),
     ];
 
     // Städte-Seiten (Hauptseite pro Stadt)
