@@ -9,7 +9,10 @@ import { getCityAndRegion, getRegionLabel } from '@/utils/cityHelpers';
 
 export const dynamicParams = true;
 export async function generateStaticParams() {
-    return [];
+    // Pre-render top 10 cities at build time, rest on-demand (ISR)
+    const topCities = ["hamburg", "luebeck", "lueneburg", "norderstedt", "ahrensburg",
+        "bad-oldesloe", "elmshorn", "pinneberg", "stade", "buchholz-in-der-nordheide"];
+    return topCities.map((slug) => ({ city: slug }));
 }
 
 // Dynamische Metadata für jede Stadt
