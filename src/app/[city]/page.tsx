@@ -6,8 +6,17 @@ import { FAQ, Contact } from '@/components';
 import { generateCityFAQs } from '@/lib/faqData';
 import { getCityAndRegion, getRegionLabel } from '@/utils/cityHelpers';
 
-export const dynamic = 'force-dynamic';
 // Dynamische Metadata für jede Stadt
+// SSG: Die ersten 200 Städte werden beim Build statisch vorgebaut
+export async function generateStaticParams() {
+    const { cities } = await import('@/data/cities');
+    return cities.slice(0, 200).map((city) => ({ city: city.slug }));
+}
+
+// Nicht vorgebaute Seiten werden beim ersten Aufruf on-demand generiert
+export const dynamicParams = true;
+
+
 export async function generateMetadata({ params }: { params: Promise<{ city: string }> }): Promise<Metadata> {
     const { city: citySlug } = await params;
     const city = getCityBySlug(citySlug);
