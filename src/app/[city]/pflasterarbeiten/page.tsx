@@ -7,12 +7,9 @@ import { Contact } from '@/components';
 import { getCityAndRegion, getRegionLabel } from '@/utils/cityHelpers';
 import { getUniqueIntro, getLocalTipp, getBodenart, getKreisName, selectFAQs } from '@/lib/cityContentGenerator';
 
+export const runtime = 'edge';
 export const dynamicParams = true;
 export const revalidate = 86400; // Cache for 24h
-export async function generateStaticParams() {
-    return [];
-}
-
 // Dynamische Metadata
 export async function generateMetadata({ params }: { params: Promise<{ city: string }> }): Promise<Metadata> {
     const { city: citySlug } = await params;
