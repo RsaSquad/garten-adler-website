@@ -10,7 +10,6 @@ import { getUniqueIntro, getLocalTipp, selectFAQs } from '@/lib/cityContentGener
 export const dynamicParams = true;
 export async function generateStaticParams() {
     return [];
-}));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ city: string }> }): Promise<Metadata> {

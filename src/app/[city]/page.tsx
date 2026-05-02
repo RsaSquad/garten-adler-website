@@ -10,7 +10,6 @@ import { getCityAndRegion, getRegionLabel } from '@/utils/cityHelpers';
 export const dynamicParams = true;
 export async function generateStaticParams() {
     return [];
-}));
 }
 
 // Dynamische Metadata für jede Stadt

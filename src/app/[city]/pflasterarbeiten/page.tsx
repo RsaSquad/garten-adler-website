@@ -10,7 +10,6 @@ import { getUniqueIntro, getLocalTipp, getBodenart, getKreisName, selectFAQs } f
 export const dynamicParams = true;
 export async function generateStaticParams() {
     return [];
-}));
 }
 
 // Dynamische Metadata
