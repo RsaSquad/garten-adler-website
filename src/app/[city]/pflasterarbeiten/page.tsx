@@ -7,11 +7,9 @@ import { Contact } from '@/components';
 import { getCityAndRegion, getRegionLabel } from '@/utils/cityHelpers';
 import { getUniqueIntro, getLocalTipp, getBodenart, getKreisName, selectFAQs } from '@/lib/cityContentGenerator';
 
-// On-demand ISR: Top-Städte pre-rendered, Rest bei erstem Besuch
 export const dynamicParams = true;
 export async function generateStaticParams() {
     return [];
-}));
 }
 
 // Dynamische Metadata
