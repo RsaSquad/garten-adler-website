@@ -2,12 +2,13 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
-import { cities, getCityBySlug, getNearbyCities, getTopCitySlugs } from '@/data/cities';
+import { cities, getCityBySlug, getNearbyCities } from '@/data/cities';
 import { FAQ, Contact } from '@/components';
 import { generateCityFAQs } from '@/lib/faqData';
 import { getCityAndRegion, getRegionLabel } from '@/utils/cityHelpers';
 
 export const dynamicParams = true;
+export const revalidate = 86400; // Cache for 24h
 export async function generateStaticParams() {
     return [];
 }
