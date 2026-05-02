@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 import { getCityBySlug, getNearbyCities, getAllCitySlugs } from '@/data/cities';
 import { Contact } from '@/components';
 import { getCityAndRegion, getRegionLabel } from '@/utils/cityHelpers';
+import { getUniqueIntro, getLocalTipp, getBodenart, getKreisName, selectFAQs } from '@/lib/cityContentGenerator';
 
 // Generiere alle Städte-Pflasterarbeiten-Seiten statisch
 export async function generateStaticParams() {
@@ -68,20 +69,24 @@ export default async function CityPflasterarbeitenPage({ params }: { params: Pro
     }
 
     const nearbyCities = getNearbyCities(citySlug, 4);
+    const uniqueIntro = getUniqueIntro(city, 'pflasterarbeiten');
+    const localTipp = getLocalTipp(city, 'pflasterarbeiten');
+    const bodenart = getBodenart(city);
+    const kreisName = getKreisName(city);
 
     // FAQ für Pflasterarbeiten in dieser Stadt
-    const faqs = [
+    const allFaqs = [
         {
             q: `Was kosten Pflasterarbeiten in ${city.name}?`,
             a: `Die Kosten für Pflasterarbeiten in ${city.name} variieren je nach Material und Fläche. Betonsteinpflaster beginnt bei ca. 60-80€/m², Naturstein ab 100-150€/m². Wir erstellen Ihnen ein kostenloses Angebot für Ihr Projekt in ${city.name}.`,
         },
         {
             q: `Wie lange dauern Pflasterarbeiten in ${city.name}?`,
-            a: `Eine typische Einfahrt (30-50m²) in ${city.name} ist in 3-5 Arbeitstagen fertig. Größere Projekte planen wir individuell. Durch unsere Nähe (nur $) sind wir flexibel und schnell vor Ort.`,
+            a: `Eine typische Einfahrt (30-50m²) in ${city.name} ist in 3-5 Arbeitstagen fertig. Größere Projekte planen wir individuell. Mit nur ${city.distance}km Anfahrt sind wir flexibel und schnell vor Ort.`,
         },
         {
             q: `Welches Pflaster ist für ${city.name} am besten geeignet?`,
-            a: `für ${getCityAndRegion(city)} empfehlen wir frostbeständige Materialien. Besonders beliebt sind hier Betonsteine mit Natursteinoptik oder klassisches Granitpflaster. Wir beraten Sie vor Ort zu den besten Optionen.`,
+            a: `Für ${getCityAndRegion(city)} empfehlen wir frostbeständige Materialien. Besonders beliebt sind hier Betonsteine mit Natursteinoptik oder klassisches Granitpflaster. Wir beraten Sie vor Ort zu den besten Optionen.`,
         },
         {
             q: `Bieten Sie Pflasterarbeiten in ganz ${city.name} an?`,
@@ -91,7 +96,16 @@ export default async function CityPflasterarbeitenPage({ params }: { params: Pro
             q: `Gibt es eine Gewährleistung auf Pflasterarbeiten in ${city.name}?`,
             a: `Ja, auf alle Pflasterarbeiten in ${city.name} geben wir 5 Jahre Gewährleistung. Das ist länger als gesetzlich vorgeschrieben und zeigt unser Vertrauen in die Qualität unserer Arbeit.`,
         },
+        {
+            q: `Welcher Unterbau ist für ${city.name} nötig?`,
+            a: `Auf dem ${bodenart} im ${kreisName} empfehlen wir einen mehrschichtigen Unterbau aus Frostschutzschicht und Splittbett. So vermeiden Sie Absenkungen und Frostschäden langfristig.`,
+        },
+        {
+            q: `Brauche ich eine Entwässerung bei Pflasterarbeiten in ${city.name}?`,
+            a: `Ja, eine fachgerechte Entwässerung ist wichtig. In ${city.name} setzen wir auf Gefälleplanung und Drainrinnen. Versickerungsfähiges Pflaster kann zudem die Abwassergebühren senken – fragen Sie bei Ihrer Gemeinde nach.`,
+        },
     ];
+    const faqs = selectFAQs(allFaqs, citySlug, 5);
 
     // JSON-LD
     const jsonLd = {
@@ -224,6 +238,14 @@ export default async function CityPflasterarbeitenPage({ params }: { params: Pro
                 {/* Materials */}
                 <section className="section-padding bg-white">
                     <div className="container-custom">
+                        <div className="max-w-4xl mx-auto mb-12">
+                            <div className="prose prose-lg max-w-none text-gray-600 mb-8">
+                                <p>{uniqueIntro}</p>
+                                <div className="bg-amber-50 rounded-xl p-5 border-l-4 border-amber-500 my-6">
+                                    <p className="text-amber-800 font-medium text-sm">💡 {localTipp}</p>
+                                </div>
+                            </div>
+                        </div>
                         <div className="text-center max-w-3xl mx-auto mb-12">
                             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                                 Pflastermaterialien für {city.name}

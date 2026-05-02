@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 import { getCityBySlug, getNearbyCities, getAllCitySlugs } from '@/data/cities';
 import { Contact } from '@/components';
 import { getCityAndRegion, getRegionLabel } from '@/utils/cityHelpers';
+import { getUniqueIntro, getLocalTipp, getBodenart, getKreisName, selectFAQs } from '@/lib/cityContentGenerator';
 
 export async function generateStaticParams() {
     return getAllCitySlugs().map((slug) => ({ city: slug }));
@@ -72,8 +73,11 @@ export default async function CityBaumpflegePage({ params }: { params: Promise<{
     }
 
     const nearbyCities = getNearbyCities(citySlug, 6);
+    const uniqueIntro = getUniqueIntro(city, 'baumpflege');
+    const localTipp = getLocalTipp(city, 'baumpflege');
+    const kreisName = getKreisName(city);
 
-    const faqs = [
+    const allFaqs = [
         {
             q: `Was kostet Baumpflege in ${city.name}?`,
             a: `Die Kosten für Baumpflege in ${city.name} hängen von Baumgröße und Maßnahme ab. Einfache Kronenpflege ab ca. 150-300€, Baumfällungen werden individuell kalkuliert. Wir erstellen Ihnen ein kostenloses Angebot nach Besichtigung in ${city.name}.`,
@@ -98,7 +102,16 @@ export default async function CityBaumpflegePage({ params }: { params: Promise<{
             q: `Arbeiten Sie mit Seilklettertechnik in ${city.name}?`,
             a: `Ja, unsere zertifizierten Baumpfleger arbeiten mit moderner Seilklettertechnik. Das schont Ihren Garten in ${city.name} – keine schweren Hebebühnen nötig.`,
         },
+        {
+            q: `Welche Baumarten sind in ${city.name} typisch?`,
+            a: `Im ${kreisName} finden wir häufig Eichen, Buchen, Birken und Obstbäume. Jede Art hat eigene Pflegeanforderungen – wir kennen sie alle und beraten Sie individuell.`,
+        },
+        {
+            q: `Wann ist die beste Zeit für Baumpflege in ${city.name}?`,
+            a: `Kronenpflege ist ganzjährig möglich. Größere Rückschnitte empfehlen wir für Oktober bis Februar (Vegetationsruhe). Obstbäume werden idealerweise im Winter geschnitten. Notfälle behandeln wir natürlich sofort.`,
+        },
     ];
+    const faqs = selectFAQs(allFaqs, citySlug, 6);
 
     const jsonLd = {
         '@context': 'https://schema.org',
@@ -260,10 +273,16 @@ export default async function CityBaumpflegePage({ params }: { params: Promise<{
                                     Baumpflegebetrieb sind wir regelmäßig in {city.name} und der Region {getRegionLabel(city)} tätig.
                                 </p>
                                 <p className="mb-6">
+                                    {uniqueIntro}
+                                </p>
+                                <p className="mb-6">
                                     Mit unserer <strong>Seilklettertechnik</strong> erreichen wir jeden Ast, ohne Ihren Garten
                                     mit schweren Maschinen zu beschädigen. Ob Kronenpflege, Obstbaumschnitt oder Baumfällung –
                                     wir arbeiten sauber, sicher und nach den Richtlinien der ZTV-Baumpflege.
                                 </p>
+                                <div className="bg-green-50 rounded-xl p-5 border-l-4 border-green-500 my-6">
+                                    <p className="text-green-800 font-medium text-sm">💡 {localTipp}</p>
+                                </div>
                                 <p>
                                     Als Grundstückseigentümer in {city.name} tragen Sie die Verkehrssicherungspflicht für Ihre Bäume.
                                     Wir helfen Ihnen, Gefahren zu erkennen und zu beseitigen – von Totholz bis zu instabilen Kronen.

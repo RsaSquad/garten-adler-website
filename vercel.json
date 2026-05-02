@@ -1,0 +1,8 @@
+{
+  "crons": [
+    {
+      "path": "/api/blog-notify",
+      "schedule": "0 6 * * *"
+    }
+  ]
+}

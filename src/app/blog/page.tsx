@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
-import { blogArticles } from '@/data/blog';
+import { getPublishedArticles } from '@/data/blog';
 
 export const metadata: Metadata = {
     title: 'Blog — Garten-Ratgeber & Tipps | Adler & Sohn',
@@ -21,6 +21,7 @@ export const metadata: Metadata = {
 };
 
 export default function BlogPage() {
+    const articles = getPublishedArticles();
     const jsonLd = {
         '@context': 'https://schema.org',
         '@type': 'Blog',
@@ -88,7 +89,7 @@ export default function BlogPage() {
                 <section className="section-padding bg-gray-50">
                     <div className="container-custom">
                         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                            {blogArticles.map((article) => (
+                            {articles.map((article) => (
                                 <Link
                                     key={article.slug}
                                     href={`/blog/${article.slug}`}
@@ -127,7 +128,7 @@ export default function BlogPage() {
                             ))}
                         </div>
 
-                        {blogArticles.length === 0 && (
+                        {articles.length === 0 && (
                             <div className="text-center py-20">
                                 <p className="text-gray-500 text-lg">Noch keine Artikel vorhanden. Bald kommt frischer Content!</p>
                             </div>

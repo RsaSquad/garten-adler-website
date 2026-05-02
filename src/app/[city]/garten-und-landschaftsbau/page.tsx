@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 import { getCityBySlug, getNearbyCities, getAllCitySlugs } from '@/data/cities';
 import { Contact } from '@/components';
 import { getCityAndRegion, getRegionLabel } from '@/utils/cityHelpers';
+import { getUniqueIntro, getLocalTipp, getBodenart, getKreisName, selectFAQs } from '@/lib/cityContentGenerator';
 
 export async function generateStaticParams() {
     return getAllCitySlugs().map((slug) => ({ city: slug }));
@@ -60,8 +61,12 @@ export default async function CityGartenLandschaftsbauPage({ params }: { params:
     }
 
     const nearbyCities = getNearbyCities(citySlug, 6);
+    const uniqueIntro = getUniqueIntro(city, 'garten-und-landschaftsbau');
+    const localTipp = getLocalTipp(city, 'garten-und-landschaftsbau');
+    const bodenart = getBodenart(city);
+    const kreisName = getKreisName(city);
 
-    const faqs = [
+    const allFaqs = [
         {
             q: `Was kostet Gartengestaltung in ${city.name}?`,
             a: `Die Kosten variieren je nach Umfang: Einfache Umgestaltungen ab ca. 10.000€, komplette Neuanlagen ab 30.000-60.000€. Wir erstellen Ihnen ein individuelles Festpreisangebot für Ihr Projekt in ${city.name}.`,
@@ -86,7 +91,16 @@ export default async function CityGartenLandschaftsbauPage({ params }: { params:
             q: `Bieten Sie auch Pflege-Verträge für ${city.name} an?`,
             a: `Ja, wir bieten flexible Gartenpflege-Verträge für ${city.name} an – von monatlicher Betreuung bis zu saisonalen Leistungen.`,
         },
+        {
+            q: `Welche Bodenverhältnisse gibt es in ${city.name}?`,
+            a: `In ${city.name} (${kreisName}) finden wir überwiegend ${bodenart}. Wir stimmen unsere Pflanz- und Baukonzepte auf diese Gegebenheiten ab – für langlebige Ergebnisse.`,
+        },
+        {
+            q: `Kennen Sie sich in ${city.name} und Umgebung aus?`,
+            a: `Ja, wir sind regelmäßig im ${kreisName} tätig und kennen die lokalen Gegebenheiten genau. Von den Bodenverhältnissen bis zu den Genehmigungsanforderungen – wir beraten Sie umfassend.`,
+        },
     ];
+    const faqs = selectFAQs(allFaqs, citySlug, 6);
 
     const jsonLd = {
         '@context': 'https://schema.org',
@@ -249,10 +263,16 @@ export default async function CityGartenLandschaftsbauPage({ params }: { params:
                                     Wir planen, gestalten und pflegen Außenanlagen mit Leidenschaft und Fachwissen.
                                 </p>
                                 <p className="mb-6">
+                                    {uniqueIntro}
+                                </p>
+                                <p className="mb-6">
                                     Als erfahrener Galabau-Betrieb sind wir in {getCityAndRegion(city)} für Sie tätig.
                                     Unser Team aus <strong>ausgebildeten Landschaftsgärtnern</strong> berät Sie individuell
                                     und setzt Ihr Projekt termingerecht um – mit Festpreisgarantie.
                                 </p>
+                                <div className="bg-green-50 rounded-xl p-5 border-l-4 border-green-500 my-6">
+                                    <p className="text-green-800 font-medium text-sm">💡 {localTipp}</p>
+                                </div>
                                 <p>
                                     Von der repräsentativen Einfahrt über die gemütliche Terrasse bis zum durchdachten
                                     Pflanzkonzept – wir verwandeln Ihr Grundstück in {city.name} in einen Lebensraum.

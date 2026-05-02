@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
+import { StickyContactButton } from "@/components";
 import "./globals.css";
 
 const inter = Inter({ 
@@ -79,6 +80,7 @@ export default function RootLayout({
       </head>
       <body className={`${inter.className} antialiased`}>
         {children}
+        <StickyContactButton />
       </body>
     </html>
   );

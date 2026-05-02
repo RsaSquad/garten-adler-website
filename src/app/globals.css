@@ -234,6 +234,19 @@ a, button, [role="button"], input[type="submit"], summary {
   }
 }
 
+@keyframes subtleBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.animate-subtle-bounce {
+  animation: subtleBounce 2.5s ease-in-out infinite;
+}
+
 /* Reduce motion for users who prefer it */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {

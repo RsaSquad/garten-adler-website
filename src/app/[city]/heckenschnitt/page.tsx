@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 import { getCityBySlug, getNearbyCities, getAllCitySlugs } from '@/data/cities';
 import { Contact } from '@/components';
 import { getCityAndRegion, getRegionLabel } from '@/utils/cityHelpers';
+import { getUniqueIntro, getLocalTipp, selectFAQs } from '@/lib/cityContentGenerator';
 
 export async function generateStaticParams() {
     return getAllCitySlugs().map((slug) => ({ city: slug }));
@@ -61,8 +62,10 @@ export default async function CityHeckenschnittPage({ params }: { params: Promis
     }
 
     const nearbyCities = getNearbyCities(citySlug, 6);
+    const uniqueIntro = getUniqueIntro(city, 'heckenschnitt');
+    const localTipp = getLocalTipp(city, 'heckenschnitt');
 
-    const faqs = [
+    const allFaqs = [
         {
             q: `Was kostet Heckenschnitt in ${city.name}?`,
             a: `Der Preis für Heckenschnitt in ${city.name} hängt von Höhe und Länge ab. Richtwert: 5-15€ pro laufendem Meter bei normaler Höhe (bis 2m). Höhere Hecken kosten mehr. Fordern Sie ein kostenloses Angebot an!`,
@@ -88,6 +91,7 @@ export default async function CityHeckenschnittPage({ params }: { params: Promis
             a: `Für Formschnitte brauchen Sie in ${city.name} keine Genehmigung. Radikale Rückschnitte und Rodungen sind nur von Oktober bis Februar erlaubt (Vogelschutz §39 BNatSchG).`,
         },
     ];
+    const faqs = selectFAQs(allFaqs, citySlug, 5);
 
     const jsonLd = {
         '@context': 'https://schema.org',
@@ -247,10 +251,11 @@ export default async function CityHeckenschnittPage({ params }: { params: Promis
                                     Regelmäßiger Heckenschnitt sorgt für <strong>dichtes Wachstum, schöne Optik und gesunde Pflanzen</strong>.
                                 </p>
                                 <p className="mb-6">
-                                    Ob <strong>Thuja, Liguster, Buche oder Kirschlorbeer</strong> – wir kennen alle Heckenarten und
-                                    wissen genau, wann und wie geschnitten werden muss. Mit professionellem Equipment arbeiten
-                                    wir schnell und sauber in {city.name} und Umgebung.
+                                    {uniqueIntro}
                                 </p>
+                                <div className="bg-green-50 rounded-xl p-5 border-l-4 border-green-500 my-6">
+                                    <p className="text-green-800 font-medium text-sm">💡 {localTipp}</p>
+                                </div>
                                 <p>
                                     Als Grundstückseigentümer in {city.name} profitieren Sie von unserer Erfahrung:
                                     Wir schneiden Ihre Hecke fachgerecht, entsorgen das komplette Schnittgut

@@ -1,0 +1,101 @@
+name: Scheduled Blog Publish
+
+on:
+  schedule:
+    # Runs daily at 06:00 UTC = 08:00 CET
+    - cron: '0 6 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  check-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check for articles to publish
+        id: check_articles
+        run: |
+          TODAY=$(date +%Y-%m-%d)
+          echo "today=$TODAY" >> $GITHUB_OUTPUT
+
+          # Count articles with publishDate <= today (not just exact match)
+          # This catches articles that were missed on their exact publish date
+          MATCHES=$(node -e "
+            const fs = require('fs');
+            const content = fs.readFileSync('src/data/blog.ts', 'utf-8');
+            const dates = [...content.matchAll(/publishDate:\s*['\"](\d{4}-\d{2}-\d{2})['\"]/g)];
+            const today = '$TODAY';
+            const due = dates.filter(m => m[1] <= today);
+            console.log(due.length);
+          ")
+          echo "published_count=$MATCHES" >> $GITHUB_OUTPUT
+
+          # Check for articles with EXACTLY today's date (for notification)
+          NEW_TODAY=$(node -e "
+            const fs = require('fs');
+            const content = fs.readFileSync('src/data/blog.ts', 'utf-8');
+            const dates = [...content.matchAll(/publishDate:\s*['\"](\d{4}-\d{2}-\d{2})['\"]/g)];
+            const today = '$TODAY';
+            const newToday = dates.filter(m => m[1] === today);
+            console.log(newToday.length);
+          ")
+          echo "new_today=$NEW_TODAY" >> $GITHUB_OUTPUT
+
+          if [ "$NEW_TODAY" -gt "0" ]; then
+            echo "has_new=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_new=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Trigger Vercel Redeploy
+        if: steps.check_articles.outputs.has_new == 'true'
+        run: |
+          # Trigger a production deploy via Vercel Deploy Hook
+          # This forces a rebuild so getPublishedArticles() picks up newly due articles
+          if [ -n "${{ secrets.VERCEL_DEPLOY_HOOK }}" ]; then
+            curl -X POST "${{ secrets.VERCEL_DEPLOY_HOOK }}"
+            echo "✅ Vercel redeploy triggered via deploy hook"
+          else
+            echo "⚠️ VERCEL_DEPLOY_HOOK secret not set — skipping deploy"
+            echo "Set it in GitHub Settings → Secrets → Actions"
+            echo "Get the URL from Vercel → Settings → Git → Deploy Hooks"
+          fi
+
+      - name: Send notification via API
+        if: steps.check_articles.outputs.has_new == 'true'
+        run: |
+          # Wait for Vercel to start building (give it 30 seconds)
+          sleep 30
+
+          # Call the blog-notify API endpoint to send the email
+          RESPONSE=$(curl -s -w "\n%{http_code}" \
+            -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" \
+            "https://garten-adler.de/api/blog-notify" || true)
+          
+          HTTP_CODE=$(echo "$RESPONSE" | tail -1)
+          BODY=$(echo "$RESPONSE" | head -n -1)
+          
+          echo "API Response ($HTTP_CODE): $BODY"
+          
+          if [ "$HTTP_CODE" = "200" ]; then
+            echo "✅ Blog notification sent successfully"
+          else
+            echo "⚠️ Blog notification API returned $HTTP_CODE"
+            echo "The deploy might still be in progress. The Vercel Cron will retry later."
+          fi
+
+      - name: Log — no new articles today
+        if: steps.check_articles.outputs.has_new == 'false'
+        run: |
+          echo "Kein neuer Artikel für heute (${{ steps.check_articles.outputs.today }}) geplant."
+          echo "Aktuell veröffentlicht: ${{ steps.check_articles.outputs.published_count }} Artikel"

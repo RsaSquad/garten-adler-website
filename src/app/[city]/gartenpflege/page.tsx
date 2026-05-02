@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 import { getCityBySlug, getNearbyCities, getAllCitySlugs } from '@/data/cities';
 import { Contact } from '@/components';
 import { getCityAndRegion, getRegionLabel } from '@/utils/cityHelpers';
+import { getUniqueIntro, getLocalTipp, selectFAQs } from '@/lib/cityContentGenerator';
 
 export async function generateStaticParams() {
     return getAllCitySlugs().map((slug) => ({ city: slug }));
@@ -46,8 +47,10 @@ export default async function CityGartenpflegePage({ params }: { params: Promise
     if (!city) notFound();
 
     const nearbyCities = getNearbyCities(citySlug, 4);
+    const uniqueIntro = getUniqueIntro(city, 'gartenpflege');
+    const localTipp = getLocalTipp(city, 'gartenpflege');
 
-    const faqs = [
+    const allFaqs = [
         {
             q: `Was kostet Gartenpflege in ${city.name}?`,
             a: `Die Kosten für Gartenpflege in ${city.name} richten sich nach Gartengröße und Leistungsumfang. Wir erstellen Ihnen ein individuelles Angebot nach einer kostenlosen Besichtigung vor Ort.`,
@@ -73,6 +76,7 @@ export default async function CityGartenpflegePage({ params }: { params: Promise
             a: `Nein, die Anfahrt nach ${city.name} ($) ist in unseren Angeboten bereits enthalten. Es entstehen keine zusätzlichen Anfahrtskosten.`,
         },
     ];
+    const faqs = selectFAQs(allFaqs, citySlug, 5);
 
     const jsonLd = {
         '@context': 'https://schema.org',
@@ -231,9 +235,11 @@ export default async function CityGartenpflegePage({ params }: { params: Promise
                                     Warum Adler & Sohn für Gartenpflege in {city.name}?
                                 </h2>
                                 <p className="text-lg text-gray-600 mb-8">
-                                    Als regionaler Gartenpflegedienst kennen wir {city.name} und die Besonderheiten der Region {getRegionLabel(city)}.
-                                    Unsere Nähe garantiert schnellen Service und persönliche Betreuung.
+                                    {uniqueIntro}
                                 </p>
+                                <div className="bg-green-50 rounded-xl p-5 border-l-4 border-green-500 mb-8">
+                                    <p className="text-green-800 font-medium text-sm">💡 {localTipp}</p>
+                                </div>
                                 <div className="space-y-4">
                                     {[
                                         { t: 'Lokale Expertise', d: `Wir kennen Boden und Klima in ${city.name}` },

@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 import { getCityBySlug, getNearbyCities, getAllCitySlugs } from '@/data/cities';
 import { Contact } from '@/components';
 import { getCityAndRegion, getRegionLabel } from '@/utils/cityHelpers';
+import { getUniqueIntro, getLocalTipp, selectFAQs } from '@/lib/cityContentGenerator';
 
 export async function generateStaticParams() {
     return getAllCitySlugs().map((slug) => ({ city: slug }));
@@ -54,8 +55,10 @@ export default async function CityTerrassenbauPage({ params }: { params: Promise
     }
 
     const nearbyCities = getNearbyCities(citySlug, 6);
+    const uniqueIntro = getUniqueIntro(city, 'terrassenbau');
+    const localTipp = getLocalTipp(city, 'terrassenbau');
 
-    const faqs = [
+    const allFaqs = [
         {
             q: `Was kostet eine Terrasse in ${city.name}?`,
             a: `Die Kosten für Terrassenbau in ${city.name} hängen von Material und Größe ab: Betonplatten ab 120€/m², Naturstein ab 150€/m², Holz ab 180€/m², WPC ab 200€/m². Eine typische 30m² Terrasse kostet 4.500€-8.000€ inklusive Unterbau und Montage.`,
@@ -81,6 +84,7 @@ export default async function CityTerrassenbauPage({ params }: { params: Promise
             a: `Ja, wir bauen Terrassenstufen und Gartentreppen in ${city.name} passend zu Ihrer Terrasse – aus dem gleichen Material oder als bewussten Kontrast.`,
         },
     ];
+    const faqs = selectFAQs(allFaqs, citySlug, 5);
 
     const jsonLd = {
         '@context': 'https://schema.org',
@@ -241,10 +245,11 @@ export default async function CityTerrassenbauPage({ params }: { params: Promise
                                     Wir planen und bauen Terrassen aus allen Materialien – für Jahrzehnte Genuss im Freien.
                                 </p>
                                 <p className="mb-6">
-                                    Als erfahrener Galabau-Betrieb wissen wir: Eine gute Terrasse beginnt mit dem richtigen Unterbau.
-                                    Wir legen großen Wert auf fachgerechte Drainage, präzises Gefälle und eine stabile Tragschicht –
-                                    für eine Terrasse in {city.name}, die Jahrzehnte hält.
+                                    {uniqueIntro}
                                 </p>
+                                <div className="bg-stone-50 rounded-xl p-5 border-l-4 border-stone-500 my-6">
+                                    <p className="text-stone-800 font-medium text-sm">💡 {localTipp}</p>
+                                </div>
                                 <p>
                                     Von der ersten Beratung über die Materialauswahl bis zur fertigen Terrasse
                                     erhalten Sie bei uns alles aus einer Hand – mit <strong>Festpreisgarantie</strong>.

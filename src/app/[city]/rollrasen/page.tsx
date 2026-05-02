@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 import { getCityBySlug, getNearbyCities, getAllCitySlugs } from '@/data/cities';
 import { Contact } from '@/components';
 import { getCityAndRegion, getRegionLabel } from '@/utils/cityHelpers';
+import { getUniqueIntro, getLocalTipp, getBodenart, getKreisName, selectFAQs } from '@/lib/cityContentGenerator';
 
 export async function generateStaticParams() {
     return getAllCitySlugs().map((slug) => ({ city: slug }));
@@ -73,8 +74,12 @@ export default async function CityRollrasenPage({ params }: { params: Promise<{ 
     }
 
     const nearbyCities = getNearbyCities(citySlug, 6);
+    const uniqueIntro = getUniqueIntro(city, 'rollrasen');
+    const localTipp = getLocalTipp(city, 'rollrasen');
+    const bodenart = getBodenart(city);
+    const kreisName = getKreisName(city);
 
-    const faqs = [
+    const allFaqs = [
         {
             q: `Was kostet Rollrasen verlegen in ${city.name}?`,
             a: `Die Kosten für Rollrasen in ${city.name} liegen bei 15-25€/m² inklusive Verlegung und Bodenvorbereitung. Der reine Rollrasen kostet ca. 5-8€/m². Wir erstellen Ihnen gerne ein kostenloses Angebot für Ihr Projekt in ${city.name}.`,
@@ -100,6 +105,7 @@ export default async function CityRollrasenPage({ params }: { params: Promise<{ 
             a: `Ja, die fachgerechte Entsorgung von Altgras und Erdaushub ist in unseren Angeboten für ${city.name} enthalten. Sie müssen sich um nichts kümmern.`,
         },
     ];
+    const faqs = selectFAQs(allFaqs, citySlug, 6);
 
     const jsonLd = {
         '@context': 'https://schema.org',
@@ -268,10 +274,11 @@ export default async function CityRollrasenPage({ params }: { params: Promise<{ 
                                     in eine sattgrüne Wohlfühloase.
                                 </p>
                                 <p className="mb-6">
-                                    Als erfahrener Garten- und Landschaftsbaubetrieb verlegen wir regelmäßig Rollrasen in {city.name}
-                                    und der gesamten Region {getRegionLabel(city)}. Mit nur <strong>{city.distance}km Entfernung</strong> sind
-                                    wir schnell bei Ihnen und liefern Ihren neuen Rasen frisch von der Rasenschule.
+                                    {uniqueIntro}
                                 </p>
+                                <div className="bg-green-50 rounded-xl p-5 border-l-4 border-green-500 my-6">
+                                    <p className="text-green-800 font-medium text-sm">💡 {localTipp}</p>
+                                </div>
                                 <p>
                                     Unser Rundum-Service für {city.name} umfasst: Beratung, Bodenvorbereitung, Lieferung, Verlegung
                                     und Pflegeeinweisung – alles aus einer Hand und zum garantierten Festpreis.

@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 import { getCityBySlug, getNearbyCities, getAllCitySlugs } from '@/data/cities';
 import { Contact } from '@/components';
 import { getCityAndRegion, getRegionLabel } from '@/utils/cityHelpers';
+import { getUniqueIntro, getLocalTipp, selectFAQs } from '@/lib/cityContentGenerator';
 
 export async function generateStaticParams() {
     return getAllCitySlugs().map((slug) => ({ city: slug }));
@@ -56,8 +57,10 @@ export default async function CityGalabauPage({ params }: { params: Promise<{ ci
     }
 
     const nearbyCities = getNearbyCities(citySlug, 6);
+    const uniqueIntro = getUniqueIntro(city, 'galabau');
+    const localTipp = getLocalTipp(city, 'galabau');
 
-    const faqs = [
+    const allFaqs = [
         {
             q: `Was kostet Galabau in ${city.name}?`,
             a: `Die Kosten für Galabau in ${city.name} hängen stark vom Umfang ab. Eine einfache Terrassenerstellung beginnt ab ca. 5.000€, komplette Gartenumgestaltungen können 20.000-50.000€ kosten. Wir erstellen Ihnen ein individuelles Festpreisangebot.`,
@@ -83,6 +86,7 @@ export default async function CityGalabauPage({ params }: { params: Promise<{ ci
             a: `Ja, Sie erhalten auf alle Arbeiten in ${city.name} die gesetzliche Gewährleistung. Bei Pflanzungen geben wir eine Anwachsgarantie.`,
         },
     ];
+    const faqs = selectFAQs(allFaqs, citySlug, 5);
 
     const jsonLd = {
         '@context': 'https://schema.org',
@@ -244,10 +248,11 @@ export default async function CityGalabauPage({ params }: { params: Promise<{ ci
                                     Als erfahrener <strong>Galabau-Betrieb</strong> verwandeln wir Ihre Vorstellungen in Realität.
                                 </p>
                                 <p className="mb-6">
-                                    Ob Sie eine neue <strong>Terrasse</strong> wünschen, Ihre Einfahrt pflastern lassen möchten,
-                                    oder einen <strong>kompletten Traumgarten</strong> in {city.name} planen – wir sind Ihr Partner
-                                    für alle Arbeiten rund um Garten und Außenanlagen.
+                                    {uniqueIntro}
                                 </p>
+                                <div className="bg-green-50 rounded-xl p-5 border-l-4 border-green-500 my-6">
+                                    <p className="text-green-800 font-medium text-sm">💡 {localTipp}</p>
+                                </div>
                                 <p>
                                     Bei uns bekommen Sie alles aus einer Hand: Von der ersten Idee und Planung
                                     über die fachgerechte Ausführung bis zur fertigen Übergabe in {city.name}.

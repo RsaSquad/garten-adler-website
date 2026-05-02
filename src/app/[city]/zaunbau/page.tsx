@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 import { getCityBySlug, getNearbyCities, getAllCitySlugs } from '@/data/cities';
 import { Contact } from '@/components';
 import { getCityAndRegion, getRegionLabel } from '@/utils/cityHelpers';
+import { getUniqueIntro, getLocalTipp, selectFAQs } from '@/lib/cityContentGenerator';
 
 export async function generateStaticParams() {
     return getAllCitySlugs().map((slug) => ({ city: slug }));
@@ -54,8 +55,10 @@ export default async function CityZaunbauPage({ params }: { params: Promise<{ ci
     }
 
     const nearbyCities = getNearbyCities(citySlug, 6);
+    const uniqueIntro = getUniqueIntro(city, 'zaunbau');
+    const localTipp = getLocalTipp(city, 'zaunbau');
 
-    const faqs = [
+    const allFaqs = [
         {
             q: `Was kostet ein Zaun in ${city.name}?`,
             a: `Die Kosten für Zaunbau in ${city.name} hängen von Zaunart und Länge ab: Maschendraht ab 25€/lfm, Doppelstabmatten ab 60€/lfm, Holzzäune ab 80€/lfm, Gabionen ab 150€/lfm – jeweils inklusive Material und Montage.`,
@@ -81,6 +84,7 @@ export default async function CityZaunbauPage({ params }: { params: Promise<{ ci
             a: `Ja, wir liefern und montieren passende Gartenpforten, Einfahrtstore und Schiebetore in ${city.name}. Auf Wunsch auch mit elektrischem Antrieb.`,
         },
     ];
+    const faqs = selectFAQs(allFaqs, citySlug, 5);
 
     const jsonLd = {
         '@context': 'https://schema.org',
@@ -241,11 +245,11 @@ export default async function CityZaunbauPage({ params }: { params: Promise<{ ci
                                     bis zum repräsentativen Sichtschutz.
                                 </p>
                                 <p className="mb-6">
-                                    Als erfahrener Galabau-Betrieb beraten wir Sie umfassend zu den verschiedenen
-                                    Materialien und deren Vor- und Nachteilen. <strong>Holz</strong> für natürliche Wärme,
-                                    <strong> Metall</strong> für Langlebigkeit, <strong>Gabionen</strong> für modernes Design –
-                                    für jeden Anspruch finden wir die passende Lösung in {city.name}.
+                                    {uniqueIntro}
                                 </p>
+                                <div className="bg-amber-50 rounded-xl p-5 border-l-4 border-amber-500 my-6">
+                                    <p className="text-amber-800 font-medium text-sm">💡 {localTipp}</p>
+                                </div>
                                 <p>
                                     Von der Vor-Ort-Beratung über die Fundamentierung bis zur fertigen Montage
                                     erhalten Sie bei uns alles aus einer Hand – mit <strong>Festpreisgarantie</strong>.

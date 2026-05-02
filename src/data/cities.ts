@@ -12,6 +12,12 @@ export interface City {
     districts?: string[];
     lat?: number;
     lng?: number;
+    // Content-Diversifizierung
+    bodenart?: string;
+    klimazone?: string;
+    besonderheiten?: string[];
+    typischeGaerten?: string;
+    kreisName?: string;
 }
 
 export const cities: City[] = [
