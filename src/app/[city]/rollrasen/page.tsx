@@ -9,7 +9,8 @@ import { getUniqueIntro, getLocalTipp, getBodenart, getKreisName, selectFAQs } f
 
 export const dynamicParams = true;
 export async function generateStaticParams() {
-    return getTopCitySlugs(30).map((slug) => ({ city: slug }));
+    return [];
+}));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ city: string }> }): Promise<Metadata> {

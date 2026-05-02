@@ -10,9 +10,8 @@ import { getCityAndRegion, getRegionLabel } from '@/utils/cityHelpers';
 // On-demand ISR: Top-Städte pre-rendered, Rest bei erstem Besuch
 export const dynamicParams = true;
 export async function generateStaticParams() {
-    return getTopCitySlugs(30).map((slug) => ({
-        city: slug,
-    }));
+    return [];
+}));
 }
 
 // Dynamische Metadata für jede Stadt
