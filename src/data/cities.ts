@@ -2039,6 +2039,15 @@ export function getAllCitySlugs(): string[] {
     return cities.map(city => city.slug);
 }
 
+// Top-Städte für Build-Time SSG (Vercel Hobby Plan hat 45min Timeout)
+// Rest wird on-demand generiert und gecacht (ISR)
+export function getTopCitySlugs(limit: number = 30): string[] {
+    return [...cities]
+        .sort((a, b) => b.population - a.population)
+        .slice(0, limit)
+        .map(city => city.slug);
+}
+
 // Städte nach Region gruppieren
 export function getCitiesByRegion(): Record<string, City[]> {
     return cities.reduce((acc, city) => {

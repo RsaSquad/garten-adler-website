@@ -2,14 +2,15 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
-import { getCityBySlug, getNearbyCities, getAllCitySlugs } from '@/data/cities';
+import { getCityBySlug, getNearbyCities, getTopCitySlugs } from '@/data/cities';
 import { Contact } from '@/components';
 import { getCityAndRegion, getRegionLabel } from '@/utils/cityHelpers';
 import { getUniqueIntro, getLocalTipp, getBodenart, getKreisName, selectFAQs } from '@/lib/cityContentGenerator';
 
-// Generiere alle Städte-Pflasterarbeiten-Seiten statisch
+// On-demand ISR: Top-Städte pre-rendered, Rest bei erstem Besuch
+export const dynamicParams = true;
 export async function generateStaticParams() {
-    return getAllCitySlugs().map((slug) => ({
+    return getTopCitySlugs(30).map((slug) => ({
         city: slug,
     }));
 }

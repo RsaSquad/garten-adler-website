@@ -2,13 +2,14 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
-import { getCityBySlug, getNearbyCities, getAllCitySlugs } from '@/data/cities';
+import { getCityBySlug, getNearbyCities, getTopCitySlugs } from '@/data/cities';
 import { Contact } from '@/components';
 import { getCityAndRegion, getRegionLabel } from '@/utils/cityHelpers';
 import { getUniqueIntro, getLocalTipp, selectFAQs } from '@/lib/cityContentGenerator';
 
+export const dynamicParams = true;
 export async function generateStaticParams() {
-    return getAllCitySlugs().map((slug) => ({ city: slug }));
+    return getTopCitySlugs(30).map((slug) => ({ city: slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ city: string }> }): Promise<Metadata> {

@@ -2,14 +2,15 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
-import { cities, getCityBySlug, getNearbyCities, getAllCitySlugs } from '@/data/cities';
+import { cities, getCityBySlug, getNearbyCities, getTopCitySlugs } from '@/data/cities';
 import { FAQ, Contact } from '@/components';
 import { generateCityFAQs } from '@/lib/faqData';
 import { getCityAndRegion, getRegionLabel } from '@/utils/cityHelpers';
 
-// Generiere alle Städte-Seiten statisch
+// On-demand ISR: Top-Städte pre-rendered, Rest bei erstem Besuch
+export const dynamicParams = true;
 export async function generateStaticParams() {
-    return getAllCitySlugs().map((slug) => ({
+    return getTopCitySlugs(30).map((slug) => ({
         city: slug,
     }));
 }
