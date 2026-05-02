@@ -1,6 +1,5 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { cities, getCityBySlug, getNearbyCities } from '@/data/cities';
 import { FAQ, Contact } from '@/components';
@@ -171,7 +170,7 @@ export default async function CityPage({ params }: { params: Promise<{ city: str
                 <div className="container-custom py-1.5">
                     <nav className="flex items-center justify-between">
                         <Link href="/" className="flex items-center gap-3">
-                            <Image src="/images/logo.png" alt="Adler & Sohn Galabau" width={140} height={47} className="h-10 w-auto object-contain" />
+                            <img src="/images/logo.png" alt="Adler & Sohn Galabau" width={140} height={47} className="h-10 w-auto object-contain" />
                         </Link>
                         <div className="hidden md:flex items-center gap-6">
                             <Link href="/#leistungen" className="text-white/80 hover:text-white hover:bg-white/10 px-4 py-2 rounded-full transition-all">Leistungen</Link>
@@ -188,14 +187,6 @@ export default async function CityPage({ params }: { params: Promise<{ city: str
             <main>
                 {/* Hero Section */}
                 <section className="relative pt-32 pb-20 overflow-hidden">
-                    <Image
-                        src={`/images/garten-landschaftsbau-gartengestaltung-projekt-${city.slug}-${heroIndex}.png`}
-                        alt={`Garten- und Landschaftsbau ${city.name} - Professionelle Gartengestaltung`}
-                        fill
-                        priority
-                        quality={85}
-                        className="object-cover"
-                    />
                     <div className="absolute inset-0 bg-gradient-to-br from-green-900/80 via-green-800/70 to-green-700/60" />
 
                     <div className="container-custom relative z-10">
@@ -291,7 +282,7 @@ export default async function CityPage({ params }: { params: Promise<{ city: str
                             {services.map((service, index) => (
                                 <div key={index} className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow card-hover">
                                     <div className="h-36 relative">
-                                        <Image src={service.image} alt={service.name} fill className="object-cover" />
+                                        
                                     </div>
                                     <div className="p-6">
                                     <h3 className="text-lg font-bold text-gray-900 mb-2">
@@ -448,13 +439,7 @@ export default async function CityPage({ params }: { params: Promise<{ city: str
 
                 {/* CTA Section */}
                 <section className="relative section-padding overflow-hidden">
-                    <Image
-                        src={`/images/garten-landschaftsbau-traumgarten-beratung-${city.slug}-${ctaIndex}.png`}
-                        alt={`Garten- und Landschaftsbau ${city.name} - Traumgarten anlegen lassen`}
-                        fill
-                        className="object-cover"
-                        quality={80}
-                    />
+                    
                     <div className="absolute inset-0 bg-gradient-to-r from-green-900/80 to-green-800/70" />
                     <div className="container-custom text-center relative z-10">
                         <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
@@ -487,7 +472,7 @@ export default async function CityPage({ params }: { params: Promise<{ city: str
                 <div className="container-custom">
                     <div className="flex flex-col md:flex-row items-center justify-between gap-6">
                         <div className="flex items-center gap-3">
-                            <Image src="/images/logo.png" alt="Adler & Sohn Galabau" width={120} height={40} className="h-10 w-auto object-contain brightness-200" />
+                            <img src="/images/logo.png" alt="Adler & Sohn Galabau" width={120} height={40} className="h-10 w-auto object-contain brightness-200" />
                         </div>
                         <div className="flex gap-6 text-sm">
                             <Link href="/" className="hover:text-green-500 transition-colors">Home</Link>

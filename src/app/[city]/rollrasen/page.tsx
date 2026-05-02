@@ -1,6 +1,5 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { getCityBySlug, getNearbyCities } from '@/data/cities';
 import { Contact } from '@/components';
@@ -158,7 +157,7 @@ export default async function CityRollrasenPage({ params }: { params: Promise<{ 
                 <div className="container-custom py-1.5">
                     <nav className="flex items-center justify-between">
                         <Link href="/" className="flex items-center gap-3">
-                            <Image src="/images/logo.png" alt="Adler & Sohn Galabau" width={140} height={47} className="h-10 w-auto object-contain" />
+                            <img src="/images/logo.png" alt="Adler & Sohn Galabau" width={140} height={47} className="h-10 w-auto object-contain" />
                         </Link>
                         <div className="hidden md:flex items-center gap-6">
                             <Link href={`/${city.slug}`} className="text-white/80 hover:text-white hover:bg-white/10 px-4 py-2 rounded-full transition-all">{city.name}</Link>
@@ -174,15 +173,6 @@ export default async function CityRollrasenPage({ params }: { params: Promise<{ 
                 {/* Hero */}
                 <section className="relative pt-32 pb-24 overflow-hidden">
                     {/* Background Image */}
-                    <Image
-                        src={`/images/rollrasen-hero-${city.slug}.png`}
-                        alt={`Rollrasen verlegen ${city.name} - Frischer grüner Fertigrasen vom Profi`}
-                        fill
-                        priority
-                        quality={85}
-                        sizes="100vw"
-                        className="object-cover z-0"
-                    />
                     {/* 60% Transparent Overlay */}
                     <div className="absolute inset-0 bg-gradient-to-br from-green-800/60 via-green-700/60 to-lime-600/60 z-[1]" />
                     <div className="absolute top-20 right-10 w-72 h-72 rounded-full bg-lime-400/20 blur-3xl z-[1]" />
@@ -330,14 +320,6 @@ export default async function CityRollrasenPage({ params }: { params: Promise<{ 
                 {/* Process */}
                 <section className="relative section-padding text-white overflow-hidden">
                     {/* Background Image */}
-                    <Image
-                        src={`/images/rollrasen-verlegung-${city.slug}.jpg`}
-                        alt={`Rollrasen Verlegung ${city.name} - Schritt für Schritt`}
-                        fill
-                        quality={75}
-                        sizes="100vw"
-                        className="object-cover z-0"
-                    />
                     {/* 80% Dark Overlay */}
                     <div className="absolute inset-0 bg-gray-900/80 z-[1]" />
 
@@ -444,13 +426,7 @@ export default async function CityRollrasenPage({ params }: { params: Promise<{ 
 
                 {/* CTA */}
                 <section className="relative section-padding overflow-hidden">
-                    <Image
-                        src={`/images/rollrasen-cta-${city.slug}.png`}
-                        alt={`Rollrasen verlegen ${city.name} - Jetzt Angebot anfordern`}
-                        fill
-                        className="object-cover"
-                        quality={80}
-                    />
+                    
                     <div className="absolute inset-0 bg-gradient-to-r from-green-900/80 to-lime-900/70" />
                     <div className="container-custom text-center relative z-10">
                         <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
@@ -477,7 +453,7 @@ export default async function CityRollrasenPage({ params }: { params: Promise<{ 
                 <div className="container-custom">
                     <div className="flex flex-col md:flex-row items-center justify-between gap-6">
                         <div className="flex items-center gap-3">
-                            <Image src="/images/logo.png" alt="Adler & Sohn Galabau" width={120} height={40} className="h-10 w-auto object-contain brightness-200" />
+                            <img src="/images/logo.png" alt="Adler & Sohn Galabau" width={120} height={40} className="h-10 w-auto object-contain brightness-200" />
                         </div>
                         <div className="flex gap-6 text-sm">
                             <Link href="/" className="hover:text-green-500 transition-colors">Home</Link>
