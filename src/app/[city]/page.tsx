@@ -7,9 +7,7 @@ import { FAQ, Contact } from '@/components';
 import { generateCityFAQs } from '@/lib/faqData';
 import { getCityAndRegion, getRegionLabel } from '@/utils/cityHelpers';
 
-export const runtime = 'edge';
-export const dynamicParams = true;
-export const revalidate = 86400; // Cache for 24h
+export const dynamic = 'force-dynamic';
 // Dynamische Metadata für jede Stadt
 export async function generateMetadata({ params }: { params: Promise<{ city: string }> }): Promise<Metadata> {
     const { city: citySlug } = await params;
