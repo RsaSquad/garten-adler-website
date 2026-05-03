@@ -2209,6 +2209,126 @@ export const blogArticles: BlogArticle[] = [
         ],
         relatedServices: ['garten-und-landschaftsbau', 'galabau', 'terrassenbau', 'pflasterarbeiten', 'rollrasen'],
     },
+
+    // ========================================================================
+    // ARTIKEL 27: Rasenkrankheiten
+    // ========================================================================
+    {
+        slug: 'rasenkrankheiten-erkennen',
+        title: 'Rasenkrankheiten erkennen & behandeln',
+        metaTitle: 'Rasenkrankheiten erkennen & behandeln: Diagnose-Guide 2026',
+        metaDescription: 'Rasenkrankheiten erkennen? Schneeschimmel, Rotspitzigkeit, Dollar Spot, Hexenringe. Diagnose und Behandlung vom Profi.',
+        excerpt: 'Schneeschimmel, Rotspitzigkeit oder Dollar Spot — wir zeigen, wie Sie Rasenkrankheiten erkennen und richtig behandeln.',
+        category: 'Ratgeber',
+        publishDate: '2026-07-15',
+        readingTime: 8,
+        keywords: ['Rasenkrankheiten', 'Schneeschimmel Rasen', 'Rotspitzigkeit Rasen', 'Rasen Pilz'],
+        tableOfContents: [
+            { id: 'schneeschimmel', title: 'Schneeschimmel' },
+            { id: 'rotspitzigkeit', title: 'Rotspitzigkeit' },
+            { id: 'vorbeugen', title: 'Vorbeugen statt heilen' },
+        ],
+        content: [
+            { id: 'schneeschimmel', heading: 'Schneeschimmel (Microdochium nivale)', content: '<p><strong>Erkennung:</strong> Runde, grau-weisse Flecken (5-25 cm) im Fruehling nach Schneeschmelze.</p><p><strong>Behandlung:</strong></p><ul><li>Befallene Stellen vertikutieren und belueften</li><li>Rasen trocknen lassen</li><li>Nachsaeen wenn kahle Stellen bleiben</li><li>Im Herbst: Kaliumbetonten Duenger verwenden</li></ul>' },
+            { id: 'rotspitzigkeit', heading: 'Rotspitzigkeit (Laetisaria fuciformis)', content: '<p><strong>Erkennung:</strong> Rosa bis roetliche Faeden an den Grashalm-Spitzen. Unregelmaessige gelb-braune Flecken.</p><p><strong>Ursache:</strong> Stickstoffmangel + hohe Luftfeuchtigkeit.</p><p><strong>Behandlung:</strong></p><ul><li>Sofort stickstoffbetonten Duenger ausbringen</li><li>Rasen besser belueften (vertikutieren)</li><li>Nicht abends waessern</li></ul><p><strong>Gute Nachricht:</strong> Rotspitzigkeit sieht schlimm aus, toetet den Rasen aber nicht.</p>' },
+            { id: 'vorbeugen', heading: 'Vorbeugen statt heilen', content: '<ul><li><strong>3x pro Jahr duengen:</strong> Gesunder, gut genaehrter Rasen ist resistent</li><li><strong>Morgens waessern:</strong> Abendliches Waessern foerdert Pilze</li><li><strong>1x pro Jahr vertikutieren</strong></li><li><strong>Laub entfernen:</strong> Die Nr.1 Ursache fuer Schneeschimmel</li><li><strong>Nicht zu kurz maehen</strong></li></ul>' },
+        ],
+        faqs: [
+            { q: 'Ist Schneeschimmel gefaehrlich fuer den Rasen?', a: 'Schneeschimmel sieht schlimm aus, toetet aber selten den gesamten Rasen. Die befallenen Stellen erholen sich nach Vertikutieren und Duengung meist innerhalb von 4-6 Wochen.' },
+            { q: 'Wann sollte man einen Profi rufen?', a: 'Wenn sich die Krankheit trotz Duengung und Belueftung ausbreitet, oder wenn Sie die Ursache nicht identifizieren koennen.' },
+        ],
+        relatedServices: ['gartenpflege', 'rollrasen', 'garten-und-landschaftsbau'],
+    },
+
+    // ========================================================================
+    // ARTIKEL 28: Kleinen Garten gestalten
+    // ========================================================================
+    {
+        slug: 'kleinen-garten-gestalten',
+        title: 'Kleinen Garten gestalten: 15 Tricks die gross wirken',
+        metaTitle: 'Kleiner Garten: 15 Gestaltungs-Tricks die gross wirken 2026',
+        metaDescription: 'Kleiner Garten, grosse Wirkung? 15 Profi-Tricks, Raumwunder, die richtige Bepflanzung. So wird Ihr kleiner Garten zum Paradies.',
+        excerpt: 'Auch ein kleiner Garten kann ein Paradies sein — mit den richtigen Tricks. 15 erprobte Gestaltungsideen vom Profi.',
+        category: 'Inspiration',
+        publishDate: '2026-07-27',
+        readingTime: 9,
+        keywords: ['Kleiner Garten Ideen', 'kleiner Garten gestalten', 'Reihenhausgarten Ideen'],
+        tableOfContents: [
+            { id: 'grundregeln', title: 'Die 3 Grundregeln' },
+            { id: 'raumtricks', title: '5 Raumtricks' },
+            { id: 'pflanzen', title: 'Die richtigen Pflanzen' },
+        ],
+        content: [
+            { id: 'grundregeln', heading: 'Die 3 Grundregeln', content: '<ol><li><strong>Weniger ist mehr:</strong> Max. 3 Bodenbelaege, 5-7 Pflanzenarten</li><li><strong>Diagonale statt gerade:</strong> Diagonale Wege lassen den Garten laenger wirken</li><li><strong>In die Hoehe denken:</strong> Kletterpflanzen, Hochbeete, vertikale Gaerten</li></ol>' },
+            { id: 'raumtricks', heading: '5 Tricks die Ihren Garten groesser wirken lassen', content: '<ul><li><strong>1. Spiegel:</strong> Wetterfester Spiegel an der Gartenmauer verdoppelt den Raum optisch</li><li><strong>2. Tiefenwirkung:</strong> Grosse Pflanzen vorne, kleine hinten</li><li><strong>3. Keine geraden Grenzen:</strong> Geschwungene Beete kaschieren die Grundstuecksgrenze</li><li><strong>4. Helle Farben hinten:</strong> Weisse Blueten am Ende des Gartens lassen ihn weiter wirken</li><li><strong>5. Ebenen schaffen:</strong> Auch 30 cm Hoehenunterschied erzeugt Raumgefuehl</li></ul>' },
+            { id: 'pflanzen', heading: 'Die richtigen Pflanzen', content: '<table><thead><tr><th>Pflanze</th><th>Hoehe</th><th>Besonderheit</th></tr></thead><tbody><tr><td><strong>Japanischer Ahorn</strong></td><td>2-3 m</td><td>Kompakt, Herbstfaerbung</td></tr><tr><td><strong>Saeulen-Hainbuche</strong></td><td>5-8 m, schmal</td><td>Nur 1,5 m breit</td></tr><tr><td><strong>Ziergraeser</strong></td><td>60-180 cm</td><td>Leicht, transparent</td></tr><tr><td><strong>Kletterhortensie</strong></td><td>bis 8 m</td><td>Begruent Waende</td></tr></tbody></table>' },
+        ],
+        faqs: [
+            { q: 'Wie gross muss ein Garten mindestens sein?', a: 'Schon 20-30 m2 reichen fuer einen gemuetlichen Sitzplatz mit Bepflanzung. Ab 50 m2 koennen Sie Terrasse, kleine Rasenflaeche und Beete unterbringen.' },
+            { q: 'Was kostet es, einen kleinen Garten gestalten zu lassen?', a: 'Fuer einen kleinen Garten (50-100 m2) rechnen Sie mit 5.000-15.000 Euro fuer Terrasse, Bepflanzung und Gestaltung.' },
+        ],
+        relatedServices: ['garten-und-landschaftsbau', 'galabau', 'gartenpflege', 'terrassenbau'],
+    },
+
+    // ========================================================================
+    // ARTIKEL 29: Garten Hitze Sommer
+    // ========================================================================
+    {
+        slug: 'garten-hitze-sommer-tipps',
+        title: 'Garten im Hochsommer: 10 Tipps gegen Hitze-Schaeden',
+        metaTitle: 'Garten im Hochsommer: 10 Tipps gegen Hitze und Trockenheit 2026',
+        metaDescription: 'Garten bei Hitze schuetzen? 10 Profi-Tipps zum richtigen Waessern, Rasen retten und Pflanzen vor Hitzestress schuetzen.',
+        excerpt: 'Temperaturen ueber 30 Grad stressen Ihren Garten. 10 Profi-Tipps, wie Sie Rasen, Pflanzen und Baeume durch den Hochsommer bringen.',
+        category: 'Ratgeber',
+        publishDate: '2026-07-30',
+        readingTime: 7,
+        keywords: ['Garten Hitze Tipps', 'Rasen Sommer Pflege', 'Pflanzen Hitze schuetzen', 'Garten waessern Sommer'],
+        tableOfContents: [
+            { id: 'waessern', title: 'Richtig waessern' },
+            { id: 'rasen', title: 'Rasen durch den Sommer bringen' },
+            { id: 'pflanzen', title: 'Pflanzen vor Hitze schuetzen' },
+        ],
+        content: [
+            { id: 'waessern', heading: 'Richtig waessern', content: '<ol><li><strong>Morgens vor 7 Uhr</strong> waessern — weniger Verdunstung</li><li><strong>Lieber selten und viel</strong> als haeufig und wenig: 2x/Woche 20 Liter/m2</li><li><strong>Nie in der Mittagshitze</strong></li><li><strong>Wurzelbereich</strong> waessern, nicht die Blaetter</li></ol>' },
+            { id: 'rasen', heading: 'Rasen durch den Sommer bringen', content: '<ul><li><strong>Schnitthoehe auf 5-6 cm:</strong> Laengeres Gras beschattet den Boden</li><li><strong>Nie mehr als 1/3 abschneiden</strong></li><li><strong>Mulchmaehen:</strong> Schnittgut liegen lassen schuetzt den Boden</li><li><strong>Nicht duengen ueber 30 Grad</strong></li><li><strong>Brauner Rasen?</strong> Nicht maehen, nur waessern. Er erholt sich nach Regen.</li></ul>' },
+            { id: 'pflanzen', heading: 'Pflanzen vor Hitze schuetzen', content: '<ul><li><strong>Mulchen:</strong> 5-8 cm Rindenmulch haelt Feuchtigkeit und kuehlt den Boden um bis zu 8 Grad</li><li><strong>Schattieren:</strong> Empfindliche Pflanzen mit Vlies abdecken</li><li><strong>Kuebelpflanzen:</strong> In den Schatten stellen</li><li><strong>Nicht schneiden:</strong> Rueckschnitt bei Hitze stresst die Pflanze zusaetzlich</li></ul>' },
+        ],
+        faqs: [
+            { q: 'Soll man bei Hitze den Rasen waessern?', a: 'Ja, aber richtig: 2x pro Woche morgens durchdringend (20 Liter/m2). Taegliches Sprenkeln ist kontraproduktiv.' },
+            { q: 'Erholt sich brauner Rasen nach der Hitze?', a: 'In den meisten Faellen ja. Graeser gehen in eine Art Sommerschlaf und treiben nach Regen wieder gruen aus.' },
+        ],
+        relatedServices: ['gartenpflege', 'rollrasen', 'garten-und-landschaftsbau'],
+    },
+
+    // ========================================================================
+    // ARTIKEL 30: Vorgarten modern gestalten
+    // ========================================================================
+    {
+        slug: 'vorgarten-modern-gestalten',
+        title: 'Vorgarten modern gestalten: Ideen und Kosten',
+        metaTitle: 'Vorgarten modern gestalten: Ideen, Kosten und Profi-Tipps 2026',
+        metaDescription: 'Vorgarten modern gestalten? 8 Ideen, Kosten, pflegeleicht und schoen. Kein Schottergarten! Profi-Inspiration.',
+        excerpt: 'Ein moderner Vorgarten ist die Visitenkarte Ihres Hauses. 8 Gestaltungsideen von pflegeleicht bis premium.',
+        category: 'Inspiration',
+        publishDate: '2026-08-15',
+        readingTime: 8,
+        keywords: ['Vorgarten gestalten modern', 'Vorgarten Ideen', 'Vorgarten pflegeleicht'],
+        tableOfContents: [
+            { id: 'regeln', title: 'Design-Regeln' },
+            { id: 'ideen', title: '8 Gestaltungsideen' },
+            { id: 'kosten', title: 'Kosten' },
+        ],
+        content: [
+            { id: 'regeln', heading: 'Design-Regeln fuer moderne Vorgaerten', content: '<ol><li><strong>Klarheit:</strong> Wenige Materialien, klare Linien</li><li><strong>Kontraste:</strong> Dunkel + Hell, Hart + Weich</li><li><strong>Struktur:</strong> Formschnitt-Pflanzen geben ein Grundgeruest</li><li><strong>Weniger Rasen:</strong> Besser Bodendecker oder Kies mit Bepflanzung</li><li><strong>Beleuchtung:</strong> Wegeleuchten und Akzent-Spots</li></ol>' },
+            { id: 'ideen', heading: '8 Gestaltungsideen', content: '<h3>1. Minimalistisch: Graeser + Anthrazit</h3><p>Grossformatige Anthrazit-Platten, dazwischen Ziergraeser und Lavendel.</p><h3>2. Natuerlich: Cottage-Style</h3><p>Geschwungener Kiesweg, ueppige Staudenbeete, Kletterrosen.</p><h3>3. Japanisch inspiriert</h3><p>Kies, einzelne Findlinge, Japanischer Ahorn, Bodendecker.</p><h3>4. Eingangs-Allee</h3><p>Zwei Saeulen-Hainbuchen rahmen den Weg ein.</p><h3>5. Modernes Hochbeet</h3><p>Cortenstahl-Hochbeete als Strukturelement.</p><h3>6. Wasser-Element</h3><p>Kleiner Quellstein als Blickfang.</p><h3>7. Gruene Einfahrt</h3><p>Rasengittersteine — befahrbar und trotzdem gruen.</p><h3>8. Vertikaler Garten</h3><p>Rankgitter oder begrueente Gabionen an der Hauswand.</p>' },
+            { id: 'kosten', heading: 'Kosten-Ueberblick', content: '<table><thead><tr><th>Vorgarten-Stil</th><th>Kosten (30m2)</th></tr></thead><tbody><tr><td>Einfach (Kies + Bodendecker)</td><td>1.500-3.000 Euro</td></tr><tr><td>Mittel (Pflaster + Stauden)</td><td>3.000-6.000 Euro</td></tr><tr><td>Premium (Naturstein + Design)</td><td>6.000-12.000 Euro</td></tr></tbody></table>' },
+        ],
+        faqs: [
+            { q: 'Was kostet eine Vorgarten-Gestaltung?', a: 'Fuer einen 30m2 Vorgarten: 1.500-3.000 Euro einfach, 3.000-6.000 Euro mittel, 6.000-12.000 Euro premium.' },
+            { q: 'Sind Schottergaerten in Niedersachsen verboten?', a: 'Ja, seit der Novellierung der Niedersaechsischen Bauordnung sind reine Schottergaerten bei Neubauten nicht mehr erlaubt.' },
+        ],
+        relatedServices: ['garten-und-landschaftsbau', 'galabau', 'pflasterarbeiten', 'gartenpflege'],
+    },
 ];
 
 // Helper functions
