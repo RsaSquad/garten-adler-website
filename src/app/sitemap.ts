@@ -65,13 +65,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'weekly',
             priority: 0.8,
         },
-        // Blog-Artikel
-        ...blogArticles.map((article) => ({
-            url: `${baseUrl}/blog/${article.slug}`,
-            lastModified: article.updatedDate || article.publishDate,
-            changeFrequency: 'monthly' as const,
-            priority: 0.75,
-        })),
+        // Blog-Artikel (nur veröffentlichte – publishDate <= heute)
+        ...blogArticles
+            .filter((article) => new Date(article.publishDate) <= new Date())
+            .map((article) => ({
+                url: `${baseUrl}/blog/${article.slug}`,
+                lastModified: article.updatedDate || article.publishDate,
+                changeFrequency: 'monthly' as const,
+                priority: 0.75,
+            })),
     ];
 
     // Städte-Seiten (Hauptseite pro Stadt)
