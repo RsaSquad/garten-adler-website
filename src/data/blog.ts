@@ -1904,6 +1904,208 @@ export const blogArticles: BlogArticle[] = [
         ],
         relatedServices: ['gartenpflege', 'garten-und-landschaftsbau', 'rollrasen'],
     },
+
+    // ========================================================================
+    // ARTIKEL 18: Zaun Grundstücksgrenze Recht
+    // ========================================================================
+    {
+        slug: 'zaun-hoehe-grenze-recht',
+        title: 'Zaun an der Grundstücksgrenze: Höhe, Recht & Nachbarschaft',
+        metaTitle: 'Zaun Grundstücksgrenze: Höhe, Recht & Nachbar-Regelung 2026',
+        metaDescription: 'Zaun an der Grundstücksgrenze? ✓ Erlaubte Höhe ✓ Nachbarrecht ✓ Wer zahlt? ✓ Abstand. Alles was Sie rechtlich wissen müssen.',
+        excerpt: 'Darf ich einen Zaun an die Grundstücksgrenze setzen? Wie hoch? Wer zahlt? Wir klären die wichtigsten Rechtsfragen.',
+        category: 'Recht & Wissen',
+        publishDate: '2026-06-09',
+        readingTime: 8,
+        keywords: ['Zaun Grundstücksgrenze', 'Zaun Höhe Vorschriften', 'Zaun Nachbarrecht', 'Einfriedungspflicht'],
+        tableOfContents: [
+            { id: 'grundlagen', title: 'Rechtliche Grundlagen' },
+            { id: 'hoehe', title: 'Erlaubte Zaunhöhen' },
+            { id: 'abstand', title: 'Abstand zur Grenze' },
+            { id: 'kosten', title: 'Wer zahlt den Zaun?' },
+            { id: 'streit', title: 'Streit mit dem Nachbarn vermeiden' },
+        ],
+        content: [
+            { id: 'grundlagen', heading: 'Rechtliche Grundlagen', content: '<p>Das Zaunrecht ist in Deutschland <strong>Ländersache</strong> — jedes Bundesland hat eigene Nachbarrechtsgesetze. Zusätzlich können Gemeinden in ihrem <strong>Bebauungsplan</strong> weitere Vorschriften machen.</p><p><strong>Die drei Rechtsquellen:</strong></p><ol><li><strong>Nachbarrechtsgesetz</strong> des Bundeslandes (z.B. NNachbG für Niedersachsen)</li><li><strong>Bebauungsplan</strong> der Gemeinde (kann Zaunhöhen und -arten vorschreiben)</li><li><strong>BGB § 903-924</strong> (allgemeines Eigentumsrecht)</li></ol><p><strong>Wichtig:</strong> Prüfen Sie immer zuerst den Bebauungsplan Ihrer Gemeinde — dieser hat Vorrang vor allgemeinen Regelungen.</p>' },
+            { id: 'hoehe', heading: 'Erlaubte Zaunhöhen', content: '<table><thead><tr><th>Bundesland</th><th>Max. Höhe (Wohngebiet)</th><th>Besonderheit</th></tr></thead><tbody><tr><td><strong>Niedersachsen</strong></td><td>1,20 m (ortsüblich)</td><td>Keine gesetzliche Maximalhöhe, ortsüblich entscheidet</td></tr><tr><td><strong>Hamburg</strong></td><td>1,20-1,50 m</td><td>Bebauungsplan entscheidend</td></tr><tr><td><strong>Schleswig-Holstein</strong></td><td>1,20 m</td><td>Einfriedungspflicht nur auf Verlangen des Nachbarn</td></tr><tr><td><strong>Allgemein</strong></td><td>1,20-1,80 m</td><td>Höhere Zäune oft genehmigungspflichtig</td></tr></tbody></table><p><strong>Faustregel:</strong> Bis 1,20 m sind Sie fast überall auf der sicheren Seite. Ab 1,80 m wird es in vielen Gemeinden genehmigungspflichtig. Sichtschutzzäune über 1,80 m sind oft nicht erlaubt.</p>' },
+            { id: 'abstand', heading: 'Abstand zur Grenze', content: '<p>In den meisten Bundesländern darf ein Zaun <strong>direkt auf die Grundstücksgrenze</strong> gesetzt werden. Aber:</p><ul><li><strong>Auf der Grenze:</strong> Beide Nachbarn sind Eigentümer und müssen sich über Material und Kosten einigen</li><li><strong>Auf eigenem Grundstück:</strong> 50 cm Abstand zur Grenze ist empfehlenswert — für Wartung und um Streit zu vermeiden</li><li><strong>Fundament:</strong> Darf nicht ins Nachbargrundstück ragen</li></ul><p><strong>Unser Tipp:</strong> Setzen Sie den Zaun 10-20 cm auf Ihr Grundstück zurück. So haben Sie freie Hand bei Material und Gestaltung und vermeiden Nachbarschaftsstreit.</p>' },
+            { id: 'kosten', heading: 'Wer zahlt den Zaun?', content: '<p>Das hängt davon ab, <strong>wer den Zaun will</strong> und wo er steht:</p><table><thead><tr><th>Situation</th><th>Wer zahlt?</th></tr></thead><tbody><tr><td>Zaun auf eigener Seite</td><td>Sie allein</td></tr><tr><td>Zaun auf der Grenze (gemeinsam)</td><td>Beide je 50%</td></tr><tr><td>Einfriedungspflicht (Nachbar verlangt)</td><td>Meist der Einfriedungspflichtige</td></tr><tr><td>Bestehender Zaun beschädigt</td><td>Wer den Schaden verursacht hat</td></tr></tbody></table><p><strong>Niedersachsen:</strong> In Niedersachsen gibt es eine Einfriedungspflicht auf Verlangen — wenn Ihr Nachbar einen Zaun verlangt, müssen Sie sich an den Kosten beteiligen.</p>' },
+            { id: 'streit', heading: 'Streit mit dem Nachbarn vermeiden', content: '<ul><li><strong>Vorher reden:</strong> Informieren Sie den Nachbarn über Ihr Zaunvorhaben, bevor Sie bauen</li><li><strong>Schriftlich vereinbaren:</strong> Material, Höhe, Kostenteilung und Zuständigkeit für die Pflege</li><li><strong>Schöne Seite nach außen:</strong> Die „schöne Seite" des Zauns sollte zum Nachbarn zeigen — das ist nicht nur höflich, sondern in manchen Regionen Vorschrift</li><li><strong>Bebauungsplan prüfen:</strong> Vermeidet böse Überraschungen und Rückbau-Anordnungen</li><li><strong>Schlichtung statt Gericht:</strong> Bei Streit erst die Schiedsstelle der Gemeinde kontaktieren</li></ul>' },
+        ],
+        faqs: [
+            { q: 'Wie hoch darf ein Zaun zum Nachbarn sein?', a: 'In Wohngebieten sind 1,20-1,50 m üblich und meist ohne Genehmigung erlaubt. Ab 1,80 m wird es in vielen Gemeinden genehmigungspflichtig. Prüfen Sie immer den Bebauungsplan Ihrer Gemeinde.' },
+            { q: 'Darf ich einen Sichtschutzzaun aufstellen?', a: 'Grundsätzlich ja, auf Ihrem eigenen Grundstück. Die erlaubte Höhe variiert — in den meisten Wohngebieten sind 1,80 m das Maximum. Blickdichte Zäune können von Nachbarn als unzumutbare Beeinträchtigung angesehen werden.' },
+            { q: 'Muss mein Nachbar den Zaun mitbezahlen?', a: 'Nur wenn der Zaun auf der Grundstücksgrenze steht und beide Seiten ihn nutzen, oder wenn eine Einfriedungspflicht besteht. Einen Zaun auf Ihrem eigenen Grundstück zahlen Sie allein.' },
+        ],
+        relatedServices: ['zaunbau', 'garten-und-landschaftsbau', 'galabau'],
+    },
+
+    // ========================================================================
+    // ARTIKEL 19: Unkraut im Rasen
+    // ========================================================================
+    {
+        slug: 'unkraut-rasen-bekaempfen',
+        title: 'Unkraut im Rasen: Was hilft wirklich?',
+        metaTitle: 'Unkraut im Rasen entfernen: Was wirklich hilft 2026',
+        metaDescription: 'Unkraut im Rasen loswerden? ✓ Klee, Löwenzahn, Moos ✓ Mechanisch oder chemisch? ✓ Vorbeugen statt bekämpfen. Profi-Tipps.',
+        excerpt: 'Klee, Löwenzahn und Moos im Rasen? Wir zeigen, was wirklich hilft — ohne den Rasen zu ruinieren.',
+        category: 'Ratgeber',
+        publishDate: '2026-06-15',
+        readingTime: 8,
+        keywords: ['Unkraut im Rasen entfernen', 'Klee im Rasen', 'Löwenzahn im Rasen', 'Moos im Rasen'],
+        tableOfContents: [
+            { id: 'ursachen', title: 'Warum wächst Unkraut im Rasen?' },
+            { id: 'arten', title: 'Die häufigsten Unkräuter' },
+            { id: 'bekaempfung', title: 'Mechanisch vs. chemisch' },
+            { id: 'vorbeugen', title: 'Vorbeugen ist besser' },
+        ],
+        content: [
+            { id: 'ursachen', heading: 'Warum wächst Unkraut im Rasen?', content: '<p>Unkraut ist ein <strong>Symptom</strong>, nicht die Krankheit. Es zeigt: <strong>Dem Rasen geht es nicht gut.</strong></p><ul><li><strong>Zu wenig Dünger:</strong> Schwacher Rasen = Platz für Unkraut</li><li><strong>Zu kurz gemäht:</strong> Unter 3 cm können Unkrautsamen keimen</li><li><strong>Bodenverdichtung:</strong> Moos breitet sich auf verdichtetem Boden aus</li><li><strong>Schatten:</strong> Gras wächst schlecht, Moos liebt es</li><li><strong>Zu selten vertikutiert:</strong> Rasenfilz = idealer Nährboden für Moos</li></ul><p><strong>Die Lösung:</strong> Einen gesunden, dichten Rasen fördern — dann hat Unkraut keine Chance.</p>' },
+            { id: 'arten', heading: 'Die häufigsten Unkräuter', content: '<table><thead><tr><th>Unkraut</th><th>Erkennung</th><th>Beste Bekämpfung</th></tr></thead><tbody><tr><td><strong>Weißklee</strong></td><td>Runde Dreiblätter, weiße Blüten</td><td>Stickstoff-Düngung (Klee zeigt N-Mangel an!)</td></tr><tr><td><strong>Löwenzahn</strong></td><td>Gelbe Blüten, tiefe Pfahlwurzel</td><td>Mit Unkrautstecher ausstechen</td></tr><tr><td><strong>Gänseblümchen</strong></td><td>Kleine weiße Blüten</td><td>Regelmäßiges Mähen reduziert sie</td></tr><tr><td><strong>Moos</strong></td><td>Grüner Teppich in Schattenlagen</td><td>Vertikutieren + Kalk + Dünger</td></tr><tr><td><strong>Ehrenpreis</strong></td><td>Kleine blaue Blüten, kriechend</td><td>Rasen stärken, ggf. Rasenherbizid</td></tr></tbody></table>' },
+            { id: 'bekaempfung', heading: 'Mechanisch vs. chemisch', content: '<h3>Mechanisch (unser Favorit)</h3><ul><li><strong>Unkrautstecher:</strong> Ideal für Löwenzahn und einzelne Unkräuter. Wurzel komplett entfernen!</li><li><strong>Vertikutierer:</strong> Entfernt Moos und Rasenfilz. Im April und ggf. September.</li><li><strong>Nachsäen:</strong> Kahle Stellen sofort nachsäen, damit kein neues Unkraut kommt</li></ul><h3>Chemisch (nur als letzter Ausweg)</h3><ul><li><strong>Rasenherbizide:</strong> Wirken nur gegen breitblättrige Unkräuter, nicht gegen Gras</li><li><strong>Anwendung:</strong> Nur bei 15-25°C, nicht bei Regen, nicht bei Trockenheit</li><li><strong>Achtung:</strong> Rasen erst 3 Tage nach Behandlung mähen, Kinder und Haustiere fernhalten</li></ul><p><strong>Unsere Empfehlung:</strong> In 90% der Fälle reicht es, den Rasen richtig zu pflegen (düngen, nicht zu kurz mähen, vertikutieren). Chemie ist fast nie nötig.</p>' },
+            { id: 'vorbeugen', heading: 'Vorbeugen ist besser als bekämpfen', content: '<ol><li><strong>3x pro Jahr düngen</strong> (April, Juni, September)</li><li><strong>Nie kürzer als 4 cm mähen</strong> — dichtes Gras unterdrückt Unkraut</li><li><strong>1x pro Jahr vertikutieren</strong> (April)</li><li><strong>Kahle Stellen sofort nachsäen</strong></li><li><strong>Richtig wässern:</strong> 2x/Woche durchdringend statt täglich oberflächlich</li></ol><div class="fazit-box"><p><strong>Die Wahrheit:</strong> Ein perfekt unkrautfreier Rasen ist weder realistisch noch ökologisch sinnvoll. Ein paar Gänseblümchen und Klee sind normal und sogar gut für Bienen. Handeln Sie erst, wenn Unkraut mehr als 20-30% der Fläche einnimmt.</p></div>' },
+        ],
+        faqs: [
+            { q: 'Was hilft am besten gegen Klee im Rasen?', a: 'Klee zeigt Stickstoffmangel an. Die beste Lösung: Stickstoffbetonten Dünger ausbringen (NPK 20-5-10). Innerhalb von 4-6 Wochen verdrängt der gestärkte Rasen den Klee von allein.' },
+            { q: 'Wie bekomme ich Moos aus dem Rasen?', a: 'Moos bekämpfen Sie in 3 Schritten: 1. Vertikutieren (April), 2. Kalken wenn der pH-Wert unter 5,5 liegt, 3. Düngen. Langfristig: Schatten reduzieren und Boden lockern.' },
+            { q: 'Kann ich Essig gegen Unkraut im Rasen verwenden?', a: 'Nein! Essig ist auf versiegelten Flächen sogar verboten und tötet im Rasen auch das Gras ab. Verwenden Sie lieber einen Unkrautstecher für einzelne Unkräuter.' },
+        ],
+        relatedServices: ['gartenpflege', 'rollrasen', 'garten-und-landschaftsbau'],
+    },
+
+    // ========================================================================
+    // ARTIKEL 20: Pflastersteine verlegen
+    // ========================================================================
+    {
+        slug: 'pflastersteine-verlegen-anleitung',
+        title: 'Pflastersteine verlegen: Anleitung & häufige Fehler',
+        metaTitle: 'Pflastersteine verlegen: Schritt-für-Schritt Anleitung 2026',
+        metaDescription: 'Pflastersteine verlegen? ✓ Komplette Anleitung ✓ Unterbau richtig machen ✓ Häufige Fehler ✓ Kosten. Vom Pflaster-Profi erklärt.',
+        excerpt: 'Einfahrt pflastern, Gartenweg anlegen oder Terrasse pflastern — wir zeigen den korrekten Aufbau und die häufigsten Fehler.',
+        category: 'Ratgeber',
+        publishDate: '2026-06-18',
+        readingTime: 10,
+        keywords: ['Pflastersteine verlegen', 'Einfahrt pflastern', 'Pflaster verlegen Anleitung', 'Unterbau Pflaster'],
+        tableOfContents: [
+            { id: 'aufbau', title: 'Der richtige Schichtaufbau' },
+            { id: 'anleitung', title: 'Schritt für Schritt' },
+            { id: 'fehler', title: 'Die 5 häufigsten Fehler' },
+            { id: 'kosten', title: 'Kosten-Übersicht' },
+        ],
+        content: [
+            { id: 'aufbau', heading: 'Der richtige Schichtaufbau', content: '<p>Ein Pflasterbelag ist nur so gut wie sein <strong>Unterbau</strong>. Der korrekte Aufbau von unten nach oben:</p><table><thead><tr><th>Schicht</th><th>Material</th><th>Dicke</th><th>Funktion</th></tr></thead><tbody><tr><td><strong>1. Planum</strong></td><td>Verdichteter Boden</td><td>—</td><td>Ebene, feste Basis</td></tr><tr><td><strong>2. Tragschicht</strong></td><td>Schotter 0/32 oder 0/45</td><td>15-30 cm</td><td>Trägt die Last, leitet Wasser ab</td></tr><tr><td><strong>3. Bettungsschicht</strong></td><td>Splitt 2/5 oder Sand 0/5</td><td>3-5 cm</td><td>Ausgleich, Pflaster liegt plan</td></tr><tr><td><strong>4. Pflaster</strong></td><td>Beton oder Naturstein</td><td>6-10 cm</td><td>Begehbare Oberfläche</td></tr><tr><td><strong>5. Fugenmaterial</strong></td><td>Fugensand oder Splitt</td><td>—</td><td>Stabilisiert die Steine</td></tr></tbody></table><p><strong>Bei Einfahrten:</strong> Tragschicht mindestens 25-30 cm, da PKW-Belastung. Bei Gehwegen reichen 15-20 cm.</p>' },
+            { id: 'anleitung', heading: 'Schritt für Schritt', content: '<ol><li><strong>Aushub:</strong> Boden 30-45 cm tief ausheben (je nach Belastung). Gefälle von 2% einplanen!</li><li><strong>Planum verdichten:</strong> Boden mit Rüttelplatte verdichten. Bei lehmigem Boden: Vlies auslegen.</li><li><strong>Tragschicht einbauen:</strong> Schotter in 10-15 cm Lagen einbringen und jede Lage verdichten.</li><li><strong>Randsteine setzen:</strong> Randeinfassung mit Beton fixieren. Ohne Randsteine rutscht das Pflaster auseinander!</li><li><strong>Bettung:</strong> 3-5 cm Splitt aufziehen und mit Abziehlatte abziehen. NICHT betreten!</li><li><strong>Pflaster verlegen:</strong> Von einer Ecke aus verlegen, nicht auf der Bettung knien. Fugenbreite 3-5 mm.</li><li><strong>Abrütteln:</strong> Mit Rüttelplatte (mit Gummimatte!) das Pflaster einrütteln.</li><li><strong>Fugen:</strong> Fugensand einkehren und einschlämmen. Nach 2-3 Wochen nachfugen.</li></ol>' },
+            { id: 'fehler', heading: 'Die 5 häufigsten Fehler', content: '<table><thead><tr><th>Fehler</th><th>Folge</th><th>Vermeidung</th></tr></thead><tbody><tr><td><strong>Unterbau zu dünn</strong></td><td>Pflaster sackt ab, Pfützen entstehen</td><td>Min. 20 cm Tragschicht (Einfahrt: 30 cm)</td></tr><tr><td><strong>Kein Gefälle</strong></td><td>Wasser steht, Frostschäden im Winter</td><td>2% Gefälle vom Haus weg</td></tr><tr><td><strong>Keine Randsteine</strong></td><td>Pflaster wandert und öffnet sich</td><td>Immer Randeinfassung setzen</td></tr><tr><td><strong>Bettung nicht abgezogen</strong></td><td>Unebene Oberfläche</td><td>Mit Schienen und Abziehlatte arbeiten</td></tr><tr><td><strong>Nicht verdichtet</strong></td><td>Setzungen nach Monaten</td><td>Jede Schicht einzeln rütteln</td></tr></tbody></table>' },
+            { id: 'kosten', heading: 'Kosten-Übersicht', content: '<table><thead><tr><th>Position</th><th>Kosten pro m²</th></tr></thead><tbody><tr><td><strong>Aushub & Entsorgung</strong></td><td>10-20 €</td></tr><tr><td><strong>Tragschicht (Schotter)</strong></td><td>8-15 €</td></tr><tr><td><strong>Bettung (Splitt)</strong></td><td>3-5 €</td></tr><tr><td><strong>Pflastersteine (Beton)</strong></td><td>15-40 €</td></tr><tr><td><strong>Pflastersteine (Naturstein)</strong></td><td>40-120 €</td></tr><tr><td><strong>Verlegung (Profi)</strong></td><td>30-50 €</td></tr><tr><td><strong>Gesamt (Beton, Profi)</strong></td><td><strong>65-130 €/m²</strong></td></tr><tr><td><strong>Gesamt (Naturstein, Profi)</strong></td><td><strong>90-210 €/m²</strong></td></tr></tbody></table><p><strong>Beispiel:</strong> Eine 30m² Einfahrt mit Betonpflaster kostet komplett vom Profi verlegt ca. 2.000-3.900 Euro.</p>' },
+        ],
+        faqs: [
+            { q: 'Was kostet es, Pflastersteine verlegen zu lassen?', a: 'Komplett mit Unterbau kostet Betonpflaster 65-130 €/m², Natursteinpflaster 90-210 €/m². Eine 30m² Einfahrt liegt damit bei 2.000-6.300 Euro.' },
+            { q: 'Wie dick muss der Unterbau sein?', a: 'Für Gehwege 15-20 cm Tragschicht, für befahrene Flächen (Einfahrt) 25-30 cm. Dazu kommen 3-5 cm Bettung und 6-10 cm Pflasterstein.' },
+            { q: 'Braucht man eine Genehmigung zum Pflastern?', a: 'Für private Flächen auf dem eigenen Grundstück in der Regel nicht. Aber: In manchen Gemeinden gibt es Vorschriften zur Versiegelung. Prüfen Sie, ob ein Versickerungsnachweis nötig ist.' },
+        ],
+        relatedServices: ['pflasterarbeiten', 'terrassenbau', 'garten-und-landschaftsbau'],
+    },
+
+    // ========================================================================
+    // ARTIKEL 21: Schnellwachsende Hecken
+    // ========================================================================
+    {
+        slug: 'schnellwachsende-hecken',
+        title: 'Schnellwachsende Hecken: Die 8 besten Sorten',
+        metaTitle: 'Schnellwachsende Hecken: Die 8 besten Sorten im Vergleich 2026',
+        metaDescription: 'Schnell blickdicht? ✓ Die 8 besten schnellwachsenden Hecken ✓ Wuchsgeschwindigkeit ✓ Kosten ✓ Pflege. Profi-Vergleich.',
+        excerpt: 'Sie brauchen schnell Sichtschutz? Diese 8 Heckenpflanzen wachsen am schnellsten und werden zuverlässig dicht.',
+        category: 'Vergleich',
+        publishDate: '2026-06-21',
+        readingTime: 9,
+        keywords: ['Schnellwachsende Hecke', 'Hecke schnell dicht', 'Sichtschutz Hecke schnell', 'schnell wachsende Heckenpflanzen'],
+        tableOfContents: [
+            { id: 'vergleich', title: 'Die 8 besten Sorten' },
+            { id: 'immergruen', title: 'Immergrüne Sorten' },
+            { id: 'laubabwerfend', title: 'Laubabwerfende Sorten' },
+            { id: 'tipps', title: 'Tipps für schnelles Wachstum' },
+        ],
+        content: [
+            { id: 'vergleich', heading: 'Die 8 besten schnellwachsenden Hecken', content: '<table><thead><tr><th>Sorte</th><th>Wuchs/Jahr</th><th>Max. Höhe</th><th>Immergrün</th><th>Preis/Pflanze</th></tr></thead><tbody><tr><td><strong>Liguster</strong></td><td>40-60 cm</td><td>3-4 m</td><td>Halb-immergrün</td><td>3-8 €</td></tr><tr><td><strong>Hainbuche</strong></td><td>30-50 cm</td><td>4-6 m</td><td>Nein (Laub bleibt)</td><td>3-7 €</td></tr><tr><td><strong>Rotbuche</strong></td><td>30-50 cm</td><td>4-6 m</td><td>Nein (Laub bleibt)</td><td>4-9 €</td></tr><tr><td><strong>Thuja</strong></td><td>30-40 cm</td><td>4-8 m</td><td>Ja</td><td>5-15 €</td></tr><tr><td><strong>Kirschlorbeer</strong></td><td>30-50 cm</td><td>3-5 m</td><td>Ja</td><td>8-20 €</td></tr><tr><td><strong>Eibe</strong></td><td>20-30 cm</td><td>3-4 m</td><td>Ja</td><td>8-25 €</td></tr><tr><td><strong>Feldahorn</strong></td><td>40-60 cm</td><td>5-8 m</td><td>Nein</td><td>4-10 €</td></tr><tr><td><strong>Glanzmispel</strong></td><td>30-40 cm</td><td>2-3 m</td><td>Ja</td><td>10-25 €</td></tr></tbody></table>' },
+            { id: 'immergruen', heading: 'Immergrüne Sorten — ganzjährig dicht', content: '<h3>🏆 Unsere Empfehlung: Eibe (Taxus)</h3><p>Langsamer als Kirschlorbeer, aber <strong>die mit Abstand beste Hecke</strong> für Norddeutschland:</p><ul><li>Extrem schnittverträglich — wird nach jedem Schnitt dichter</li><li>Winterhart bis -30°C</li><li>Wird 100+ Jahre alt</li><li>Einheimisch und ökologisch wertvoll</li><li>Einzige Nadelpflanze die aus altem Holz austreibt</li></ul><h3>Thuja (Lebensbaum)</h3><p>Beliebt aber mit Einschränkungen:</p><ul><li>Günstig und schnell blickdicht</li><li>Aber: Treibt nicht aus altem Holz nach — einmal zu stark geschnitten = für immer kahl</li><li>Anfällig für Miniermotte und Trockenheit</li></ul>' },
+            { id: 'laubabwerfend', heading: 'Laubabwerfende Sorten — natürlich & robust', content: '<h3>🏆 Unsere Empfehlung: Hainbuche</h3><p>Die <strong>perfekte Hecke</strong> für die meisten Gärten:</p><ul><li>Wächst fast überall (Sonne bis Halbschatten, jeder Boden)</li><li>Wird schnell dicht und blickdicht</li><li>Behält das braune Laub bis zum Frühling — auch im Winter Sichtschutz!</li><li>Extrem schnittverträglich</li><li>Heimisch, bietet Vögeln Nistplätze</li><li>Günstigste Option (3-7 € pro Pflanze)</li></ul><p><strong>Pflanzabstand:</strong> 4-5 Pflanzen pro laufenden Meter für eine dichte Hecke.</p>' },
+            { id: 'tipps', heading: 'Tipps für schnelles Wachstum', content: '<ol><li><strong>Im Herbst pflanzen</strong> (Oktober/November) — die Wurzeln wachsen den ganzen Winter</li><li><strong>Boden vorbereiten:</strong> Pflanzgraben 50 cm breit, 40 cm tief, mit Kompost mischen</li><li><strong>Sofort nach dem Pflanzen kürzen:</strong> Um 1/3 einkürzen fördert dichten Wuchs von unten</li><li><strong>Regelmäßig wässern:</strong> Im ersten Jahr alle 3-4 Tage gießen</li><li><strong>2x pro Jahr düngen:</strong> März und Juni mit Heckendünger</li></ol><div class="fazit-box"><p><strong>Realistisch:</strong> Mit schnellwachsenden Sorten dauert es 3-4 Jahre bis zur vollen Blickdichte. Wenn Sie sofort Sichtschutz brauchen, pflanzen Sie größere Pflanzen (150-200 cm) — das kostet mehr, spart aber Jahre.</p></div>' },
+        ],
+        faqs: [
+            { q: 'Welche Hecke wächst am schnellsten?', a: 'Liguster und Feldahorn wachsen mit 40-60 cm pro Jahr am schnellsten. Für immergrüne Hecken ist Kirschlorbeer mit 30-50 cm/Jahr die schnellste Option.' },
+            { q: 'Wie schnell wird eine Hecke blickdicht?', a: 'Mit schnellwachsenden Sorten und Pflanzen ab 80-100 cm Höhe dauert es 2-3 Jahre bis zur vollen Blickdichte. Mit größeren Pflanzen (150-200 cm) nur 1-2 Jahre.' },
+            { q: 'Was kostet eine neue Hecke?', a: 'Pro laufenden Meter: 15-35 € (Hainbuche, 4-5 Pflanzen) bis 80-125 € (Eibe, größere Pflanzen). Für 10 Meter Hecke also 150-1.250 € nur für die Pflanzen.' },
+        ],
+        relatedServices: ['heckenschnitt', 'gartenpflege', 'garten-und-landschaftsbau'],
+    },
+
+    // ========================================================================
+    // ARTIKEL 22: Gabionenzaun
+    // ========================================================================
+    {
+        slug: 'gabionenzaun-vor-nachteile',
+        title: 'Gabionenzaun: Kosten, Vorteile & Nachteile',
+        metaTitle: 'Gabionenzaun: Kosten pro Meter, Vorteile & ehrliche Nachteile 2026',
+        metaDescription: 'Gabionenzaun als Sichtschutz? ✓ Kosten pro Meter ✓ Vorteile & Nachteile ✓ Fundament ✓ Befüllung. Ehrlicher Profi-Vergleich.',
+        excerpt: 'Gabionen liegen im Trend — aber sind sie wirklich die beste Lösung für Ihren Garten? Kosten, Vor- und Nachteile im ehrlichen Vergleich.',
+        category: 'Vergleich',
+        publishDate: '2026-06-24',
+        readingTime: 7,
+        keywords: ['Gabionenzaun Kosten', 'Gabionen Erfahrungen', 'Gabionenwand Garten', 'Gabionen Sichtschutz'],
+        tableOfContents: [
+            { id: 'was', title: 'Was sind Gabionen?' },
+            { id: 'vorteile', title: 'Vorteile' },
+            { id: 'nachteile', title: 'Nachteile' },
+            { id: 'kosten', title: 'Kosten pro Meter' },
+            { id: 'fazit', title: 'Fazit' },
+        ],
+        content: [
+            { id: 'was', heading: 'Was sind Gabionen?', content: '<p><strong>Gabionen</strong> sind Drahtkörbe aus verzinktem Stahl, die mit Steinen gefüllt werden. Sie dienen als Sichtschutz, Lärmschutz, Stützmauer oder dekoratives Element.</p><ul><li><strong>Standardmaße:</strong> 100-200 cm hoch, 30-50 cm tief, Länge variabel</li><li><strong>Draht:</strong> Verzinkter Stahl, 4-5 mm stark, Maschenweite 5x10 oder 10x10 cm</li><li><strong>Füllung:</strong> Natursteine (Granit, Basalt, Kalkstein, Jura), Größe 60-120 mm</li></ul>' },
+            { id: 'vorteile', heading: 'Vorteile von Gabionen', content: '<ul><li><strong>Extrem langlebig:</strong> 50-80 Jahre Lebensdauer bei verzinktem Draht</li><li><strong>Wartungsfrei:</strong> Kein Streichen, kein Imprägnieren, kein Nacharbeiten</li><li><strong>Schallschutz:</strong> Reduzieren Straßenlärm um 5-8 dB — deutlich spürbar</li><li><strong>Naturnaher Look:</strong> Passen gut zu modernen und naturnahen Gärten</li><li><strong>Keine Genehmigung:</strong> Bis 1,80 m in den meisten Gemeinden genehmigungsfrei</li><li><strong>Flexibel:</strong> Kurven, Ecken und Stufen möglich</li></ul>' },
+            { id: 'nachteile', heading: 'Die ehrlichen Nachteile', content: '<ul><li><strong>Teuer:</strong> Pro Meter 200-600 € — deutlich teurer als Holzzaun oder Doppelstabmatte</li><li><strong>Schwer:</strong> 1 Meter Gabione wiegt 500-1.500 kg. Fundament zwingend nötig!</li><li><strong>Breite:</strong> Mindestens 30 cm tief — das kostet Gartenfläche</li><li><strong>Unkraut:</strong> In den Steinfugen wächst mit der Zeit Unkraut und Moos</li><li><strong>Optik altert:</strong> Steine verfärben sich mit der Zeit durch Algen und Moos (grünlich)</li><li><strong>Nicht reparierbar:</strong> Wenn der Draht rostet, muss die ganze Gabione erneuert werden</li></ul>' },
+            { id: 'kosten', heading: 'Kosten pro laufenden Meter', content: '<table><thead><tr><th>Position</th><th>Kosten/lfm</th></tr></thead><tbody><tr><td><strong>Gabionenkorb (180 cm hoch)</strong></td><td>80-150 €</td></tr><tr><td><strong>Steine (Granit/Basalt)</strong></td><td>80-200 €</td></tr><tr><td><strong>Fundament (Streifenfundament)</strong></td><td>40-80 €</td></tr><tr><td><strong>Montage (Profi)</strong></td><td>60-120 €</td></tr><tr><td><strong>Gesamt pro Meter</strong></td><td><strong>260-550 €</strong></td></tr></tbody></table><p><strong>Vergleich:</strong> Doppelstabmattenzaun: 80-180 €/lfm. Holzzaun: 100-250 €/lfm. Gabionen sind also 2-3x teurer als Alternativen.</p>' },
+            { id: 'fazit', heading: 'Unser Fazit', content: '<div class="fazit-box"><p><strong>Gabionen sind toll, wenn:</strong> Sie einen modernen, wartungsfreien Sichtschutz wollen und das Budget haben. Besonders als Kombination mit Holz- oder Metallelementen sehen sie großartig aus.</p><p><strong>Gabionen sind übertrieben, wenn:</strong> Sie einfach nur Sichtschutz brauchen. Dann ist ein Doppelstabmattenzaun mit Sichtschutzstreifen oder eine dichte Hecke günstiger und genauso effektiv.</p></div>' },
+        ],
+        faqs: [
+            { q: 'Was kostet ein Gabionenzaun pro Meter?', a: 'Komplett mit Fundament, Körben, Steinen und Montage: 260-550 € pro laufenden Meter. Für 10 Meter Gabionenzaun also 2.600-5.500 Euro.' },
+            { q: 'Braucht ein Gabionenzaun ein Fundament?', a: 'Ja, zwingend. Gabionen wiegen 500-1.500 kg pro Meter. Ohne Streifenfundament sacken sie ab und kippen. Das Fundament sollte 30-40 cm tief und frostfrei gegründet sein.' },
+            { q: 'Wie lange hält ein Gabionenzaun?', a: 'Bei verzinktem Draht (Zink-Aluminium-Beschichtung) hält ein Gabionenzaun 50-80 Jahre. Standard-Verzinkung hält ca. 20-30 Jahre.' },
+        ],
+        relatedServices: ['zaunbau', 'pflasterarbeiten', 'garten-und-landschaftsbau'],
+    },
+
+    // ========================================================================
+    // ARTIKEL 23: Sichtschutz Garten
+    // ========================================================================
+    {
+        slug: 'sichtschutz-garten-ideen',
+        title: 'Sichtschutz im Garten: 10 Ideen von günstig bis premium',
+        metaTitle: 'Sichtschutz Garten: 10 Ideen von günstig bis premium 2026',
+        metaDescription: 'Sichtschutz für den Garten gesucht? ✓ 10 Ideen ✓ Von 20€ bis 500€ pro Meter ✓ Natürlich & modern ✓ Profi-Vergleich.',
+        excerpt: 'Vom günstigen Sichtschutzstreifen bis zur Premium-Gabionenwand — 10 Sichtschutz-Ideen für jeden Geschmack und jedes Budget.',
+        category: 'Inspiration',
+        publishDate: '2026-07-09',
+        readingTime: 8,
+        keywords: ['Sichtschutz Garten', 'Sichtschutz modern', 'Sichtschutz günstig', 'Sichtschutz Ideen'],
+        tableOfContents: [
+            { id: 'guenstig', title: 'Günstige Optionen (20-100 €/m)' },
+            { id: 'mittel', title: 'Mittlere Preisklasse (100-250 €/m)' },
+            { id: 'premium', title: 'Premium-Lösungen (250-600 €/m)' },
+            { id: 'vergleich', title: 'Übersicht & Vergleich' },
+        ],
+        content: [
+            { id: 'guenstig', heading: 'Günstige Optionen (20-100 €/m)', content: '<h3>1. Sichtschutzstreifen im Zaun (20-40 €/m)</h3><p>PVC- oder PP-Streifen die in bestehende Doppelstabmatten eingefädelt werden. Schnell, günstig, aber optisch nicht premium.</p><h3>2. Bambusmatten (30-60 €/m)</h3><p>Natürlicher Look, einfach an bestehendem Zaun befestigt. Haltbarkeit 3-5 Jahre.</p><h3>3. Schnellwachsende Hecke (40-100 €/m)</h3><p>Liguster oder Hainbuche pflanzen. Dauert 2-3 Jahre bis blickdicht, ist aber die natürlichste und nachhaltigste Lösung.</p>' },
+            { id: 'mittel', heading: 'Mittlere Preisklasse (100-250 €/m)', content: '<h3>4. WPC-Sichtschutz (120-200 €/m)</h3><p>Fertigelemente aus WPC in Holzoptik. Pflegeleicht, modern, 20+ Jahre haltbar. Unser Preis-Leistungs-Tipp!</p><h3>5. Holzzaun mit Rhombus-Profil (100-200 €/m)</h3><p>Lärche oder Douglasie mit offenen Fugen — moderner Look, Luft- und Lichtdurchlässig.</p><h3>6. Doppelstabmattenzaun mit Rankpflanzen (80-180 €/m)</h3><p>Zaun aufstellen und mit Efeu, Clematis oder Wilder Wein bepflanzen. Nach 1-2 Jahren natürlicher Sichtschutz.</p><h3>7. Gräser als Sichtschutz (100-150 €/m)</h3><p>Chinaschilf (Miscanthus) wird 2-3 m hoch und bietet natürlichen, bewegten Sichtschutz. Im Winter allerdings kahl.</p>' },
+            { id: 'premium', heading: 'Premium-Lösungen (250-600 €/m)', content: '<h3>8. Gabionenzaun (260-550 €/m)</h3><p>Steinkörbe — massiv, wartungsfrei, 50+ Jahre. Besonders als Kombination mit Holz- oder Metallelementen.</p><h3>9. Cortenstahl-Elemente (300-500 €/m)</h3><p>Rostiger Stahl in edlem Industrial-Look. Extrem langlebig, kein Nachrosten. Sehr modern.</p><h3>10. Glaselemente (400-600 €/m)</h3><p>Satiniertes oder getöntes Glas — lässt Licht durch bei vollem Sichtschutz. Premium-Optik, aber anfällig für Verschmutzung.</p>' },
+            { id: 'vergleich', heading: 'Alle 10 Optionen im Vergleich', content: '<table><thead><tr><th>Option</th><th>Kosten/m</th><th>Haltbarkeit</th><th>Pflege</th><th>Optik</th></tr></thead><tbody><tr><td>Sichtschutzstreifen</td><td>20-40 €</td><td>5-10 Jahre</td><td>Keine</td><td>⭐⭐</td></tr><tr><td>Bambusmatten</td><td>30-60 €</td><td>3-5 Jahre</td><td>Gering</td><td>⭐⭐⭐</td></tr><tr><td>Hecke</td><td>40-100 €</td><td>50+ Jahre</td><td>2x/Jahr schneiden</td><td>⭐⭐⭐⭐</td></tr><tr><td>WPC-Sichtschutz</td><td>120-200 €</td><td>20+ Jahre</td><td>Keine</td><td>⭐⭐⭐⭐</td></tr><tr><td>Holz Rhombus</td><td>100-200 €</td><td>15-20 Jahre</td><td>1x/Jahr ölen</td><td>⭐⭐⭐⭐⭐</td></tr><tr><td>Zaun + Rankpflanzen</td><td>80-180 €</td><td>20+ Jahre</td><td>1x/Jahr schneiden</td><td>⭐⭐⭐⭐</td></tr><tr><td>Ziergräser</td><td>100-150 €</td><td>10-15 Jahre</td><td>1x/Jahr rückschneiden</td><td>⭐⭐⭐⭐</td></tr><tr><td>Gabionen</td><td>260-550 €</td><td>50+ Jahre</td><td>Keine</td><td>⭐⭐⭐⭐</td></tr><tr><td>Cortenstahl</td><td>300-500 €</td><td>50+ Jahre</td><td>Keine</td><td>⭐⭐⭐⭐⭐</td></tr><tr><td>Glas</td><td>400-600 €</td><td>30+ Jahre</td><td>Regelmäßig reinigen</td><td>⭐⭐⭐⭐⭐</td></tr></tbody></table>' },
+        ],
+        faqs: [
+            { q: 'Was ist der günstigste Sichtschutz für den Garten?', a: 'Sichtschutzstreifen für bestehende Doppelstabmatten ab 20€/m. Langfristig am günstigsten: eine Hecke, da sie Jahrzehnte hält und nur 2x/Jahr geschnitten werden muss.' },
+            { q: 'Welcher Sichtschutz ist am pflegeleichtesten?', a: 'WPC-Sichtschutz, Gabionen und Cortenstahl sind komplett wartungsfrei. Kein Streichen, kein Ölen, kein Schneiden.' },
+            { q: 'Wie hoch darf Sichtschutz im Garten sein?', a: 'In den meisten Wohngebieten maximal 1,80 m ohne Genehmigung. Prüfen Sie den Bebauungsplan Ihrer Gemeinde. An der Grundstücksgrenze gelten ggf. andere Regelungen.' },
+        ],
+        relatedServices: ['zaunbau', 'heckenschnitt', 'garten-und-landschaftsbau'],
+    },
 ];
 
 // Helper functions
