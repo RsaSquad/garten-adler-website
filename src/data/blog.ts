@@ -2106,6 +2106,109 @@ export const blogArticles: BlogArticle[] = [
         ],
         relatedServices: ['zaunbau', 'heckenschnitt', 'garten-und-landschaftsbau'],
     },
+
+    // ========================================================================
+    // ARTIKEL 24: Doppelstabmattenzaun
+    // ========================================================================
+    {
+        slug: 'doppelstabmattenzaun-montage',
+        title: 'Doppelstabmattenzaun: Kosten, Montage & Tipps',
+        metaTitle: 'Doppelstabmattenzaun: Kosten pro Meter & Montage-Anleitung 2026',
+        metaDescription: 'Doppelstabmattenzaun aufstellen? ✓ Kosten pro Meter ✓ Montage-Anleitung ✓ Mit oder ohne Sichtschutz ✓ Profi-Tipps.',
+        excerpt: 'Der Doppelstabmattenzaun ist der beliebteste Zaun Deutschlands. Kosten, Montage und was Sie wissen müssen.',
+        category: 'Ratgeber',
+        publishDate: '2026-07-24',
+        readingTime: 7,
+        keywords: ['Doppelstabmattenzaun Kosten', 'Metallzaun setzen', 'Doppelstabmatte Montage', 'Stabgitterzaun'],
+        tableOfContents: [
+            { id: 'vorteile', title: 'Warum Doppelstabmatten?' },
+            { id: 'kosten', title: 'Kosten pro Meter' },
+            { id: 'montage', title: 'Montage Schritt für Schritt' },
+            { id: 'sichtschutz', title: 'Sichtschutz-Optionen' },
+        ],
+        content: [
+            { id: 'vorteile', heading: 'Warum Doppelstabmatten?', content: '<p>Der Doppelstabmattenzaun ist aus gutem Grund <strong>Deutschlands beliebtester Zaun</strong>:</p><ul><li><strong>Extrem robust:</strong> 6/5/6 mm Drahtstärke hält Jahrzehnte</li><li><strong>Günstig:</strong> Ab 30-50 € pro Meter Material</li><li><strong>Pflegefrei:</strong> Verzinkt + pulverbeschichtet = kein Streichen nötig</li><li><strong>Flexibel:</strong> Mit Sichtschutz, Rankpflanzen oder Gabionen kombinierbar</li><li><strong>Schnelle Montage:</strong> 20 Meter Zaun an einem Tag montiert</li></ul>' },
+            { id: 'kosten', heading: 'Kosten pro laufenden Meter', content: '<table><thead><tr><th>Position</th><th>Nur Material</th><th>Mit Montage</th></tr></thead><tbody><tr><td><strong>Matten (120 cm hoch)</strong></td><td>20-35 €/m</td><td>—</td></tr><tr><td><strong>Matten (180 cm hoch)</strong></td><td>35-55 €/m</td><td>—</td></tr><tr><td><strong>Pfosten</strong></td><td>15-25 €/Stück</td><td>—</td></tr><tr><td><strong>Befestigung</strong></td><td>5-10 €/m</td><td>—</td></tr><tr><td><strong>Montage (Profi)</strong></td><td>—</td><td>30-50 €/m</td></tr><tr><td><strong>Gesamt (180 cm, Profi)</strong></td><td>55-90 €/m</td><td><strong>85-140 €/m</strong></td></tr></tbody></table>' },
+            { id: 'montage', heading: 'Montage Schritt für Schritt', content: '<ol><li><strong>Verlauf abstecken:</strong> Schnur spannen, Pfostenposition alle 250 cm markieren</li><li><strong>Löcher bohren:</strong> Mit Erdbohrer 80 cm tiefe Löcher (Durchmesser 30 cm)</li><li><strong>Pfosten einbetonieren:</strong> C25/30 Beton, Pfosten mit Wasserwaage ausrichten</li><li><strong>48 Stunden warten:</strong> Beton muss aushärten!</li><li><strong>Matten einhängen:</strong> Von oben in die Pfostenhalterungen einsetzen</li><li><strong>Befestigungsklammern:</strong> Matten mit Klammern an den Pfosten sichern</li></ol><p><strong>Tipp:</strong> Beginnen Sie immer an einer Ecke oder einem Tor. Die letzte Matte muss ggf. gekürzt werden.</p>' },
+            { id: 'sichtschutz', heading: 'Sichtschutz-Optionen', content: '<table><thead><tr><th>Option</th><th>Kosten/m</th><th>Optik</th><th>Haltbarkeit</th></tr></thead><tbody><tr><td><strong>PVC-Streifen</strong></td><td>10-25 €</td><td>⭐⭐</td><td>5-10 Jahre</td></tr><tr><td><strong>PP-Gewebe (Textil)</strong></td><td>15-30 €</td><td>⭐⭐⭐</td><td>8-12 Jahre</td></tr><tr><td><strong>Holzlatten-Füllung</strong></td><td>40-80 €</td><td>⭐⭐⭐⭐</td><td>10-15 Jahre</td></tr><tr><td><strong>Rankpflanzen</strong></td><td>20-50 € + Geduld</td><td>⭐⭐⭐⭐⭐</td><td>Dauerhaft</td></tr></tbody></table><p><strong>Unsere Empfehlung:</strong> Doppelstabmatte mit Efeu bepflanzen. Nach 1-2 Jahren haben Sie einen dichten, lebendigen Sichtschutz der nichts kostet und ökologisch wertvoll ist.</p>' },
+        ],
+        faqs: [
+            { q: 'Was kostet ein Doppelstabmattenzaun pro Meter?', a: 'Nur Material: 55-90 €/m (180 cm hoch). Mit professioneller Montage: 85-140 €/m. Für 20 Meter Zaun also 1.700-2.800 Euro komplett.' },
+            { q: 'Wie tief müssen die Pfosten einbetoniert werden?', a: 'Mindestens 80 cm tief, um frostsicher zu sein. Das Loch sollte 30 cm Durchmesser haben und mit C25/30 Beton gefüllt werden.' },
+            { q: 'Wie lange hält ein Doppelstabmattenzaun?', a: 'Mit Zink-Pulverbeschichtung 30-50 Jahre. Nur verzinkt (ohne Pulverbeschichtung) ca. 15-25 Jahre. Die Beschichtung schützt vor Rost.' },
+        ],
+        relatedServices: ['zaunbau', 'garten-und-landschaftsbau', 'galabau'],
+    },
+
+    // ========================================================================
+    // ARTIKEL 25: Thuja wird braun
+    // ========================================================================
+    {
+        slug: 'thuja-hecke-wird-braun',
+        title: 'Thuja-Hecke wird braun: Ursachen & Rettung',
+        metaTitle: 'Thuja wird braun: 6 Ursachen & was Sie jetzt tun können 2026',
+        metaDescription: 'Thuja-Hecke wird braun? ✓ 6 Ursachen ✓ Rettungsmaßnahmen ✓ Wann ist es zu spät? Diagnose-Guide vom Gärtner.',
+        excerpt: 'Ihre Thuja wird braun? Keine Panik — aber schnell handeln. Wir zeigen die 6 häufigsten Ursachen und was Sie jetzt tun können.',
+        category: 'Ratgeber',
+        publishDate: '2026-07-18',
+        readingTime: 7,
+        keywords: ['Thuja braun', 'Thuja Hecke Pflege', 'Thuja wird braun was tun', 'Lebensbaum braun'],
+        tableOfContents: [
+            { id: 'ursachen', title: 'Die 6 häufigsten Ursachen' },
+            { id: 'diagnose', title: 'Schnell-Diagnose' },
+            { id: 'rettung', title: 'Rettungsmaßnahmen' },
+            { id: 'vorbeugen', title: 'Vorbeugen' },
+        ],
+        content: [
+            { id: 'ursachen', heading: 'Die 6 häufigsten Ursachen', content: '<ol><li><strong>Trockenheit:</strong> Die #1 Ursache! Thujen brauchen auch im Winter Wasser. Braune Spitzen im Frühling = oft Trockenschaden vom Winter.</li><li><strong>Staunässe:</strong> Paradox aber wahr — zu viel Wasser ist genauso schädlich. Wurzeln faulen, die Pflanze wird braun.</li><li><strong>Miniermotte:</strong> Kleine Larven fressen das Innere der Triebspitzen aus. Befallene Spitzen werden braun und hohl.</li><li><strong>Borkenkäfer:</strong> Bohrt sich in den Stamm. Erkennbar an Bohrmehl und runden Löchern.</li><li><strong>Pilzbefall (Phytophthora):</strong> Wurzelfäule durch bodenbürtige Pilze. Oft bei verdichtetem oder staunassem Boden.</li><li><strong>Streusalz:</strong> Salz von der Straße schädigt Wurzeln und Nadeln im Winter.</li></ol>' },
+            { id: 'diagnose', heading: 'Schnell-Diagnose', content: '<table><thead><tr><th>Symptom</th><th>Wahrscheinliche Ursache</th></tr></thead><tbody><tr><td>Braune Spitzen, Rest grün</td><td>Trockenheit oder Miniermotte</td></tr><tr><td>Ganze Äste von innen braun</td><td>Normaler Prozess (alte Nadeln)</td></tr><tr><td>Pflanze komplett braun</td><td>Wurzelschaden (Staunässe/Pilz)</td></tr><tr><td>Braun nur straßenseitig</td><td>Streusalz</td></tr><tr><td>Braun nach dem Schnitt</td><td>Ins alte Holz geschnitten</td></tr></tbody></table><p><strong>Wichtig:</strong> Wenn eine Thuja ins alte (braune) Holz geschnitten wird, treibt sie dort <strong>nie wieder aus</strong>. Das ist der größte Unterschied zur Eibe.</p>' },
+            { id: 'rettung', heading: 'Rettungsmaßnahmen', content: '<ul><li><strong>Bei Trockenheit:</strong> Sofort durchdringend wässern (20-30 Liter pro Pflanze). 2x pro Woche über 4-6 Wochen.</li><li><strong>Bei Miniermotte:</strong> Befallene braune Triebspitzen abschneiden und entsorgen (nicht kompostieren!)</li><li><strong>Bei Staunässe:</strong> Drainage verbessern, ggf. Boden lockern. In schweren Fällen: Pflanze umsetzen.</li><li><strong>Bei Pilzbefall:</strong> Leider meist nicht rettbar. Befallene Pflanzen entfernen und Boden austauschen.</li></ul><div class="fazit-box"><p><strong>Ehrliche Einschätzung:</strong> Wenn mehr als 50% einer Thuja braun sind, ist sie meistens nicht mehr zu retten. Ersetzen Sie sie — am besten durch eine Eibe, die deutlich robuster ist.</p></div>' },
+            { id: 'vorbeugen', heading: 'So bleibt Ihre Thuja gesund', content: '<ul><li><strong>Auch im Winter gießen:</strong> An frostfreien Tagen wässern, besonders bei Ostwind</li><li><strong>Nie ins alte Holz schneiden:</strong> Nur den grünen Zuwachs schneiden</li><li><strong>Mulchen:</strong> 5 cm Rindenmulch hält die Feuchtigkeit im Boden</li><li><strong>Düngen:</strong> 2x pro Jahr mit Koniferendünger (März und Juli)</li><li><strong>Gute Drainage:</strong> Thujen vertragen keine Staunässe</li></ul>' },
+        ],
+        faqs: [
+            { q: 'Kann eine braune Thuja wieder grün werden?', a: 'Nur wenn die Ursache rechtzeitig behoben wird und die Pflanze nicht zu stark geschädigt ist. Braune Stellen im grünen Bereich wachsen nach. Komplett braune Äste oder Pflanzen erholen sich nicht.' },
+            { q: 'Warum wird meine Thuja von innen braun?', a: 'Das Braunwerden alter Nadeln im Inneren ist ein normaler Prozess. Thujen erneuern ihre Nadeln alle 3-4 Jahre. Solange die Außenseite grün ist, ist alles in Ordnung.' },
+            { q: 'Welche Alternative ist besser als Thuja?', a: 'Wir empfehlen Eibe (Taxus) als beste Alternative: genauso dicht und immergrün, aber schnittverträglicher, langlebiger und treibt auch aus altem Holz neu aus.' },
+        ],
+        relatedServices: ['heckenschnitt', 'baumpflege', 'gartenpflege'],
+    },
+
+    // ========================================================================
+    // ARTIKEL 26: Garten anlegen nach Hausbau
+    // ========================================================================
+    {
+        slug: 'garten-anlegen-neubau',
+        title: 'Garten anlegen nach Hausbau: Der richtige Ablauf',
+        metaTitle: 'Garten anlegen nach Hausbau: Ablauf, Kosten & Planung 2026',
+        metaDescription: 'Garten nach Hausbau anlegen? ✓ Der richtige Ablauf ✓ Was zuerst? ✓ Kosten kalkulieren ✓ Typische Fehler. Profi-Fahrplan.',
+        excerpt: 'Nach dem Hausbau gleicht der Garten einer Mondlandschaft. Wir zeigen den richtigen Ablauf — was zuerst, was kann warten.',
+        category: 'Ratgeber',
+        publishDate: '2026-06-30',
+        readingTime: 10,
+        keywords: ['Garten anlegen Neubau', 'Garten planen Hausbau', 'Garten nach Hausbau', 'Garten neu anlegen Ablauf'],
+        tableOfContents: [
+            { id: 'reihenfolge', title: 'Die richtige Reihenfolge' },
+            { id: 'phase1', title: 'Phase 1: Infrastruktur' },
+            { id: 'phase2', title: 'Phase 2: Harte Flächen' },
+            { id: 'phase3', title: 'Phase 3: Bepflanzung' },
+            { id: 'kosten', title: 'Kosten kalkulieren' },
+            { id: 'fehler', title: 'Die 5 größten Fehler' },
+        ],
+        content: [
+            { id: 'reihenfolge', heading: 'Die richtige Reihenfolge', content: '<p>Der häufigste Fehler: <strong>Alles auf einmal machen wollen.</strong> Ein Garten braucht Planung und die richtige Reihenfolge:</p><ol><li><strong>Planen</strong> (Wochen 1-4): Wünsche sammeln, Budget festlegen, Profi einbeziehen</li><li><strong>Infrastruktur</strong> (Wochen 4-8): Entwässerung, Strom, Wasser</li><li><strong>Harte Flächen</strong> (Wochen 8-14): Terrasse, Wege, Einfahrt, Zaun</li><li><strong>Bepflanzung</strong> (Wochen 14-18): Rasen, Hecke, Beete, Bäume</li></ol><p><strong>Zeitrahmen:</strong> Planen Sie 3-5 Monate für den kompletten Garten ein.</p>' },
+            { id: 'phase1', heading: 'Phase 1: Infrastruktur (das Unsichtbare)', content: '<p>Alles was <strong>in den Boden</strong> muss, kommt zuerst — bevor Terrasse und Rasen drauf sind:</p><ul><li><strong>Entwässerung:</strong> Drainage, Rigole, Regenwasserleitung</li><li><strong>Leerrohre:</strong> Strom für Gartenbeleuchtung, Mähroboter, Gartenhaus</li><li><strong>Wasseranschluss:</strong> Außenwasserhahn, ggf. Bewässerungsleitungen</li><li><strong>Boden verbessern:</strong> Baustellenboden ist verdichtet — auffräsen und Mutterboden aufbringen</li></ul><p><strong>Budget:</strong> Ca. 2.000-5.000 € für die Infrastruktur eines 300m² Gartens.</p>' },
+            { id: 'phase2', heading: 'Phase 2: Harte Flächen', content: '<ul><li><strong>Terrasse:</strong> Direkt ans Haus, mit 2% Gefälle weg vom Gebäude</li><li><strong>Einfahrt:</strong> Pflaster oder Schotter, ggf. mit Versickerungsmulde</li><li><strong>Gartenwege:</strong> Hauptwege 1,20 m breit, Nebenwege 80 cm</li><li><strong>Zaun/Sichtschutz:</strong> Grundstücksgrenze absichern</li><li><strong>Mauern/Stufen:</strong> Höhenunterschiede im Gelände ausgleichen</li></ul><p><strong>Budget:</strong> Ca. 8.000-20.000 € (abhängig von Material und Fläche).</p>' },
+            { id: 'phase3', heading: 'Phase 3: Bepflanzung', content: '<ul><li><strong>Hecke:</strong> Im Herbst pflanzen (Oktober/November) — wächst den Winter über an</li><li><strong>Rasen:</strong> April-Mai oder September. Rollrasen für sofortiges Grün, Aussaat für Budget</li><li><strong>Beete:</strong> Stauden und Bodendecker gegen Unkraut</li><li><strong>Bäume:</strong> Jetzt pflanzen, damit sie in 5 Jahren Schatten spenden</li></ul><p><strong>Budget:</strong> Ca. 3.000-8.000 € für Bepflanzung und Rasen.</p>' },
+            { id: 'kosten', heading: 'Kosten kalkulieren', content: '<table><thead><tr><th>Gartenbereich</th><th>Budget (300m² Garten)</th></tr></thead><tbody><tr><td><strong>Planung & Infrastruktur</strong></td><td>2.000-5.000 €</td></tr><tr><td><strong>Terrasse (20m²)</strong></td><td>3.000-8.000 €</td></tr><tr><td><strong>Einfahrt (25m²)</strong></td><td>2.000-5.000 €</td></tr><tr><td><strong>Zaun (30 lfm)</strong></td><td>2.500-5.000 €</td></tr><tr><td><strong>Rasen (150m²)</strong></td><td>1.500-4.000 €</td></tr><tr><td><strong>Bepflanzung</strong></td><td>1.500-4.000 €</td></tr><tr><td><strong>Gesamt</strong></td><td><strong>12.500-31.000 €</strong></td></tr></tbody></table><p><strong>Faustregel:</strong> Planen Sie 10-15% der Hausbaukosten für den Garten ein.</p>' },
+            { id: 'fehler', heading: 'Die 5 größten Fehler beim Gartenanlegen', content: '<ol><li><strong>Keinen Plan machen:</strong> Einfach drauflos führt zu teuren Umbauten</li><li><strong>Boden nicht verbessern:</strong> Baustellenboden ist verdichtet — Rasen und Pflanzen wachsen schlecht</li><li><strong>Leerrohre vergessen:</strong> Strom und Wasser nachträglich verlegen kostet 5x so viel</li><li><strong>Alles auf einmal:</strong> Lieber in Phasen — erst Infrastruktur und Terrasse, Bepflanzung kann warten</li><li><strong>Zu kleine Terrasse:</strong> Die #1 Bereue nach 2 Jahren. Lieber 5m² mehr!</li></ol>' },
+        ],
+        faqs: [
+            { q: 'Was kostet es, einen Garten nach dem Hausbau komplett anlegen zu lassen?', a: 'Für einen 300m² Garten mit Terrasse, Einfahrt, Zaun, Rasen und Bepflanzung rechnen Sie mit 12.500-31.000 Euro. Faustregel: 10-15% der Hausbaukosten.' },
+            { q: 'Wann sollte man nach dem Hausbau mit dem Garten anfangen?', a: 'Sobald die Bauarbeiten abgeschlossen und die schweren Maschinen weg sind. Idealerweise im Frühjahr oder Herbst starten. Planen können Sie aber schon während des Hausbaus.' },
+            { q: 'Kann man den Garten in Etappen anlegen?', a: 'Ja, das ist sogar empfehlenswert. Zuerst Infrastruktur und Terrasse, dann Zaun und Wege, zuletzt Bepflanzung. So verteilen Sie die Kosten auf 1-2 Jahre.' },
+        ],
+        relatedServices: ['garten-und-landschaftsbau', 'galabau', 'terrassenbau', 'pflasterarbeiten', 'rollrasen'],
+    },
 ];
 
 // Helper functions
