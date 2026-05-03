@@ -1686,6 +1686,224 @@ export const blogArticles: BlogArticle[] = [
         ],
         relatedServices: ['pflasterarbeiten', 'terrassenbau', 'garten-und-landschaftsbau'],
     },
+
+    // ========================================================================
+    // ARTIKEL 12: Rasen neu anlegen
+    // ========================================================================
+    {
+        slug: 'rasen-neuanlage-kosten',
+        title: 'Rasen neu anlegen: Kosten, Ablauf & Tipps vom Profi',
+        metaTitle: 'Rasen neu anlegen: Kosten pro m², Ablauf & Profi-Tipps 2026',
+        metaDescription: 'Rasen neu anlegen lassen? ✓ Kosten pro m² ✓ Schritt-für-Schritt Ablauf ✓ Boden vorbereiten ✓ Häufige Fehler vermeiden. Vom Profi erklärt.',
+        excerpt: 'Was kostet es, einen Rasen komplett neu anzulegen? Wir zeigen den kompletten Ablauf, realistische Kosten und die häufigsten Fehler.',
+        category: 'Ratgeber',
+        publishDate: '2026-05-18',
+        readingTime: 9,
+        keywords: ['Rasen neu anlegen Kosten', 'Rasen anlegen lassen', 'Rasen anlegen Kosten pro m2', 'Rasenfläche neu anlegen'],
+        tableOfContents: [
+            { id: 'wann', title: 'Wann Rasen neu anlegen?' },
+            { id: 'kosten', title: 'Kosten im Überblick' },
+            { id: 'ablauf', title: 'Schritt für Schritt Ablauf' },
+            { id: 'fehler', title: 'Die 5 häufigsten Fehler' },
+            { id: 'fazit', title: 'Fazit' },
+        ],
+        content: [
+            { id: 'wann', heading: 'Wann sollte man den Rasen neu anlegen?', content: '<p>Ein <strong>kompletter Neuanfang</strong> lohnt sich, wenn:</p><ul><li>Mehr als 50% der Fläche aus Moos und Unkraut besteht</li><li>Der Boden verdichtet und wasserundurchlässig ist</li><li>Unebenheiten das Mähen unmöglich machen</li><li>Nach einem Hausbau der Garten erstmals angelegt wird</li></ul><p><strong>Beste Zeit:</strong> April bis Mai oder September. Im Frühling hat der Rasen die ganze Saison zum Einwachsen, im Herbst profitiert er von Feuchtigkeit und milden Temperaturen.</p>' },
+            { id: 'kosten', heading: 'Kosten im Überblick', content: '<table><thead><tr><th>Leistung</th><th>DIY</th><th>Vom Profi</th></tr></thead><tbody><tr><td><strong>Alten Rasen entfernen</strong></td><td>Eigene Arbeit</td><td>3-5 €/m²</td></tr><tr><td><strong>Boden fräsen & planieren</strong></td><td>Maschinenmiete 80-150€</td><td>4-6 €/m²</td></tr><tr><td><strong>Rasenerde aufbringen</strong></td><td>3-5 €/m²</td><td>5-8 €/m²</td></tr><tr><td><strong>Aussaat</strong></td><td>0,50-2 €/m²</td><td>2-3 €/m²</td></tr><tr><td><strong>Rollrasen</strong></td><td>5-9 €/m²</td><td>8-12 €/m²</td></tr><tr><td><strong>Gesamt (100m² Aussaat)</strong></td><td><strong>350-700 €</strong></td><td><strong>1.400-2.200 €</strong></td></tr><tr><td><strong>Gesamt (100m² Rollrasen)</strong></td><td><strong>800-1.400 €</strong></td><td><strong>2.000-3.100 €</strong></td></tr></tbody></table><p><strong>Unser Tipp:</strong> Die Bodenvorbereitung ist der teuerste Teil — und gleichzeitig der wichtigste. Sparen Sie hier nicht, sonst haben Sie in 2 Jahren das gleiche Problem.</p>' },
+            { id: 'ablauf', heading: 'Schritt für Schritt Ablauf', content: '<ol><li><strong>Alten Bewuchs entfernen:</strong> Gras, Moos und Unkraut mit einer Schälmaschine oder Fräse abtragen. Bei starkem Unkraut 2-3 Wochen vorher mit Unkrautvernichter behandeln.</li><li><strong>Boden fräsen:</strong> 15-20 cm tief umgraben. Steine, Wurzeln und Bauabfälle entfernen.</li><li><strong>Drainage prüfen:</strong> Staut sich Wasser? Dann Sand einarbeiten (5-10 kg/m²) oder eine Drainage verlegen.</li><li><strong>Rasenerde aufbringen:</strong> 2-3 cm Schicht hochwertiger Rasenerde aufbringen und einarbeiten.</li><li><strong>Planieren:</strong> Mit einer Walze oder einem Brett die Fläche ebnen. Kleine Unebenheiten rächen sich später beim Mähen!</li><li><strong>Aussaat oder Rollrasen:</strong> Bei Aussaat: 25-30g/m² gleichmäßig verteilen, leicht einharken, walzen und wässern. Bei Rollrasen: innerhalb von 24 Stunden nach Lieferung verlegen.</li><li><strong>Wässern:</strong> In den ersten 3 Wochen täglich wässern — der Boden darf nie austrocknen!</li></ol>' },
+            { id: 'fehler', heading: 'Die 5 häufigsten Fehler', content: '<table><thead><tr><th>Fehler</th><th>Folge</th><th>Lösung</th></tr></thead><tbody><tr><td><strong>Zu wenig Bodenvorbereitung</strong></td><td>Rasen wächst ungleichmäßig</td><td>Mindestens 15 cm tief fräsen</td></tr><tr><td><strong>Billiges Saatgut</strong></td><td>Viel Unkraut, wenig Gras</td><td>RSM-zertifiziertes Saatgut verwenden</td></tr><tr><td><strong>Zu wenig wässern</strong></td><td>Keimung stoppt komplett</td><td>3 Wochen lang täglich wässern</td></tr><tr><td><strong>Zu früh betreten</strong></td><td>Junge Halme werden zerstört</td><td>6-8 Wochen warten</td></tr><tr><td><strong>Zu kurz mähen</strong></td><td>Rasen wird geschwächt</td><td>Erster Schnitt auf 6-7 cm</td></tr></tbody></table>' },
+            { id: 'fazit', heading: 'Fazit', content: '<div class="fazit-box"><p><strong>Rasen neu anlegen ist kein Hexenwerk</strong> — aber die Bodenvorbereitung entscheidet über Erfolg oder Misserfolg. Investieren Sie 80% Ihrer Zeit und Ihres Budgets in den Unterbau. Dann haben Sie jahrelang Freude an einem satten, grünen Rasen.</p></div><p>Sie möchten Ihren Rasen professionell neu anlegen lassen? Wir beraten Sie kostenlos und erstellen ein unverbindliches Angebot — von der Bodenvorbereitung bis zum fertigen Rasen.</p>' },
+        ],
+        faqs: [
+            { q: 'Was kostet Rasen neu anlegen lassen?', a: 'Vom Profi komplett angelegt kostet ein neuer Rasen mit Aussaat ca. 14-22 €/m², mit Rollrasen ca. 20-31 €/m². Für einen 100m² Garten liegt der Gesamtpreis zwischen 1.400 und 3.100 Euro inklusive Bodenvorbereitung.' },
+            { q: 'Wie lange dauert es, bis neuer Rasen wächst?', a: 'Bei Aussaat: Erste Keimung nach 7-14 Tagen, begehbar nach 6-8 Wochen, voll belastbar nach 3 Monaten. Bei Rollrasen: Sofort grün, begehbar nach 2-3 Wochen.' },
+            { q: 'Kann man alten Rasen einfach umgraben?', a: 'Ja, aber besser ist es, den alten Rasen vorher mit einer Schälmaschine abzutragen. Umgegraben verrottet er zwar im Boden, kann aber Unebenheiten und Unkraut verursachen.' },
+            { q: 'Welches Saatgut ist am besten?', a: 'Verwenden Sie RSM-zertifiziertes Saatgut (Regel-Saatgut-Mischungen). Für Hausgärten empfehlen wir RSM 2.3 (Gebrauchsrasen Spielrasen) — robust, trittfest und pflegeleicht.' },
+        ],
+        relatedServices: ['rollrasen', 'gartenpflege', 'garten-und-landschaftsbau'],
+    },
+
+    // ========================================================================
+    // ARTIKEL 13: Mähroboter Vor- und Nachteile
+    // ========================================================================
+    {
+        slug: 'maehroboter-vor-nachteile',
+        title: 'Mähroboter: Lohnt sich das? Ehrliche Vor- & Nachteile',
+        metaTitle: 'Mähroboter: Lohnt sich das? Ehrliche Vor- & Nachteile 2026',
+        metaDescription: 'Mähroboter kaufen oder nicht? ✓ Ehrliche Vor- und Nachteile ✓ Kosten ✓ Für welche Gärten geeignet ✓ Profi-Einschätzung.',
+        excerpt: 'Mähroboter versprechen den perfekten Rasen ohne Arbeit. Aber stimmt das wirklich? Wir teilen unsere ehrliche Einschätzung nach 15 Jahren Erfahrung.',
+        category: 'Vergleich',
+        publishDate: '2026-05-21',
+        readingTime: 8,
+        keywords: ['Mähroboter Vorteile Nachteile', 'Mähroboter Erfahrungen', 'Mähroboter lohnt sich', 'Rasenroboter Test'],
+        tableOfContents: [
+            { id: 'vorteile', title: 'Die echten Vorteile' },
+            { id: 'nachteile', title: 'Die Nachteile die keiner erwähnt' },
+            { id: 'kosten', title: 'Was kostet ein Mähroboter wirklich?' },
+            { id: 'geeignet', title: 'Für welche Gärten geeignet?' },
+            { id: 'fazit', title: 'Unser Fazit' },
+        ],
+        content: [
+            { id: 'vorteile', heading: 'Die echten Vorteile', content: '<p>Nach hunderten Kundengärten — hier sind die <strong>tatsächlichen Vorteile</strong>:</p><ul><li><strong>Zeitersparnis:</strong> Der Roboter mäht autonom, Sie haben Wochenende frei. Bei 200m² sparen Sie ca. 2 Stunden pro Woche.</li><li><strong>Bessere Rasenqualität:</strong> Durch tägliches Mähen in Millimeter-Schritten wird der Rasen dichter und satter. Das Schnittgut bleibt als Mulch liegen und düngt natürlich.</li><li><strong>Leise:</strong> Die meisten Mähroboter sind unter 60 dB — Sie können sie nachts oder am Sonntag laufen lassen, ohne die Nachbarn zu stören.</li><li><strong>Kein Rasenschnitt entsorgen:</strong> Da der Roboter nur Millimeter abschneidet, bleibt das Schnittgut als feiner Mulch auf dem Rasen.</li></ul>' },
+            { id: 'nachteile', heading: 'Die Nachteile die keiner erwähnt', content: '<p>Und hier die <strong>ehrlichen Nachteile</strong>, die in der Werbung fehlen:</p><ul><li><strong>Igel-Gefahr:</strong> Mähroboter die nachts fahren können Igel verletzen oder töten. Lassen Sie den Roboter nie nach Einbruch der Dunkelheit laufen!</li><li><strong>Begrenzungsdraht:</strong> Bei den meisten Modellen müssen Sie einen Draht im Boden verlegen — das dauert bei 200m² ca. 3-4 Stunden und kostet oft 300-500€ für die Installation.</li><li><strong>Hanglagen:</strong> Ab 25% Steigung wird es für viele Roboter kritisch. Premium-Modelle schaffen 35-45%, aber die kosten 2.000€+.</li><li><strong>Kein Kantenschnitt:</strong> Der Roboter kommt nicht an Mauern, Beete und Zäune heran. Sie brauchen trotzdem einen Kantentrimmer.</li><li><strong>Diebstahl:</strong> Mähroboter werden gestohlen. GPS-Tracking und PIN-Schutz sind Pflicht.</li><li><strong>Wartung:</strong> Messer alle 4-8 Wochen wechseln, Reinigung, Software-Updates. Ganz wartungsfrei ist er nicht.</li></ul>' },
+            { id: 'kosten', heading: 'Was kostet ein Mähroboter wirklich?', content: '<table><thead><tr><th>Position</th><th>Einstieg</th><th>Mittelklasse</th><th>Premium</th></tr></thead><tbody><tr><td><strong>Roboter</strong></td><td>600-900 €</td><td>1.000-1.500 €</td><td>2.000-3.500 €</td></tr><tr><td><strong>Installation</strong></td><td>200-400 €</td><td>300-500 €</td><td>500-800 €</td></tr><tr><td><strong>Garage/Überdachung</strong></td><td>50-100 €</td><td>100-200 €</td><td>200-400 €</td></tr><tr><td><strong>Jährliche Wartung</strong></td><td>50-80 €</td><td>80-120 €</td><td>100-150 €</td></tr><tr><td><strong>Gesamt Jahr 1</strong></td><td><strong>900-1.480 €</strong></td><td><strong>1.480-2.320 €</strong></td><td><strong>2.800-4.850 €</strong></td></tr></tbody></table><p><strong>Zum Vergleich:</strong> Ein professioneller Rasenmäh-Service kostet ca. 30-50€ pro Einsatz. Bei wöchentlichem Mähen sind das 1.200-2.000€/Jahr. Ein Mähroboter amortisiert sich also nach 1-2 Jahren.</p>' },
+            { id: 'geeignet', heading: 'Für welche Gärten geeignet?', content: '<p><strong>Ideal für:</strong></p><ul><li>Rasenflächen ab 100m² bis ca. 2.000m²</li><li>Relativ ebene Gärten ohne extreme Steigungen</li><li>Gärten ohne viele verwinkelte Ecken und Engstellen</li><li>Berufstätige die keine Zeit zum Mähen haben</li></ul><p><strong>Weniger geeignet für:</strong></p><ul><li>Sehr kleine Gärten unter 50m² (da lohnt sich die Investition nicht)</li><li>Stark hügelige oder terrassierte Gärten</li><li>Gärten mit vielen Bäumen, Beeten und Hindernissen</li><li>Gärten mit Kindern die viel Spielzeug auf dem Rasen liegen lassen</li></ul>' },
+            { id: 'fazit', heading: 'Unser Fazit', content: '<div class="fazit-box"><p><strong>Ein Mähroboter ist kein Ersatz für Gartenpflege</strong> — er ist ein Werkzeug, das Ihnen das Mähen abnimmt. Sie brauchen trotzdem: Kantentrimmer, Vertikutierer, Dünger und jemanden der den Roboter wartet.</p><p>Für Berufstätige mit 200-500m² Rasen ist ein Mähroboter aber eine <strong>hervorragende Investition</strong>. Der Rasen wird tatsächlich besser als beim wöchentlichen Mähen.</p></div>' },
+        ],
+        faqs: [
+            { q: 'Lohnt sich ein Mähroboter für kleine Gärten?', a: 'Ab ca. 100m² Rasenfläche lohnt sich ein Mähroboter finanziell und zeitlich. Unter 50m² ist ein normaler Akku-Mäher die bessere Wahl — schneller, günstiger und flexibler.' },
+            { q: 'Sind Mähroboter gefährlich für Igel?', a: 'Ja, besonders nachts. Igel rollen sich bei Gefahr zusammen statt zu fliehen. Lassen Sie den Roboter nie nach Einbruch der Dunkelheit laufen. Tagsüber sind Igel in der Regel nicht aktiv.' },
+            { q: 'Wie laut ist ein Mähroboter?', a: 'Die meisten Modelle liegen zwischen 55-65 dB — vergleichbar mit einem Gespräch in normaler Lautstärke. Zum Vergleich: Ein Benzinrasenmäher erreicht 90-100 dB.' },
+            { q: 'Muss man einen Mähroboter im Winter einlagern?', a: 'Ja. Ab Oktober den Roboter reinigen, die Messer wechseln, den Akku auf ca. 50-70% laden und frostfrei überwintern. Im Frühling den Begrenzungsdraht prüfen und den Roboter neu kalibrieren.' },
+        ],
+        relatedServices: ['gartenpflege', 'rollrasen', 'garten-und-landschaftsbau'],
+    },
+
+    // ========================================================================
+    // ARTIKEL 14: Braune Flecken im Rasen
+    // ========================================================================
+    {
+        slug: 'rasen-braune-flecken',
+        title: 'Braune Flecken im Rasen? 7 Ursachen & Lösungen',
+        metaTitle: 'Braune Flecken im Rasen: 7 Ursachen & was wirklich hilft 2026',
+        metaDescription: 'Braune Flecken im Rasen? ✓ 7 häufige Ursachen ✓ Schnelle Lösungen ✓ Wann zum Profi? Diagnose-Guide vom Gartenbauer.',
+        excerpt: 'Braune Flecken im Rasen sind ärgerlich aber meist leicht zu beheben. Wir zeigen die 7 häufigsten Ursachen und was Sie konkret tun können.',
+        category: 'Ratgeber',
+        publishDate: '2026-05-24',
+        readingTime: 7,
+        keywords: ['Rasen braune Flecken', 'Rasen trockene Stellen', 'Rasen wird braun', 'gelbe Flecken Rasen'],
+        tableOfContents: [
+            { id: 'trockenheit', title: '1. Trockenheit' },
+            { id: 'pilz', title: '2. Pilzkrankheiten' },
+            { id: 'duenger', title: '3. Überdüngung' },
+            { id: 'hund', title: '4. Hundeurin' },
+            { id: 'insekten', title: '5. Engerlinge & Insekten' },
+            { id: 'maehen', title: '6. Zu kurz gemäht' },
+            { id: 'verdichtung', title: '7. Bodenverdichtung' },
+            { id: 'fazit', title: 'Schnell-Diagnose' },
+        ],
+        content: [
+            { id: 'trockenheit', heading: '1. Trockenheit — die häufigste Ursache', content: '<p><strong>Symptome:</strong> Gleichmäßig braune, strohige Flächen. Gras federt beim Betreten nicht zurück.</p><p><strong>Lösung:</strong></p><ul><li>2x pro Woche durchdringend wässern (15-20 Liter/m²)</li><li>Morgens vor 9 Uhr wässern — nie in der Mittagshitze</li><li>Schnitthöhe auf 5 cm anheben</li></ul><p><strong>Prognose:</strong> Erholt sich nach Regen oder Bewässerung innerhalb von 1-2 Wochen vollständig.</p>' },
+            { id: 'pilz', heading: '2. Pilzkrankheiten', content: '<p><strong>Symptome:</strong> Runde, scharf begrenzte braune Flecken (10-30 cm). Oft mit weißlichem Rand. Typisch bei feuchtwarmem Wetter.</p><p><strong>Häufige Pilze:</strong></p><ul><li><strong>Schneeschimmel:</strong> Runde Flecken im Frühjahr nach Schneeschmelze</li><li><strong>Rotspitzigkeit:</strong> Rosa-rötliche Fäden an den Grashalmen</li><li><strong>Dollar Spot:</strong> Kleine münzgroße braune Flecken</li></ul><p><strong>Lösung:</strong> Vertikutieren für bessere Belüftung, nicht abends wässern, Stickstoffdüngung. Bei starkem Befall: fungizidhaltige Rasendünger.</p>' },
+            { id: 'duenger', heading: '3. Überdüngung (Dünger-Brand)', content: '<p><strong>Symptome:</strong> Scharf begrenzte braune Streifen entlang der Dünge-Bahnen. Verbranntes, gelb-braunes Gras.</p><p><strong>Lösung:</strong></p><ul><li>Sofort intensiv wässern (30-40 Liter/m²) um den Dünger auszuschwemmen</li><li>2-3 Tage hintereinander wässern</li><li>Beim nächsten Mal: Streuwagen verwenden, nie von Hand düngen</li></ul><p><strong>Prognose:</strong> Bei leichter Verbrennung erholt sich der Rasen in 2-3 Wochen. Bei starker Verbrennung: Nachsäen nötig.</p>' },
+            { id: 'hund', heading: '4. Hundeurin', content: '<p><strong>Symptome:</strong> Kleine runde Flecken (15-25 cm) mit dunkelgrünem Ring drumherum. Das Zentrum ist braun und tot.</p><p><strong>Warum:</strong> Hundeurin enthält extrem viel Stickstoff — wie eine lokale Überdüngung.</p><p><strong>Lösung:</strong></p><ul><li>Betroffene Stelle sofort mit viel Wasser spülen</li><li>Tote Stellen aufharken und nachsäen</li><li>Vorbeugend: Dem Hund einen festen Bereich zuweisen</li></ul>' },
+            { id: 'insekten', heading: '5. Engerlinge & Insekten', content: '<p><strong>Symptome:</strong> Rasen lässt sich wie ein Teppich anheben — die Wurzeln sind abgefressen. Vögel hacken vermehrt im Rasen.</p><p><strong>Ursache:</strong> Engerlinge (Larven von Maikäfer, Junikäfer) oder Wiesenschnaken-Larven (Tipula) fressen die Graswurzeln.</p><p><strong>Lösung:</strong></p><ul><li>Biologisch: Nematoden (SC-Nematoden gegen Engerlinge) im August/September ausbringen</li><li>Rasen vertikutieren und nachsäen</li><li>Bei starkem Befall: Professionelle Behandlung empfohlen</li></ul>' },
+            { id: 'maehen', heading: '6. Zu kurz gemäht (Skalpierung)', content: '<p><strong>Symptome:</strong> Großflächig gelblich-braune Flächen nach dem Mähen. Besonders auf Hügeln und Unebenheiten.</p><p><strong>Lösung:</strong></p><ul><li>Nie mehr als 1/3 der Halmlänge auf einmal abschneiden</li><li>Minimum 3,5 cm Schnitthöhe, im Sommer 5 cm</li><li>Unebenheiten mit Rasenerde auffüllen</li></ul>' },
+            { id: 'verdichtung', heading: '7. Bodenverdichtung', content: '<p><strong>Symptome:</strong> Braune Stellen an stark belaufenen Bereichen (Spielbereich der Kinder, Weg zur Garage). Wasser steht nach Regen.</p><p><strong>Lösung:</strong></p><ul><li>Aerifizieren: Mit einer Grabegabel alle 10-15 cm einstechen</li><li>Sand einarbeiten (5-10 kg/m²)</li><li>Besonders stark belastete Stellen: Trittplatten oder Rasengittersteine verwenden</li></ul>' },
+            { id: 'fazit', heading: 'Schnell-Diagnose', content: '<table><thead><tr><th>Muster</th><th>Wahrscheinliche Ursache</th><th>Erste Hilfe</th></tr></thead><tbody><tr><td>Gleichmäßig braun</td><td>Trockenheit</td><td>Intensiv wässern</td></tr><tr><td>Runde Flecken mit Rand</td><td>Pilz</td><td>Vertikutieren, morgens wässern</td></tr><tr><td>Streifen entlang Bahnen</td><td>Dünger-Brand</td><td>Sofort spülen</td></tr><tr><td>Kleine Kreise, grüner Ring</td><td>Hundeurin</td><td>Wasser, nachsäen</td></tr><tr><td>Rasen hebt sich ab</td><td>Engerlinge</td><td>Nematoden</td></tr><tr><td>Braun nach dem Mähen</td><td>Zu kurz gemäht</td><td>Höher mähen</td></tr><tr><td>Braun an Laufwegen</td><td>Verdichtung</td><td>Aerifizieren</td></tr></tbody></table>' },
+        ],
+        faqs: [
+            { q: 'Erholt sich brauner Rasen von alleine?', a: 'Bei Trockenheit: Ja, nach Regen oder Bewässerung innerhalb von 1-2 Wochen. Bei Pilzbefall oder Engerlingen: Nur mit Behandlung. Bei Skalpierung: Oft Nachsaat nötig.' },
+            { q: 'Wann sollte man einen Profi rufen?', a: 'Wenn sich die braunen Flecken trotz Bewässerung ausbreiten, der Rasen sich wie ein Teppich abheben lässt, oder Sie den Grund nicht identifizieren können.' },
+            { q: 'Kann man braune Stellen einfach nachsäen?', a: 'Ja, aber erst die Ursache beheben! Sonst werden auch die neuen Halme braun. Tote Stellen aufharken, Rasenerde aufbringen, nachsäen und 3 Wochen feucht halten.' },
+        ],
+        relatedServices: ['gartenpflege', 'rollrasen', 'garten-und-landschaftsbau'],
+    },
+
+    // ========================================================================
+    // ARTIKEL 15: Obstbäume schneiden
+    // ========================================================================
+    {
+        slug: 'obstbaum-schneiden-anleitung',
+        title: 'Obstbäume richtig schneiden: Anleitung für Anfänger',
+        metaTitle: 'Obstbäume schneiden: Wann & wie? Anleitung für Anfänger 2026',
+        metaDescription: 'Obstbaum richtig schneiden? ✓ Zeitpunkt ✓ Schritt-für-Schritt ✓ Apfelbaum, Kirsche, Pflaume ✓ Die 5 häufigsten Fehler vermeiden.',
+        excerpt: 'Obstbäume schneiden ist einfacher als gedacht — wenn man weiß, wann und wie. Unsere Schritt-für-Schritt-Anleitung für gesunde, ertragreiche Bäume.',
+        category: 'Ratgeber',
+        publishDate: '2026-05-27',
+        readingTime: 10,
+        keywords: ['Obstbaum schneiden wann', 'Apfelbaum schneiden Anleitung', 'Obstbaumschnitt', 'Kirschbaum schneiden'],
+        tableOfContents: [
+            { id: 'wann', title: 'Wann Obstbäume schneiden?' },
+            { id: 'werkzeug', title: 'Das richtige Werkzeug' },
+            { id: 'grundregeln', title: 'Die 5 Grundregeln' },
+            { id: 'apfel', title: 'Apfelbaum schneiden' },
+            { id: 'kirsche', title: 'Kirschbaum schneiden' },
+            { id: 'fehler', title: 'Häufige Fehler' },
+        ],
+        content: [
+            { id: 'wann', heading: 'Wann Obstbäume schneiden?', content: '<table><thead><tr><th>Obstart</th><th>Bester Zeitpunkt</th><th>Warum</th></tr></thead><tbody><tr><td><strong>Apfel, Birne</strong></td><td>Januar – März</td><td>Im Winterschlaf verheilen Schnittwunden am besten</td></tr><tr><td><strong>Kirsche, Pflaume</strong></td><td>Juni – August (nach Ernte)</td><td>Steinobst ist anfällig für Pilze bei Winterschnitt</td></tr><tr><td><strong>Walnuss</strong></td><td>August – September</td><td>Blutet stark bei Winterschnitt</td></tr><tr><td><strong>Beerensträucher</strong></td><td>Oktober – Februar</td><td>Alte Triebe entfernen fördert Neuwuchs</td></tr></tbody></table><p><strong>Goldene Regel:</strong> Kernobst (Apfel, Birne) im Winter, Steinobst (Kirsche, Pflaume) im Sommer!</p>' },
+            { id: 'werkzeug', heading: 'Das richtige Werkzeug', content: '<ul><li><strong>Bypass-Schere:</strong> Für Äste bis 2 cm Durchmesser (sauberer Schnitt, quetscht nicht)</li><li><strong>Astschere:</strong> Für Äste 2-5 cm</li><li><strong>Klappsäge:</strong> Für Äste über 5 cm</li><li><strong>Wundverschluss:</strong> Nicht nötig! Moderne Forschung zeigt: Bäume verschließen Wunden selbst besser ohne Paste</li></ul><p><strong>Wichtig:</strong> Werkzeug vor jedem Baum desinfizieren (Spiritus oder 70% Alkohol). So verhindern Sie die Übertragung von Krankheiten.</p>' },
+            { id: 'grundregeln', heading: 'Die 5 Grundregeln', content: '<ol><li><strong>Totes und Krankes zuerst:</strong> Trockene, beschädigte und von Pilz befallene Äste immer entfernen</li><li><strong>Konkurrenztriebe entfernen:</strong> Wenn zwei Äste parallel wachsen oder sich kreuzen — den schwächeren entfernen</li><li><strong>Innen lichten:</strong> Licht und Luft müssen ins Innere der Krone gelangen. Nur so reifen Früchte gleichmäßig</li><li><strong>Auf Astring schneiden:</strong> Immer direkt am Astring (der Verdickung am Astansatz) schneiden, keine Stummel lassen</li><li><strong>Nie mehr als 20% entfernen:</strong> Zu starker Schnitt stresst den Baum und löst Wasserschosse aus</li></ol>' },
+            { id: 'apfel', heading: 'Apfelbaum schneiden — Schritt für Schritt', content: '<ol><li><strong>Totholz entfernen:</strong> Alle trockenen, abgestorbenen Äste herausschneiden</li><li><strong>Steil nach oben wachsende Triebe entfernen:</strong> Diese „Wasserschosse" tragen keine Früchte und nehmen Licht</li><li><strong>Sich kreuzende Äste:</strong> Den schwächeren oder nach innen wachsenden Ast entfernen</li><li><strong>Zu dichte Bereiche lichten:</strong> Nach dem Schnitt sollte „ein Vogel durch die Krone fliegen können"</li><li><strong>Leittriebe einkürzen:</strong> Die Hauptäste um 1/3 des letztjährigen Zuwachses einkürzen — immer auf eine nach außen zeigende Knospe</li></ol>' },
+            { id: 'kirsche', heading: 'Kirschbaum schneiden', content: '<p><strong>Wichtig:</strong> Kirschen werden im Sommer geschnitten — direkt nach der Ernte! Bei Winterschnitt drohen Pilzinfektionen.</p><ul><li>Abgetragene Fruchttriebe auf junge Seitentriebe ableiten</li><li>Krone lichten, damit Kirschen gleichmäßig reifen</li><li>Sauerkirschen stärker schneiden als Süßkirschen (fruchten am einjährigen Holz)</li></ul>' },
+            { id: 'fehler', heading: 'Die häufigsten Fehler', content: '<table><thead><tr><th>Fehler</th><th>Folge</th></tr></thead><tbody><tr><td>Kirschbaum im Winter schneiden</td><td>Pilzbefall (Monilia, Gummifluss)</td></tr><tr><td>Stummel stehen lassen</td><td>Faulen ab, Eintrittspforte für Krankheiten</td></tr><tr><td>Zu viel auf einmal schneiden</td><td>Massenhaft Wasserschosse im nächsten Jahr</td></tr><tr><td>Stumpfes Werkzeug</td><td>Gequetschte Schnittstellen heilen schlecht</td></tr><tr><td>Werkzeug nicht desinfizieren</td><td>Krankheiten von Baum zu Baum übertragen</td></tr></tbody></table>' },
+        ],
+        faqs: [
+            { q: 'Wann schneidet man einen Apfelbaum?', a: 'Idealerweise zwischen Januar und März, bei frostfreiem Wetter. Der Baum ist im Winterschlaf und verheilt die Schnittwunden am besten.' },
+            { q: 'Kann man beim Obstbaumschnitt etwas falsch machen?', a: 'Die häufigsten Fehler: Zu viel auf einmal entfernen, Stummel stehen lassen, und Kirschbäume im Winter statt im Sommer schneiden. Mit unseren 5 Grundregeln vermeiden Sie die schlimmsten Fehler.' },
+            { q: 'Muss man Schnittwunden versiegeln?', a: 'Nein. Moderne Forschung zeigt, dass Bäume Wunden am besten selbst verschließen. Wundverschlusspaste kann sogar schaden, da sie Feuchtigkeit einschließt.' },
+        ],
+        relatedServices: ['baumpflege', 'gartenpflege', 'garten-und-landschaftsbau'],
+    },
+
+    // ========================================================================
+    // ARTIKEL 16: Terrasse planen
+    // ========================================================================
+    {
+        slug: 'terrasse-planen-groesse-ausrichtung',
+        title: 'Terrasse planen: Die richtige Größe & Ausrichtung',
+        metaTitle: 'Terrasse planen: Größe berechnen, Ausrichtung & Profi-Tipps 2026',
+        metaDescription: 'Terrasse planen? ✓ Richtige Größe berechnen ✓ Beste Ausrichtung ✓ Material wählen ✓ Häufige Planungsfehler vermeiden. Profi-Guide.',
+        excerpt: 'Die perfekte Terrasse beginnt mit der richtigen Planung. Wir zeigen, wie Sie die optimale Größe, Ausrichtung und das Material bestimmen.',
+        category: 'Ratgeber',
+        publishDate: '2026-05-30',
+        readingTime: 8,
+        keywords: ['Terrasse planen', 'Terrasse Größe berechnen', 'Terrasse Ausrichtung', 'Terrasse bauen Planung'],
+        tableOfContents: [
+            { id: 'groesse', title: 'Die richtige Größe' },
+            { id: 'ausrichtung', title: 'Himmelsrichtung & Ausrichtung' },
+            { id: 'material', title: 'Material wählen' },
+            { id: 'fehler', title: 'Die 5 größten Planungsfehler' },
+            { id: 'kosten', title: 'Kosten-Überblick' },
+        ],
+        content: [
+            { id: 'groesse', heading: 'Die richtige Größe', content: '<p>Die häufigste Frage: <strong>Wie groß sollte die Terrasse sein?</strong> Unsere Faustformel:</p><table><thead><tr><th>Nutzung</th><th>Empfohlene Größe</th></tr></thead><tbody><tr><td>2 Personen, Kaffeetisch</td><td>8-12 m²</td></tr><tr><td>4 Personen, Esstisch</td><td>12-16 m²</td></tr><tr><td>6+ Personen, Esstisch + Lounge</td><td>20-30 m²</td></tr><tr><td>Große Grillterrasse</td><td>30-50 m²</td></tr></tbody></table><p><strong>Faustregel:</strong> Pro Person ca. 3-4 m² einplanen. Lieber etwas größer als zu klein — eine Terrasse nachträglich zu vergrößern ist teuer und optisch oft unbefriedigend.</p>' },
+            { id: 'ausrichtung', heading: 'Himmelsrichtung & Ausrichtung', content: '<table><thead><tr><th>Ausrichtung</th><th>Sonnenstunden</th><th>Ideal für</th></tr></thead><tbody><tr><td><strong>Süden</strong></td><td>Ganztags Sonne</td><td>Sonnenanbeter, Markise empfohlen</td></tr><tr><td><strong>Westen</strong></td><td>Ab Mittag Sonne</td><td>Feierabend-Genießer, Abendsonne!</td></tr><tr><td><strong>Osten</strong></td><td>Morgens Sonne</td><td>Frühstücker, im Sommer angenehm</td></tr><tr><td><strong>Norden</strong></td><td>Kaum direkte Sonne</td><td>Hitzeempfindliche, schattig & kühl</td></tr></tbody></table><p><strong>Unser Favorit:</strong> Südwest-Ausrichtung — Sie haben den ganzen Nachmittag und Abend Sonne, ohne in der Mittagshitze zu braten.</p>' },
+            { id: 'material', heading: 'Material wählen', content: '<table><thead><tr><th>Material</th><th>Kosten/m²</th><th>Haltbarkeit</th><th>Pflege</th></tr></thead><tbody><tr><td><strong>Betonplatten</strong></td><td>15-50 €</td><td>20-30 Jahre</td><td>Gering</td></tr><tr><td><strong>Naturstein</strong></td><td>40-120 €</td><td>50-100 Jahre</td><td>Gering</td></tr><tr><td><strong>Holz (Douglasie)</strong></td><td>25-45 €</td><td>10-20 Jahre</td><td>Hoch (ölen)</td></tr><tr><td><strong>Holz (Bangkirai)</strong></td><td>50-90 €</td><td>20-30 Jahre</td><td>Mittel</td></tr><tr><td><strong>WPC</strong></td><td>40-80 €</td><td>20-30 Jahre</td><td>Gering</td></tr></tbody></table>' },
+            { id: 'fehler', heading: 'Die 5 größten Planungsfehler', content: '<ol><li><strong>Zu klein geplant:</strong> Viele planen nur den Tisch ein und vergessen Stuhlrückfläche, Durchgänge und Lounge-Bereich.</li><li><strong>Kein Gefälle:</strong> Eine Terrasse braucht 2% Gefälle vom Haus weg, sonst steht Wasser an der Hauswand.</li><li><strong>Falsches Material für Südterrasse:</strong> Dunkle WPC-Dielen werden in der Sonne 60°C heiß — barfuß unbenutzbar!</li><li><strong>Keine Beleuchtung eingeplant:</strong> Leerrohre für Strom sind im Nachhinein extrem teuer. Vorher planen!</li><li><strong>Unterbau gespart:</strong> Ein schlechter Unterbau führt zu absackenden Platten und Pfützen.</li></ol>' },
+            { id: 'kosten', heading: 'Kosten-Überblick', content: '<table><thead><tr><th>Terrassengröße</th><th>Einfach (Beton)</th><th>Mittel (WPC/Holz)</th><th>Premium (Naturstein)</th></tr></thead><tbody><tr><td><strong>15 m²</strong></td><td>1.500-3.000 €</td><td>3.000-5.000 €</td><td>5.000-9.000 €</td></tr><tr><td><strong>25 m²</strong></td><td>2.500-5.000 €</td><td>5.000-8.500 €</td><td>8.500-15.000 €</td></tr><tr><td><strong>40 m²</strong></td><td>4.000-8.000 €</td><td>8.000-14.000 €</td><td>14.000-24.000 €</td></tr></tbody></table><p>Preise inkl. Unterbau, Material und Verlegung durch den Profi.</p>' },
+        ],
+        faqs: [
+            { q: 'Wie groß sollte eine Terrasse für 4 Personen sein?', a: 'Mindestens 12-16 m². Planen Sie 3-4 m² pro Person plus Platz für den Durchgang. Wenn Sie zusätzlich eine Lounge aufstellen möchten, rechnen Sie 20-25 m².' },
+            { q: 'Braucht man eine Baugenehmigung für eine Terrasse?', a: 'In den meisten Bundesländern ist eine ebenerdige Terrasse genehmigungsfrei. Erhöhte Terrassen (über 50-100 cm, je nach Landesbauordnung) können genehmigungspflichtig sein.' },
+            { q: 'Welches Material ist am besten für die Terrasse?', a: 'Es kommt auf Ihre Prioritäten an: Naturstein für maximale Langlebigkeit und Optik, WPC für Pflegeleichtigkeit, Holz für natürliche Wärme. Unser Favorit: Geflämmter Granit oder Thermoeiche.' },
+        ],
+        relatedServices: ['terrassenbau', 'pflasterarbeiten', 'garten-und-landschaftsbau'],
+    },
+
+    // ========================================================================
+    // ARTIKEL 17: Bewässerungssystem Garten
+    // ========================================================================
+    {
+        slug: 'garten-bewaesserung-system',
+        title: 'Gartenbewässerung: Welches System passt zu Ihnen?',
+        metaTitle: 'Gartenbewässerung: Automatische Systeme im Vergleich 2026',
+        metaDescription: 'Garten automatisch bewässern? ✓ Systeme im Vergleich ✓ Kosten ✓ Installation ✓ Tropfbewässerung vs. Sprinkler. Profi-Guide.',
+        excerpt: 'Nie wieder von Hand gießen — wir vergleichen die besten Bewässerungssysteme für jeden Garten und jedes Budget.',
+        category: 'Ratgeber',
+        publishDate: '2026-06-03',
+        readingTime: 9,
+        keywords: ['Garten Bewässerung automatisch', 'Bewässerungssystem Garten', 'Garten bewässern', 'Tropfbewässerung Garten'],
+        tableOfContents: [
+            { id: 'systeme', title: 'Die 4 Systeme im Überblick' },
+            { id: 'kosten', title: 'Kosten-Vergleich' },
+            { id: 'planung', title: 'Planung & Installation' },
+            { id: 'tipps', title: 'Wasser sparen — 5 Profi-Tipps' },
+        ],
+        content: [
+            { id: 'systeme', heading: 'Die 4 Systeme im Überblick', content: '<table><thead><tr><th>System</th><th>Ideal für</th><th>Vorteile</th><th>Nachteile</th></tr></thead><tbody><tr><td><strong>Versenkregner</strong></td><td>Große Rasenflächen</td><td>Unsichtbar im Boden, gleichmäßig</td><td>Teuer, Einbau aufwändig</td></tr><tr><td><strong>Tropfbewässerung</strong></td><td>Beete, Hecken, Gemüse</td><td>Wassersparend, gezielt</td><td>Verstopfungsgefahr</td></tr><tr><td><strong>Micro-Sprinkler</strong></td><td>Kleinere Beete, Balkon</td><td>Günstig, flexibel</td><td>Ungleichmäßig bei Wind</td></tr><tr><td><strong>Perlschlauch</strong></td><td>Hecken, Reihen</td><td>Sehr günstig, einfach</td><td>Begrenzte Reichweite</td></tr></tbody></table><p><strong>Unsere Empfehlung:</strong> Die meisten Gärten profitieren von einer <strong>Kombination</strong>: Versenkregner für den Rasen + Tropfbewässerung für Beete und Hecken. Gesteuert über einen Bewässerungscomputer mit Regensensor.</p>' },
+            { id: 'kosten', heading: 'Kosten-Vergleich', content: '<table><thead><tr><th>System</th><th>Material (200m²)</th><th>Installation (Profi)</th><th>Gesamt</th></tr></thead><tbody><tr><td><strong>Versenkregner</strong></td><td>800-1.500 €</td><td>1.000-2.000 €</td><td>1.800-3.500 €</td></tr><tr><td><strong>Tropfbewässerung</strong></td><td>200-500 €</td><td>300-600 €</td><td>500-1.100 €</td></tr><tr><td><strong>Bewässerungscomputer</strong></td><td>50-300 €</td><td>inkl.</td><td>50-300 €</td></tr><tr><td><strong>Kombi-System</strong></td><td>1.200-2.500 €</td><td>1.500-3.000 €</td><td>2.700-5.500 €</td></tr></tbody></table><p><strong>Amortisation:</strong> Ein automatisches Bewässerungssystem spart 30-50% Wasser gegenüber Handgießen und erspart Ihnen 3-5 Stunden pro Woche im Sommer.</p>' },
+            { id: 'planung', heading: 'Planung & Installation', content: '<ol><li><strong>Wasseranschluss prüfen:</strong> Sie brauchen mindestens 3 bar Wasserdruck und 1.500 l/h Durchflussmenge</li><li><strong>Zonen planen:</strong> Rasen, Beete, Hecken haben unterschiedlichen Wasserbedarf — separate Kreise anlegen</li><li><strong>Regnertypen wählen:</strong> Getrieberegner für große Flächen, Sprühregner für kleine Bereiche</li><li><strong>Leitungen verlegen:</strong> PE-Rohre 20-30 cm tief verlegen. Am besten beim Terrassenbau oder Gartenanlage gleich mit planen!</li><li><strong>Computer programmieren:</strong> Morgens 5-7 Uhr bewässern, 2-3x pro Woche, je 20-30 Min pro Zone</li></ol>' },
+            { id: 'tipps', heading: 'Wasser sparen — 5 Profi-Tipps', content: '<ul><li><strong>Morgens gießen:</strong> Vor 7 Uhr verdunstet am wenigsten Wasser</li><li><strong>Regensensor:</strong> Kostet nur 20-40€ und verhindert Bewässerung bei Regen</li><li><strong>Mulchen:</strong> 5 cm Mulch auf Beeten reduziert den Wasserbedarf um 50%</li><li><strong>Richtige Pflanzen:</strong> Heimische Stauden brauchen weniger Wasser als exotische</li><li><strong>Lieber selten und viel:</strong> 2x pro Woche 20 Liter/m² ist besser als täglich 5 Liter</li></ul>' },
+        ],
+        faqs: [
+            { q: 'Was kostet eine automatische Gartenbewässerung?', a: 'Ein Kombi-System (Versenkregner für Rasen + Tropfbewässerung für Beete) für einen 200m² Garten kostet komplett installiert 2.700-5.500 Euro. Einfache Tropfbewässerung für Beete gibt es ab 500 Euro.' },
+            { q: 'Kann man eine Bewässerung nachträglich einbauen?', a: 'Ja, aber es ist deutlich aufwändiger. Die Leitungen müssen im bestehenden Rasen verlegt werden (Gräben ziehen). Ideal ist die Installation bei einem Neubau oder einer Gartenneuanlage.' },
+            { q: 'Wie viel Wasser spart eine automatische Bewässerung?', a: 'Eine gut geplante automatische Bewässerung mit Regensensor spart 30-50% Wasser gegenüber Handgießen. Der Grund: gleichmäßige Verteilung, optimaler Zeitpunkt und keine Über- oder Unterbewässerung.' },
+        ],
+        relatedServices: ['gartenpflege', 'garten-und-landschaftsbau', 'rollrasen'],
+    },
 ];
 
 // Helper functions
