@@ -2,7 +2,6 @@ import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import { StickyContactButton } from "@/components";
 import ExitIntentPopup from "@/components/ExitIntentPopup";
-import SeasonalBanner from "@/components/SeasonalBanner";
 import "./globals.css";
 
 const inter = Inter({ 
@@ -85,7 +84,6 @@ export default function RootLayout({
         <meta httpEquiv="x-dns-prefetch-control" content="on" />
       </head>
       <body className={`${inter.className} antialiased`}>
-        <SeasonalBanner />
         {children}
         <StickyContactButton />
         <ExitIntentPopup />
