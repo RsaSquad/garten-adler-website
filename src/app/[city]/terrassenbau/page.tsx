@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
     const { city: citySlug } = await params;
     const city = getCityBySlug(citySlug);
     if (!city) return { title: 'Nicht gefunden' };
-    const title = `Terrassenbau ${city.name} | Adler & Sohn`;
+    const title = `Terrassenbau ${city.name} `;
     const description = `Terrassenbau in ${city.name}. ✓ Holzterrassen ✓ Steinterrassen ✓ Überdachungen. Individuelle Planung & Festpreise!`;
     return {
         title, description,
@@ -149,6 +149,21 @@ export default async function CityTerrassenbauPage({ params }: { params: Promise
 
                 <Contact defaultOrt={city.name} />
 
+                
+                <section className="section-padding bg-green-50">
+                    <div className="container-custom">
+                        <div className="max-w-3xl mx-auto">
+                            <h2 className="text-2xl font-bold text-gray-900 mb-6">📚 Ratgeber-Artikel</h2>
+                            <div className="space-y-3">
+                            <Link href="/blog/wpc-oder-holz-terrasse" className="group flex items-center gap-3 p-4 bg-white rounded-xl hover:shadow-md transition-all border border-gray-100">
+                                <span className="text-2xl">📖</span>
+                                <span className="text-gray-700 group-hover:text-green-600 font-medium transition-colors">WPC oder Holz? Welche Terrasse hält länger</span>
+                                <svg className="w-4 h-4 text-gray-400 group-hover:text-green-500 ml-auto transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+                            </Link>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <section className="section-padding bg-white">
                     <div className="container-custom">
                         <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">FAQ – Terrassenbau in {city.name}</h2>

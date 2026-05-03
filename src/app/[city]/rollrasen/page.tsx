@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
     const { city: citySlug } = await params;
     const city = getCityBySlug(citySlug);
     if (!city) return { title: 'Nicht gefunden' };
-    const title = `Rollrasen ${city.name} | Adler & Sohn`;
+    const title = `Rollrasen ${city.name} `;
     const description = `Rollrasen verlegen in ${city.name}. ✓ Sofort grün ✓ Premium-Qualität ✓ Komplett-Service. Jetzt anfragen!`;
     return {
         title, description,
@@ -149,6 +149,26 @@ export default async function CityRollrasenPage({ params }: { params: Promise<{ 
 
                 <Contact defaultOrt={city.name} />
 
+                
+                <section className="section-padding bg-green-50">
+                    <div className="container-custom">
+                        <div className="max-w-3xl mx-auto">
+                            <h2 className="text-2xl font-bold text-gray-900 mb-6">📚 Ratgeber-Artikel</h2>
+                            <div className="space-y-3">
+                            <Link href="/blog/rollrasen-oder-rasen-saeen" className="group flex items-center gap-3 p-4 bg-white rounded-xl hover:shadow-md transition-all border border-gray-100">
+                                <span className="text-2xl">📖</span>
+                                <span className="text-gray-700 group-hover:text-green-600 font-medium transition-colors">Rollrasen oder Rasen säen? Der ehrliche Vergleich</span>
+                                <svg className="w-4 h-4 text-gray-400 group-hover:text-green-500 ml-auto transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+                            </Link>
+                            <Link href="/blog/rasen-pflege-jahresplan" className="group flex items-center gap-3 p-4 bg-white rounded-xl hover:shadow-md transition-all border border-gray-100">
+                                <span className="text-2xl">📖</span>
+                                <span className="text-gray-700 group-hover:text-green-600 font-medium transition-colors">Rasen düngen & mähen — der Jahresplan</span>
+                                <svg className="w-4 h-4 text-gray-400 group-hover:text-green-500 ml-auto transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+                            </Link>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <section className="section-padding bg-white">
                     <div className="container-custom">
                         <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">FAQ – Rollrasen in {city.name}</h2>
