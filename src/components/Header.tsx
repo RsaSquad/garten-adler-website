@@ -20,8 +20,9 @@ const Header = () => {
         { href: '#leistungen', label: 'Leistungen' },
         { href: '#ueber-uns', label: 'Über uns' },
         { href: '#projekte', label: 'Projekte' },
-        { href: '#kontakt', label: 'Kontakt' },
+        { href: '/standorte', label: 'Standorte' },
         { href: '/blog', label: 'Blog' },
+        { href: '#kontakt', label: 'Kontakt' },
     ];
 
     return (

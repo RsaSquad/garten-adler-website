@@ -19,13 +19,13 @@ const Footer = () => {
         unternehmen: [
             { label: 'Über uns', href: '#ueber-uns' },
             { label: 'Projekte', href: '#projekte' },
+            { label: 'Blog & Ratgeber', href: '/blog' },
             { label: 'Standorte', href: '/standorte' },
             { label: 'Kontakt', href: '#kontakt' },
         ],
         rechtliches: [
             { label: 'Impressum', href: '/impressum' },
             { label: 'Datenschutz', href: '/datenschutz' },
-            { label: 'AGB', href: '/agb' },
         ],
     };
 

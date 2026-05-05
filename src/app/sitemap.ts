@@ -3,7 +3,7 @@ import { cities } from '@/data/cities';
 import { blogArticles } from '@/data/blog';
 
 // Festes Datum für konsistentes Caching – bei Content-Updates aktualisieren
-const LAST_UPDATED = '2026-04-21';
+const LAST_UPDATED = '2026-05-05';
 
 const services = [
     'pflasterarbeiten',
@@ -62,8 +62,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
         {
             url: `${baseUrl}/blog`,
             lastModified: LAST_UPDATED,
-            changeFrequency: 'weekly',
-            priority: 0.8,
+            changeFrequency: 'daily',
+            priority: 0.85,
         },
         // Blog-Artikel (nur veröffentlichte – publishDate <= heute)
         ...blogArticles
