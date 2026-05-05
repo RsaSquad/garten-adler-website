@@ -37,7 +37,7 @@ const projects = [
         title: 'Einfahrt & Pflasterung',
         category: 'Pflasterarbeiten',
         description: 'Großflächige Einfahrt mit hochwertigen Verbundsteinen',
-        image: '/images/projects/pflasterarbeiten-einfahrt-pflasterarbeiten-naturstein-terrasse.png',
+        image: '/images/projects/pflasterarbeiten-einfahrt-naturstein.png',
     },
     {
         id: 6,
