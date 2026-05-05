@@ -48,18 +48,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.85,
         })),
         {
-            url: `${baseUrl}/impressum`,
-            lastModified: LAST_UPDATED,
-            changeFrequency: 'yearly',
-            priority: 0.3,
-        },
-        {
-            url: `${baseUrl}/datenschutz`,
-            lastModified: LAST_UPDATED,
-            changeFrequency: 'yearly',
-            priority: 0.3,
-        },
-        {
             url: `${baseUrl}/blog`,
             lastModified: LAST_UPDATED,
             changeFrequency: 'daily',
