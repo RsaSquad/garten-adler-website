@@ -51,10 +51,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: 'https://garten-adler.de/images/og-default.jpg',
+        url: 'https://garten-adler.de/images/og-default.png',
         width: 1200,
         height: 630,
-        alt: 'Adler & Sohn - Garten- & Landschaftsbau',
+        alt: 'Adler & Sohn - Garten- & Landschaftsbau Lüneburg',
       },
     ],
   },
@@ -62,6 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Adler & Sohn | Garten- & Landschaftsbau",
     description: "Professioneller Garten- und Landschaftsbau in Lüneburg und Umgebung.",
+    images: ['https://garten-adler.de/images/og-default.png'],
   },
   // GEO meta tags are set per-page to avoid conflicts with city-specific pages
 };

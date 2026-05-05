@@ -10,7 +10,7 @@ const jsonLd = {
       '@id': 'https://garten-adler.de/#organization',
       name: 'Adler & Sohn',
       url: 'https://garten-adler.de',
-      logo: 'https://garten-adler.de/logo.png',
+      logo: 'https://garten-adler.de/images/logo.png',
       description: 'Professioneller Garten- und Landschaftsbau in Lüneburg und Umgebung.',
       telephone: '04131 - 394 2971',
       email: 'galabau@sohn-adler.de',
