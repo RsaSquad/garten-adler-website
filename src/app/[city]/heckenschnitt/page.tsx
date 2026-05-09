@@ -48,7 +48,7 @@ export default async function CityHeckenschnittPage({ params }: { params: Promis
     const jsonLd = {
         '@context': 'https://schema.org',
         '@graph': [
-            { '@type': 'Service', name: `Heckenschnitt ${city.name}`, provider: { '@type': 'HomeAndConstructionBusiness', name: 'Adler & Sohn', telephone: '04131 - 394 2971' }, areaServed: { '@type': 'City', name: city.name } },
+            { '@type': 'Service', name: `Heckenschnitt ${city.name}`, provider: { '@type': 'HomeAndConstructionBusiness', name: 'Adler & Sohn', url: 'https://garten-adler.de', telephone: '04131 - 394 2971' }, areaServed: { '@type': 'City', name: city.name } },
             { '@type': 'FAQPage', mainEntity: faqs.map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) },
             { '@type': 'BreadcrumbList', itemListElement: [
                 { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://garten-adler.de' },

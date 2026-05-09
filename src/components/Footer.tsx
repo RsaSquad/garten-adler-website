@@ -137,6 +137,7 @@ const Footer = () => {
                 <div className="container-custom py-6">
                     <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-500">
                         <p>© {currentYear} Adler & Sohn. Alle Rechte vorbehalten.</p>
+                        <p className="text-gray-600/40 text-xs">garten-adler.de – Garten- & Landschaftsbau</p>
                         <p>Mit 💚 gestaltet in Lüneburg</p>
                     </div>
                 </div>
