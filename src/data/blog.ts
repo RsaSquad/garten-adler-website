@@ -2481,8 +2481,10 @@ export function getAllBlogSlugs(): string[] {
 
 export function getPublishedArticles(): BlogArticle[] {
     const today = new Date().toISOString().split('T')[0];
-    return blogArticles.filter((article) => {
-        if (!article.publishDate) return true;
-        return article.publishDate <= today;
-    });
+    return blogArticles
+        .filter((article) => {
+            if (!article.publishDate) return true;
+            return article.publishDate <= today;
+        })
+        .sort((a, b) => b.publishDate.localeCompare(a.publishDate));
 }
