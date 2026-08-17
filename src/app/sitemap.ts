@@ -2,8 +2,8 @@ import { MetadataRoute } from 'next';
 import { cities } from '@/data/cities';
 import { blogArticles } from '@/data/blog';
 
-// Festes Datum für konsistentes Caching – bei Content-Updates aktualisieren
-const LAST_UPDATED = '2026-05-05';
+// Bei Content-Updates aktualisieren
+const LAST_UPDATED = '2026-07-23';
 
 const services = [
     'pflasterarbeiten',
@@ -64,21 +64,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
             })),
     ];
 
-    // Städte-Seiten (Hauptseite pro Stadt)
-    const cityPages: MetadataRoute.Sitemap = cities.map((city) => ({
+    // Nur Städte mit >20.000 Einwohnern in die Sitemap (Hauptseite pro Stadt)
+    const topCities = cities.filter((city) => city.population > 20000);
+
+    const cityPages: MetadataRoute.Sitemap = topCities.map((city) => ({
         url: `${baseUrl}/${city.slug}`,
         lastModified: LAST_UPDATED,
         changeFrequency: 'monthly' as const,
-        priority: city.population > 50000 ? 0.8 : city.population > 20000 ? 0.7 : 0.6,
+        priority: city.population > 50000 ? 0.8 : 0.7,
     }));
 
-    // Städte × Services (alle Kombinationen)
-    const cityServicePages: MetadataRoute.Sitemap = cities.flatMap((city) =>
+    // Nur Top-10 Städte (>50.000 Einwohner) × Services in die Sitemap
+    const majorCities = cities.filter((city) => city.population > 50000);
+
+    const cityServicePages: MetadataRoute.Sitemap = majorCities.flatMap((city) =>
         services.map((service) => ({
             url: `${baseUrl}/${city.slug}/${service}`,
             lastModified: LAST_UPDATED,
             changeFrequency: 'monthly' as const,
-            priority: city.population > 50000 ? 0.75 : city.population > 20000 ? 0.65 : 0.55,
+            priority: 0.75,
         }))
     );
 

@@ -1,13 +1,20 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { getCityBySlug, getNearbyCities } from '@/data/cities';
+import { cities, getCityBySlug, getNearbyCities } from '@/data/cities';
 import { Contact } from '@/components';
 import { getCityAndRegion, getRegionLabel } from '@/utils/cityHelpers';
 import { getUniqueIntro, getLocalTipp, selectFAQs } from '@/lib/cityContentGenerator';
 
 
 
+
+// Top-Städte beim Build vorrendern
+export async function generateStaticParams() {
+    return cities
+        .filter(c => c.population > 20000)
+        .map(city => ({ city: city.slug }));
+}
 
 // ISR: Seite wird beim ersten Aufruf gerendert, dann 24h gecached
 export const revalidate = 86400;
@@ -20,6 +27,8 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
     const title = `GaLaBau ${city.name} `;
     const description = `Professioneller GaLaBau in ${city.name}. ✓ Gartengestaltung ✓ Erdbau ✓ Entwässerung ✓ Mauerbau. Komplettservice!`;
     return {
+        // Kleine Städte (<20.000 Einwohner) nicht indexieren
+        ...(city.population < 20000 ? { robots: { index: false, follow: true } } : {}),
         title, description,
         openGraph: { title, description, url: `https://garten-adler.de/${city.slug}/galabau` },
         alternates: { canonical: `https://garten-adler.de/${city.slug}/galabau` },

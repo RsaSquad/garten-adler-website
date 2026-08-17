@@ -1,13 +1,19 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { getCityBySlug, getNearbyCities } from '@/data/cities';
+import { getCityBySlug, getNearbyCities, cities } from '@/data/cities';
 import { Contact } from '@/components';
 import { getCityAndRegion, getRegionLabel } from '@/utils/cityHelpers';
 import { getUniqueIntro, getLocalTipp, getBodenart, getKreisName, selectFAQs } from '@/lib/cityContentGenerator';
 
 // Dynamische Metadata
 
+// Top-Städte beim Build vorrendern
+export async function generateStaticParams() {
+    return cities
+        .filter(c => c.population > 20000)
+        .map(city => ({ city: city.slug }));
+}
 
 // ISR: Seite wird beim ersten Aufruf gerendert, dann 24h gecached
 export const revalidate = 86400;
@@ -27,6 +33,7 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
     return {
         title,
         description,
+        ...(city.population < 20000 ? { robots: { index: false, follow: true } } : {}),
         keywords: `Pflasterarbeiten ${city.name}, Pflastersteine ${city.name}, Einfahrt pflastern ${city.name}, Terrasse pflastern ${city.name}, Pflasterbau ${getRegionLabel(city)}`,
         openGraph: {
             title,
@@ -195,11 +202,11 @@ export default async function CityPflasterarbeitenPage({ params }: { params: Pro
 
                             <p className="text-xl text-gray-300 leading-relaxed mb-8">
                                 Professionelle Pflasterarbeiten für Einfahrten, Terrassen und Gartenwege in {city.name}.
-                                Mit nur  Anfahrt sind wir schnell bei Ihnen – für dauerhafte Qualität.
+                                Mit nur {city.distance}km Anfahrt sind wir schnell bei Ihnen – für dauerhafte Qualität.
                             </p>
 
                             <div className="flex flex-wrap gap-4 mb-10">
-                                {['Festpreisgarantie', '5 Jahre Gewährleistung', `Nur $ Anfahrt`].map((item, i) => (
+                                {['Festpreisgarantie', '5 Jahre Gewährleistung', `Nur ${city.distance}km Anfahrt`].map((item, i) => (
                                     <div key={i} className="flex items-center gap-2 text-white/90">
                                         <svg className="w-5 h-5 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />

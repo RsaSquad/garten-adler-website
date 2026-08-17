@@ -9,3 +9,4 @@ export { default as Footer } from './Footer';
 export { default as FAQ, homepageFAQs, generateCityFAQs } from './FAQ';
 export { default as StickyContactButton } from './StickyContactButton';
 export { default as LandingPageForm } from './LandingPageForm';
+export { default as BewerbungsFunnel } from './BewerbungsFunnel';

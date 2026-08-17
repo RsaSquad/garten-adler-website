@@ -6,8 +6,12 @@ import { FAQ, Contact } from '@/components';
 import { generateCityFAQs } from '@/lib/faqData';
 import { getCityAndRegion, getRegionLabel } from '@/utils/cityHelpers';
 
-// Dynamische Metadata für jede Stadt
-
+// Top-Städte beim Build vorrendern
+export async function generateStaticParams() {
+    return cities
+        .filter(c => c.population > 20000)
+        .map(city => ({ city: city.slug }));
+}
 
 // ISR: Seite wird beim ersten Aufruf gerendert, dann 24h gecached
 export const revalidate = 86400;
@@ -30,6 +34,8 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
         title,
         description,
         keywords: `Garten Landschaftsbau ${city.name}, Gartengestaltung ${city.name}, Gartenbau ${city.name}, Terrassenbau ${city.name}, Rollrasen ${city.name}, Pflasterarbeiten ${city.name}, Zaunbau ${city.name}, Gartenpflege ${city.name}, Adler & Sohn ${city.name}`,
+        // Kleine Städte (<5.000 Einwohner) nicht indexieren, um Crawl-Budget zu schonen
+        ...(city.population < 5000 ? { robots: { index: false, follow: true } } : {}),
         openGraph: {
             title,
             description,
