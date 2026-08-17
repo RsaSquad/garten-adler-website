@@ -232,6 +232,19 @@ export default function BewerbungsFunnel() {
             </p>
           </div>
 
+          {/* CTA Button */}
+          <div className="text-center mb-12 md:mb-16">
+            <button
+              onClick={() => document.getElementById('bewerbung-funnel')?.scrollIntoView({ behavior: 'smooth' })}
+              className="inline-flex items-center gap-3 px-10 py-4 rounded-2xl bg-[var(--primary-green)] text-white text-lg font-bold hover:bg-[var(--primary-light)] hover:scale-105 hover:shadow-[0_0_40px_rgba(22,163,74,0.4)] transition-all duration-300 cursor-pointer"
+            >
+              JETZT BEWERBEN
+              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+              </svg>
+            </button>
+          </div>
+
           {/* Benefits Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-12 md:mb-16">
             {benefits.map((benefit, idx) => (
