@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 type Position = 
   | 'Landschaftsgärtner/in (m/w/d)'
@@ -212,12 +213,7 @@ export default function BewerbungsFunnel() {
           {/* Logo & Company Name */}
           <div className="text-center mb-12 md:mb-16 animate-fadeInUp">
             <div className="inline-flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 rounded-2xl bg-[var(--primary-green)] flex items-center justify-center shadow-lg shadow-green-500/30">
-                <svg className="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-                </svg>
-              </div>
-              <span className="text-white/80 text-lg font-medium tracking-wide">Adler & Sohn Galabau</span>
+              <Image src="/images/logo.png" alt="Adler & Sohn Galabau" width={160} height={60} className="h-14 w-auto" />
             </div>
 
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-[1.1]">
